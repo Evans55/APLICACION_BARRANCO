@@ -2,7 +2,7 @@
 /* CSS Document */
 
 
-.foreground, .midground, .background {
+.foreground, .midground, .background, .fachadaiz, .fachadader, .grassiz, .grassder, .grassfondoiz, .grassfondoder, .plantasiz, .plantasder {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -28,6 +28,112 @@
 -moz-background-size: 33% auto;
 -o-background-size: 33% auto;
 }
+
+.fachadaiz {
+  background:  url(../imagenes/Fachada_Izq.png) 0 100% no-repeat;
+  margin-top: -15.3%;
+  margin-left: 14%;
+  z-index: 3;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+.fachadader {
+  background:  url(../imagenes/Fachada_der.png) 0 100% no-repeat;
+  margin-top: -15.3%;
+  margin-left: 61%;
+  z-index: 3;
+  -webkit-background-size: 21% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+
+.grassiz {
+  background:  url(../imagenes/gras_Izq.png) 0 100% no-repeat;
+  margin-top: -12.7%;
+  margin-left: 11.5%;
+  z-index: 3;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+
+.grassder {
+  background:  url(../imagenes/gras_der.png) 0 100% no-repeat;
+  margin-top: -12.7%;
+  margin-left: 61%;
+  z-index: 3;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+.grassfondoiz {
+  background:  url(../imagenes/grass_fondo.png) 0 100% no-repeat;
+  margin-top: -15.7%;
+  margin-left: 11.5%;
+  z-index: 3;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+.grassfondoder {
+  background:  url(../imagenes/grass_fondo.png) 0 100% no-repeat;
+  margin-top: -15.9%;
+  margin-left: 61%;
+  z-index: 3;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+
+.plantasiz {
+  background:  url(../imagenes/Plantas_Izq.png) 0 100% no-repeat;
+  margin-top: -15.7%;
+  margin-left: 11.5%;
+  z-index: 3;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+.plantasder {
+  background:  url(../imagenes/Plantas_der.png) 0 100% no-repeat;
+  margin-top: -15.7%;
+  margin-left: 61%;
+  z-index: 3;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+
+.spritearbol {
+  background:  url(../imagenes/sprite-arbol1-1.png) 0 100% no-repeat;
+  margin-top: -35.7%;
+  margin-left: 64%;
+  z-index: 3;
+  height:1383px;
+  width:220px;
+  position: absolute;
+  top: 0; left: 0;
+  
+  -webkit-animation: spritearbol 2s steps(13, end) infinite;
+
+}
+
+
+
+@-webkit-keyframes spritearbol {  
+  from {background-position: 0px; } 
+  to {background-position: -3604px; } 
+}
+
 
 .background {
   background: url(../imagenes/cielo.png)0 100% no-repeat;
