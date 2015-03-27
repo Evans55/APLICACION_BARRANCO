@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.ExpAPPBarranco"
+    version   = "1.0.0">
+
+<name>Aplicativo Municipalidad de Barranco</name>
+
+<description>
+Proyecto del primer aplicativo móvil para la Municipalidad de Barranco.
+</description>
+
+<author href="http://experimedia.pe/" email="jonathanccoicca@gmail.com">
+Jonathan D. Ccoicca Jiménez
+</author>
+
+
+
+<gap:plugin name="org.apache.cordova.device" />
+<gap:plugin name="org.apache.cordova.device-motion" />
+<gap:plugin name="org.apache.cordova.media" />
+
+</widget>
