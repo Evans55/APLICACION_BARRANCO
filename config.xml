@@ -14,7 +14,7 @@ Proyecto del primer aplicativo móvil para la Municipalidad de Barranco.
 Jonathan D. Ccoicca Jiménez
 </author>
 
-
+<icon src="imagenes/iconoapp.png" />
 
 <gap:plugin name="org.apache.cordova.device" />
 <gap:plugin name="org.apache.cordova.device-motion" />
