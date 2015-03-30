@@ -92,6 +92,7 @@ function onDeviceReady(){
 
         // Set audio position
         //
+		
         function setAudioPosition(position) {
             document.getElementById('audio_position').innerHTML = position;
         }
