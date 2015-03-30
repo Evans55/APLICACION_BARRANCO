@@ -4,10 +4,13 @@ function onBodyLoad(){
 document.addEventListener("deviceready", this.onDeviceReady, false);
 }
 
+	var path = window.location.pathname;
+    path = path.substr( path, path.length - 10 );
+    absolutePath='file://' + path;
 
 function onDeviceReady(){
 	
-	playAudio("audio/Ellie_Goulding_Outside.amr");
+	playAudio(absolutePath + "audio/Ellie_Goulding_Outside.mp3");
 }
 
 
@@ -20,12 +23,9 @@ function onDeviceReady(){
         // Play audio
         //
         function playAudio(src) {
-			
-	var path = window.location.pathname;
-    path = path.substr( path, path.length - 10 );
-    absolutePath='file://' + path;
+		
 	
-	alert(absolutePath);
+	//alert(absolutePath);
 			
             // Create Media object from src
             my_media = new Media(src, onSuccess, onError);
