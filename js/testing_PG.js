@@ -10,7 +10,7 @@ document.addEventListener("deviceready", this.onDeviceReady, false);
 
 function onDeviceReady(){
 	
-	playAudio(absolutePath + "audio/Ellie_Goulding_Outside.mp3");
+	playAudio(absolutePath + "/audio/Ellie_Goulding_Outside.mp3");
 }
 
 
