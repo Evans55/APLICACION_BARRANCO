@@ -8,7 +8,7 @@ document.addEventListener("deviceready", this.onDeviceReady, false);
 
 function onDeviceReady(){
 	
-	playAudio(absolutePath + '/APLICACION_BARRANCO/audio/Ellie_Goulding_Outside.amr');
+	playAudio(absolutePath + '/APLICACION_BARRANCO/audio/Ellie_Goulding_Outside.mp3');
 }
 
 
