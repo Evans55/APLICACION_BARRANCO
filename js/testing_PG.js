@@ -1,14 +1,14 @@
 // JavaScript Document
 
 function onBodyLoad(){
-document.addEventListener("deviceready", this.onDeviceReady, false);
+document.addEventListener("deviceready", onDeviceReady, false);
 }
 
 	
 
 function onDeviceReady(){
 	
-	playAudio(absolutePath + '/APLICACION_BARRANCO/audio/Ellie_Goulding_Outside.mp3');
+	playAudio('file:///android_asset/www/audio/Ellie_Goulding_Outside.mp3');
 }
 
 
@@ -36,7 +36,7 @@ function onDeviceReady(){
 
             // Play audio
             my_media.play();
-			my_media.release();
+
 
             // Update my_media position every second
             if (mediaTimer == null) {
