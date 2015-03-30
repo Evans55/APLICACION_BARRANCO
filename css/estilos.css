@@ -11,7 +11,7 @@
 
 .foreground {
   background:  url(../imagenes/piso.png) 0 100% no-repeat;
-  z-index: 1;
+  z-index: 2;
 -webkit-background-size: 100% auto;
 -moz-background-size: 100% auto;
 -o-background-size: 100% auto;
@@ -22,7 +22,7 @@
   background:  url(../imagenes/fachada.png) 0 100% no-repeat;
   margin-top: -15.3%;
   margin-left: 32%;
-  z-index: 2;
+  z-index: 4;
   -webkit-background-size: 33% auto;
 -moz-background-size: 33% auto;
 -o-background-size: 33% auto;
