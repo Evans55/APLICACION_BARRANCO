@@ -25,7 +25,7 @@ function onDeviceReady(){
 	var path = window.location.pathname;
     path = path.substr( path, path.length - 10 );
     absolutePath='file://' + path;
-	alert(absolutePath);
+	//alert(absolutePath);
 	
 	/*if (device.platform == 'Android'){
      src='/android_asset/'+src;
