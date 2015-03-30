@@ -8,7 +8,7 @@ document.addEventListener("deviceready", this.onDeviceReady, false);
 
 function onDeviceReady(){
 	
-	playAudio('audio/Ellie_Goulding_Outside.amr');
+	playAudio(absolutePath + '/APLICACION_BARRANCO/audio/Ellie_Goulding_Outside.amr');
 }
 
 
@@ -27,9 +27,9 @@ function onDeviceReady(){
     absolutePath='file://' + path;
 	alert(absolutePath);
 	
-	if (device.platform == 'Android'){
+	/*if (device.platform == 'Android'){
      src='/android_asset/'+src;
- }
+ }*/
 			
             // Create Media object from src
             my_media = new Media(src, onSuccess, onError);
