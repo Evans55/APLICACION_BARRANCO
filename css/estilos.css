@@ -423,9 +423,9 @@ and (max-width : 320px)
 and (max-height : 240px)
 {
 
-     .foreground {
+.foreground {
   background:  url(../imagenes/Piso.png) 0 100% no-repeat;
-  z-index: 3;
+  z-index: 1;
 -webkit-background-size: 100% auto;
 -moz-background-size: 100% auto;
 -o-background-size: 100% auto;
@@ -437,14 +437,213 @@ margin-top:-15%;
   background:  url(../imagenes/Fachada.png) 0 100% no-repeat;
   margin-top: -30.3%;
   margin-left: 32%;
-  z-index: 2;
+  z-index: 3;
   -webkit-background-size: 33% auto;
 -moz-background-size: 33% auto;
 -o-background-size: 33% auto;
 }
 
+
+.fachadaiz {
+  background:  url(../imagenes/Fachada_Izq.png) 0 100% no-repeat;
+  margin-top: -30.3%;
+  margin-left: 14%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+.fachadader {
+  background:  url(../imagenes/Fachada_der.png) 0 100% no-repeat;
+  margin-top: -30.3%;
+  margin-left: 61%;
+  z-index: 2;
+  -webkit-background-size: 21% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+
+.grassiz {
+  background:  url(../imagenes/gras_Izq.png) 0 100% no-repeat;
+  margin-top: -28.3%;
+  margin-left: 11.5%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+
+.grassder {
+  background:  url(../imagenes/gras_der.png) 0 100% no-repeat;
+  margin-top: -28.3%;
+  margin-left: 61%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+.grassfondoiz {
+  background:  url(../imagenes/grass_fondo.png) 0 100% no-repeat;
+  margin-top: -31.7%;
+  margin-left: 11.5%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+.grassfondoder {
+  background:  url(../imagenes/grass_fondo.png) 0 100% no-repeat;
+  margin-top: -31.7%;
+  margin-left: 61%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+
+.plantasiz {
+  background:  url(../imagenes/Plantas_Izq.png) 0 100% no-repeat;
+  margin-top: -31.7%;
+  margin-left: 11.5%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+.plantasder {
+  background:  url(../imagenes/Plantas_der.png) 0 100% no-repeat;
+  margin-top: -31.7%;
+  margin-left: 61%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
 }
 
 
 
+}
+
+
+
+@media only screen
+and (max-width : 240px)
+and (max-height : 320px)
+and (orientation : portrait)
+{
+
+.foreground {
+  background:  url(../imagenes/Piso.png) 0 100% no-repeat;
+  z-index: 1;
+-webkit-background-size: 100% auto;
+-moz-background-size: 100% auto;
+-o-background-size: 100% auto;
+margin-top:-38%;
+
+}
+
+.midground {
+  background:  url(../imagenes/Fachada.png) 0 100% no-repeat;
+  margin-top: -50.3%;
+  margin-left: 32%;
+  z-index: 3;
+  -webkit-background-size: 33% auto;
+-moz-background-size: 33% auto;
+-o-background-size: 33% auto;
+}
+
+
+.fachadaiz {
+  background:  url(../imagenes/Fachada_Izq.png) 0 100% no-repeat;
+  margin-top: -50.3%;
+  margin-left: 14%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+.fachadader {
+  background:  url(../imagenes/Fachada_der.png) 0 100% no-repeat;
+  margin-top: -50.3%;
+  margin-left: 61%;
+  z-index: 2;
+  -webkit-background-size: 21% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+
+.grassiz {
+  background:  url(../imagenes/gras_Izq.png) 0 100% no-repeat;
+  margin-top: -48.3%;
+  margin-left: 11.5%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+
+.grassder {
+  background:  url(../imagenes/gras_der.png) 0 100% no-repeat;
+  margin-top: -48.3%;
+  margin-left: 61%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+.grassfondoiz {
+  background:  url(../imagenes/grass_fondo.png) 0 100% no-repeat;
+  margin-top: -51.7%;
+  margin-left: 11.5%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+.grassfondoder {
+  background:  url(../imagenes/grass_fondo.png) 0 100% no-repeat;
+  margin-top: -51.7%;
+  margin-left: 61%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+
+.plantasiz {
+  background:  url(../imagenes/Plantas_Izq.png) 0 100% no-repeat;
+  margin-top: -51.7%;
+  margin-left: 11.5%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+.plantasder {
+  background:  url(../imagenes/Plantas_der.png) 0 100% no-repeat;
+  margin-top: -51.7%;
+  margin-left: 61%;
+  z-index: 2;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
+}
+
+
+
+}
 
