@@ -20,6 +20,13 @@ function onDeviceReady(){
         // Play audio
         //
         function playAudio(src) {
+			
+	var path = window.location.pathname;
+    path = path.substr( path, path.length - 10 );
+    absolutePath='file://' + path;
+	
+	alert(absolutePath);
+			
             // Create Media object from src
             my_media = new Media(src, onSuccess, onError);
 
