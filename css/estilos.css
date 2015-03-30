@@ -456,7 +456,7 @@ and (orientation : landscape)
   .foreground {
   background:  url(../imagenes/piso.png) 0 100% no-repeat;
   z-index: 3;
-   margin-top: -15.3%;
+   margin-top: -30.3%;
 -webkit-background-size: 100% auto;
 -moz-background-size: 100% auto;
 -o-background-size: 100% auto;
