@@ -1,13 +1,13 @@
 // JavaScript Document
 
 function onBodyLoad(){
-document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("deviceready", this.onDeviceReady, false);
 }
 
 
 function onDeviceReady(){
 	
-	playAudio("audio/Ellie_Goulding_Outside.mp3");
+	playAudio("audio/Ellie_Goulding_Outside.amr");
 }
 
 
