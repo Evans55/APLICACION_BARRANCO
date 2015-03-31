@@ -19,5 +19,8 @@ Jonathan D. Ccoicca Jiménez
 <gap:plugin name="org.apache.cordova.device" />
 <gap:plugin name="org.apache.cordova.device-motion" />
 <gap:plugin name="org.apache.cordova.media" />
+<gap:plugin name="org.apache.cordova.inappbrowser" />
+
+<preference name="stay-in-webview" value="false" />
 
 </widget>
