@@ -22,7 +22,7 @@ Jonathan D. Ccoicca Jiménez
 <gap:plugin name="org.apache.cordova.inappbrowser" />
 <gap:plugin name="org.apache.cordova.file" />
 <gap:plugin name="org.apache.cordova.file-transfer" />
-<gap:plugin name="com.kernix.pdfviewer" />
+
 
 <preference name="stay-in-webview" value="false" />
 
