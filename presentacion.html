@@ -55,7 +55,15 @@
   </div>
 
 <!--<p id="audio_position"></p> -->
-<a data-role="button" href="#" onClick="window.open('https://docs.google.com/viewer?url=http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf&embedded=true', '_blank', 'location=yes');"  style="z-index:6">Descargar PDF</a>
+<a data-role="button" href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"  style="z-index:6">Descargar PDF</a><br><br><br>
+<a data-role="button" href="#" 
+	onclick="
+	downloadAndOpenPDF(
+		'http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf',
+		'RV-001-2012-VIVIENDA-VMVU.pdf',
+		'/sdcard/dodge-this-doge/'
+	);" style="z-index:7">
+	Such PDF</a>
 
 	</div>
 
