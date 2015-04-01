@@ -16,8 +16,8 @@
  <script src="phonegap.js" charset="utf-8" type="text/javascript"></script>
 <script src="jquery-mobile/jquery-1.11.1.min.js" type="text/javascript"></script> 
 <script src="jquery-mobile/jquery.mobile-1.4.5.min.js" type="text/javascript"></script> 
-<script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>
-
+<!--<script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>
+ -->
 <script src="js/testing_PG.js" type="text/javascript"></script>
 
 
@@ -55,23 +55,21 @@
   </div>
 
 <!--<p id="audio_position"></p> -->
-<a data-role="button" href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"  style="z-index:6">Descargar PDF</a><br><br><br>
+<!--<a data-role="button" href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"  style="z-index:6">Descargar PDF</a><br><br><br> -->
 
+
+<a data-role="button" href="#page2" style="z-index:6; position:absolute; top:80%; left:80%;" data-icon="arrow-r" onclick="stopAudio();">SKIP INTRO</a>
 
 	</div>
 
 </div>
 
-<div data-role="page" id="page2">
-	<div data-role="header">
-		<h1>Página dos</h1>
-	</div>
+<div data-role="page" id="page2" style="background-image: url('imagenes/03-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+	
 	<div data-role="content">	
-		Contenido		
+				
 	</div>
-	<div data-role="footer">
-		<h4>Pie de página</h4>
-	</div>
+	
 </div>
 
 <div data-role="page" id="page3">
