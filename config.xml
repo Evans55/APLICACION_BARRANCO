@@ -25,5 +25,6 @@ Jonathan D. Ccoicca Jiménez
 
 
 <preference name="stay-in-webview" value="false" />
+<preference name="orientation" value="landscape" />
 
 </widget>
