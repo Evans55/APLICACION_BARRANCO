@@ -1019,7 +1019,7 @@ and (orientation : landscape)
 	}
 	
 	#global {
-	height: 33em;
+	height: 32em;
 	width: 50%;
 	border: 1px solid #ddd;
 	overflow-y: scroll;
