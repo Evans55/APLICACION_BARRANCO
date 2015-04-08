@@ -1018,6 +1018,17 @@ and (orientation : landscape)
 
 	}
 	
+	#global {
+	height: 33em;
+	width: 50%;
+	border: 1px solid #ddd;
+	overflow-y: scroll;
+	margin:auto;
+	margin-top:13.3%;
+	
+	
+}
+	
 }
 
 
