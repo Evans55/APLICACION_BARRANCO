@@ -22,6 +22,7 @@
 <script src="js/testing_PG.js" type="text/javascript"></script>
 
 
+
 </head> 
 <body onLoad="onBodyLoad()"> 
 
@@ -44,7 +45,7 @@
      <div class="grassfondoder"></div>
      <div class="grassder"></div>
   
-
+    <div class="spritearbol"></div>
   
   
   <div class="background">
@@ -59,8 +60,10 @@
 <!--<a data-role="button" href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"  style="z-index:6">Descargar PDF</a><br><br><br> -->
 
 
-<a data-role="button" href="#page2" style="z-index:6; position:absolute; top:80%; left:80%;" data-icon="arrow-r" onclick="stopAudio();">SKIP INTRO</a>
 
+<div class="ui-grid-solo">
+    <div class="ui-block-a"><a data-role="button" href="#page2" id="skip" data-icon="arrow-r" class="ui-btn-right ui-btn-inline" onclick="stopAudio();">SKIP INTRO</a></div>
+</div>
 	</div>
 
 </div>
@@ -75,29 +78,67 @@
 	
 </div>
 
-<div data-role="page" id="page3">
-	<div data-role="header">
-		<h1>Página tres</h1>
-	</div>
+<div data-role="page" id="page3" style="background-image: url('imagenes/04-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+	
 	<div data-role="content">	
-		Contenido		
+				<a data-role="button" href="#page4" data-transition="pop" style="position:absolute;">Siguiente</a>
 	</div>
-	<div data-role="footer">
-		<h4>Pie de página</h4>
-	</div>
+	
 </div>
 
-<div data-role="page" id="page4">
-	<div data-role="header">
-		<h1>Página cuatro</h1>
+<div data-role="page" id="page4" style="background-image: url('imagenes/05-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+	
+	<div data-role="content">
+      
+     
+			<div class="bloques" id="bloque11" data-role="button"><a><img src="imagenes/Matrimonios_Red.png" alt="bloque11"></a></div>
+             <div class="bloques" id="bloque12"><a><img src="imagenes/Transparencia_azul.png" alt="bloque12"></a></div>
+             <div class="bloques" id="bloque13"><a href="#page5" data-transition="flip"><img src="imagenes/Administracion_Trib.png" alt="bloque13"></a></div>
+             <div class="bloques" id="bloque14"><a><img src="imagenes/Edificacion_Lila.png" alt="bloque14"></a></div>
+    
+      
+             
+             <div class="posicion" id="bloque21"><a><img src="imagenes/Participacion_Ve_ambar.png" alt="bloque21"></a></div> 
+             <div class="posicion2" id="bloque22"><a><img src="imagenes/Defensa_Civ_Turquesa.png" alt="bloque22"></a></div> 
+             <div class="posicion2" id="bloque23"><a><img src="imagenes/Autorizaciones_Beige.png" alt="bloque23"></a></div>
+             <div class="posicion2" id="bloque24"><a><img src="imagenes/Busca por palabra_AzulMarino.png" alt="bloque24"></a></div>
+          
+            
 	</div>
-	<div data-role="content">	
-		Contenido		
-	</div>
-	<div data-role="footer">
-		<h4>Pie de página</h4>
-	</div>
+	
 </div>
+
+<div data-role="page" id="page5" style="background-image: url('imagenes/06-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+
+  <div data-role="content">
+
+<div id="global">
+  <div id="mensajes">
+    <div class="texto fondobloque1"><a>19. Solicitud de devolución en materia tributaria</a></div>
+    <div class="texto "><a>20. Solicitud de compensación en materia tributaria</a></div>
+    <div class="texto fondobloque1"><a>21. Solicitud de prescripción materia tributaria</a></div>
+    <div class="texto"><a>22. Recurso de reclamación</a></div>
+    <div class="texto fondobloque1"><a>23. Recurso de apelación de resolución que resuelve recurso de reclamación /2</a></div>
+    <div class="texto"><a>24. Recurso de apelación de puro derecho /2</a></div>
+    <div class="texto fondobloque1"><a>Mensaje 7</div>
+    <div class="texto"><a>Mensaje 8</a></div>
+    <div class="texto fondobloque1"><a>Mensaje 9</a></div>
+    <div class="texto"><a>Mensaje 10</a></div>
+    <div class="texto fondobloque1"><a>Mensaje 11</a></div>
+    <div class="texto"><a>Mensaje 12</a></div>
+    <div class="texto fondobloque1"><a>Mensaje 13</a></div>
+    <div class="texto"><a>Mensaje 14</a></div>
+    <div class="texto fondobloque1"><a>Mensaje 15</a></div>
+  </div>
+</div> 
+
+
+
+  </div>
+  
+</div>
+
+
 
 </body>
 </html>
