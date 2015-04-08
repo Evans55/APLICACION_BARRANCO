@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+.margenes{
+	margin-top:0;
+	
+}
+
 .fondobloque1{
 	color:#000;
 	background-color:#C6E2FF;
@@ -1019,13 +1024,18 @@ and (orientation : landscape)
 	}
 	
 	#global {
-	height: 32em;
+	height: 31em;
 	width: 50%;
 	border: 1px solid #ddd;
 	overflow-y: scroll;
 	margin:auto;
 	margin-top:13.3%;
 	
+	
+}
+
+.margenes{
+	margin-top:10%;
 	
 }
 	
