@@ -134,9 +134,9 @@ label.ui-btn {
 	box-shadow: inset 0 1px 3px /*{global-box-shadow-size}*/ 	rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
 }
 .ui-overlay-shadow {
-	-webkit-box-shadow: 0 0 12px 		rgba(0,0,0,.6);
-	-moz-box-shadow: 0 0 12px 			rgba(0,0,0,.6);
-	box-shadow: 0 0 12px 				rgba(0,0,0,.6);
+-webkit-box-shadow: -1px 13px 77px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 13px 77px -3px rgba(0,0,0,0.75);
+box-shadow: -1px 13px 77px -3px rgba(0,0,0,0.75);
 }
 /* Icons
 -----------------------------------------------------------------------------------------------------------*/
