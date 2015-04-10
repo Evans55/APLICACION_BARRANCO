@@ -15,15 +15,30 @@
 
 
 #global2 {
-	height: 45em;
+	height: 35.7em;
 	width: 70%;
 	border: 1px solid #ddd;
 	overflow-y: scroll;
-	margin-top:7%;
+	margin-top:30.8%;
 	margin-left:23%;
 	background-color:powderblue;
 	
 	
+}
+
+#global2::-webkit-scrollbar {
+    width: 1.2em;
+}
+
+#global2::-webkit-scrollbar-track {
+    background-color: #FFF;
+    border-left: 1px solid #ccc;
+}
+#global2::-webkit-scrollbar-thumb {
+    background-color:#039;
+}
+#global2::-webkit-scrollbar-thumb:hover {
+	background-color:#009;
 }
 
 #global {
@@ -137,6 +152,74 @@ transform:scale(0.8) translateY(3px);
 	top:26.5%;
 	left:88.7%;
 }
+
+
+.botondescarga {
+	
+	padding:1%;
+	width:23.8%;
+	height:auto;
+	position:relative;
+	
+}
+
+
+.botondescarga>a{
+
+  margin: .5em 0;
+  display: block;
+  cursor: pointer;
+
+}
+
+
+
+.botondescarga>a:active{
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: botoncamino2;	
+  -webkit-animation-fill-mode:forwards;
+  -webkit-animation-timing-function:cubic-bezier(0.25,0.1,0.25,1);
+
+  -webkit-animation-delay: 0s;
+	
+}
+
+
+.botonconsulta {
+	
+	padding:1%;
+	width:16.8%;
+	height:auto;
+	position:absolute;
+	
+}
+
+#botonconsulta{
+	top:74.5%;
+	left:24.7%;
+}
+
+.botonconsulta>a{
+
+  margin: .5em 0;
+  display: block;
+  cursor: pointer;
+
+}
+
+
+.botonconsulta>a:active{
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: botoncamino2;	
+  -webkit-animation-fill-mode:forwards;
+  -webkit-animation-timing-function:cubic-bezier(0.25,0.1,0.25,1);
+
+  -webkit-animation-delay: 0s;
+	
+}
+
 
 .botoncamino {
 	
@@ -256,7 +339,16 @@ transform:scale(0.8) translateY(3px);
   }
 }
 
-img { width: 100%; height: 100%; }
+
+.mapa {
+	width: 45%; 
+	height:auto;
+	margin-top:11%;
+	margin-left:19%;
+	
+}
+
+
 
 .posicion{
 
@@ -597,6 +689,28 @@ transform:scale(0.8) translateY(3px);
 }
 
 
+.spritearbolfinal {
+  background:  url(../imagenes/arbol_secuencia1.png) 0 100% repeat-x;
+  
+  margin-left: 55%;
+  z-index: 3;
+  height:800px;
+  width:450px;
+  position: absolute;
+  top: 0; left: 0;
+
+  
+   -webkit-animation: spritearbolfinal 2s steps(19, end) infinite;
+ 
+ 
+ -webkit-animation-delay: 0s;
+  
+}
+
+@-webkit-keyframes spritearbolfinal {  
+  from {background-position: 0px; } 
+  to {background-position: -10260px; } 
+}
 
 @-webkit-keyframes spritearbol {  
   from {background-position: 0px; } 
