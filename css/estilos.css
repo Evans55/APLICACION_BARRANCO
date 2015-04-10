@@ -707,6 +707,19 @@ transform:scale(0.8) translateY(3px);
   
 }
 
+
+@keyframes spritearbolfinal {  
+  from {background-position: 0px; } 
+  to {background-position: -10260px; } 
+}
+
+@keyframes spritearbol {  
+  from {background-position: 0px; } 
+  to {background-position: -9060px; } 
+}
+
+
+
 @-webkit-keyframes spritearbolfinal {  
   from {background-position: 0px; } 
   to {background-position: -10260px; } 
@@ -1305,9 +1318,56 @@ and (orientation : landscape)
 	
 }
 
+
+#global2 {
+  height: 29.7em;
+  width: 89%;
+  border: 1px solid #ddd;
+  overflow-y: scroll;
+  margin-top: 19.8%;
+  margin-left: 7%;
+  background-color: powderblue;
+}
+
+
 .margenes{
 	margin-top:8%;
 	
+}
+
+
+.bloques {
+	float:left;
+	padding:1%;
+	width:17.5%;
+	height:auto;
+	/*margin-top:33.2%;*/
+	margin-left:5%;
+	opacity:0;
+}
+
+
+.posicion{
+
+	margin-left:6%;
+	opacity:0;
+	width:17.5%;
+	height:auto;
+	clear: left;
+	float:left;
+	
+}
+
+.posicion2 {
+	float:left;
+	width:17.5%;
+	height:auto;
+	margin-left:7%;
+	opacity:0;
+}
+
+.imagemobile{
+  max-height: 80px;	
 }
 	
 }
