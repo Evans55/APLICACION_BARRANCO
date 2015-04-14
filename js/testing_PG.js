@@ -49,10 +49,6 @@ function onDeviceReady(){
                             if (position > -1) {
                                 setAudioPosition((position) + " sec");
                             }
-							
-							if (mediaTimer>15){
-								 my_media.pause();
-							}
 																				
                         },
                         // error callback
@@ -63,6 +59,14 @@ function onDeviceReady(){
                     );
                 }, 1000);
             }
+			
+			if (mediaTimer > 15){
+				  my_media.stop();
+				  clearInterval(mediaTimer);
+                 mediaTimer = null;
+							}
+							
+			
         }
 
         // Pause audio
