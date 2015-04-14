@@ -117,6 +117,108 @@ $( document ).on( "pagecreate", function() {
 
 </script>
 
+<script>
+$( document ).on( "pagecreate", "#page2", function() {
+    $( document ).on( "swipeleft swiperight", "#page2", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+            if ( e.type === "swipeleft" ) {
+                $( "#right-panel" ).panel( "open" );
+            } else if ( e.type === "swiperight" ) {
+                $( "#left-panel" ).panel( "open" );
+            }
+        }
+    });
+});
+</script>
+
+<script>
+$( document ).on( "pagecreate", "#page3", function() {
+    $( document ).on( "swipeleft swiperight", "#page3", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+            if ( e.type === "swipeleft" ) {
+                $( "#right-panel2" ).panel( "open" );
+            } else if ( e.type === "swiperight" ) {
+                $( "#left-panel2" ).panel( "open" );
+            }
+        }
+    });
+});
+</script>
+
+<script>
+$( document ).on( "pagecreate", "#page4", function() {
+    $( document ).on( "swipeleft swiperight", "#page4", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+            if ( e.type === "swipeleft" ) {
+                $( "#right-panel3" ).panel( "open" );
+            } else if ( e.type === "swiperight" ) {
+                $( "#left-panel3" ).panel( "open" );
+            }
+        }
+    });
+});
+</script>
+
+<script>
+$( document ).on( "pagecreate", "#page5", function() {
+    $( document ).on( "swipeleft swiperight", "#page5", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+            if ( e.type === "swipeleft" ) {
+                $( "#right-panel4" ).panel( "open" );
+            } else if ( e.type === "swiperight" ) {
+                $( "#left-panel4" ).panel( "open" );
+            }
+        }
+    });
+});
+</script>
+
+<script>
+$( document ).on( "pagecreate", "#page6", function() {
+    $( document ).on( "swipeleft swiperight", "#page6", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+            if ( e.type === "swipeleft" ) {
+                $( "#right-panel5" ).panel( "open" );
+            } else if ( e.type === "swiperight" ) {
+                $( "#left-panel5" ).panel( "open" );
+            }
+        }
+    });
+});
+</script>
+
+
+<script>
+$( document ).on( "pagecreate", "#page7", function() {
+    $( document ).on( "swipeleft swiperight", "#page7", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+            if ( e.type === "swipeleft" ) {
+                $( "#right-panel6" ).panel( "open" );
+            } else if ( e.type === "swiperight" ) {
+                $( "#left-panel6" ).panel( "open" );
+            }
+        }
+    });
+});
+</script>
 
 </head> 
 <body onLoad="onBodyLoad()"> 
@@ -167,7 +269,7 @@ $( document ).on( "pagecreate", function() {
 	
     <div data-role="header" data-theme="b" data-position="fixed">
 		<h1>Municipalidad de Barranco</h1>
-        <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+        <a href="#left-panel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
       <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
 	</div>
     
@@ -182,7 +284,7 @@ $( document ).on( "pagecreate", function() {
 
 	</div>
     
-    <div data-role="panel" id="bars" data-theme="c" data-display="overlay">
+    <div data-role="panel" id="left-panel" data-theme="c" data-display="overlay">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
           <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
@@ -204,7 +306,7 @@ $( document ).on( "pagecreate", function() {
 
  <div data-role="header" data-theme="b" data-position="fixed">
 		<h1>Municipalidad de Barranco</h1>
-        <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+        <a href="#left-panel2" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
       <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
 	</div>
 
@@ -214,7 +316,7 @@ $( document ).on( "pagecreate", function() {
 	</div>
 	
     
-    <div data-role="panel" id="bars" data-theme="c" data-display="overlay">
+    <div data-role="panel" id="left-panel2" data-theme="c" data-display="overlay">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
           <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
@@ -232,7 +334,7 @@ $( document ).on( "pagecreate", function() {
 	
      <div data-role="header" data-theme="b" data-position="fixed">
 		<h1>Municipalidad de Barranco</h1>
-        <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+        <a href="#left-panel3" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
       <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
 	</div>
     
@@ -255,7 +357,7 @@ $( document ).on( "pagecreate", function() {
     
 	</div>
     
-    <div data-role="panel" id="bars" data-theme="c" data-display="overlay">
+    <div data-role="panel" id="left-panel3" data-theme="c" data-display="overlay">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
           <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
@@ -272,7 +374,7 @@ $( document ).on( "pagecreate", function() {
 
 <div data-role="header" data-theme="b" data-position="fixed">
 		<h1>Municipalidad de Barranco</h1>
-        <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+        <a href="#left-panel4" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
       <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
 	</div>
 
@@ -304,7 +406,7 @@ $( document ).on( "pagecreate", function() {
   
   
   
-  <div data-role="panel" id="bars" data-theme="c" data-display="overlay">
+  <div data-role="panel" id="left-panel4" data-theme="c" data-display="overlay">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
           <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
@@ -322,7 +424,7 @@ $( document ).on( "pagecreate", function() {
   
   <div data-role="header" data-theme="b" data-position="fixed">
 		<h1>Municipalidad de Barranco</h1>
-        <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+        <a href="#left-panel5" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
       <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
 	</div>
   
@@ -383,7 +485,7 @@ $( document ).on( "pagecreate", function() {
   </div>
   
   
-    <div data-role="panel" id="bars" data-theme="c" data-display="overlay">
+    <div data-role="panel" id="left-panel5" data-theme="c" data-display="overlay">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
           <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
@@ -401,7 +503,7 @@ $( document ).on( "pagecreate", function() {
 
  <div data-role="header" data-theme="b" data-position="fixed">
 		<h1>Municipalidad de Barranco</h1>
-        <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+        <a href="#left-panel6" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
       <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
 	</div>
 
@@ -453,7 +555,7 @@ $( document ).on( "pagecreate", function() {
 
 
 
-<div data-role="panel" id="bars" data-theme="c" data-display="overlay">
+<div data-role="panel" id="left-panel6" data-theme="c" data-display="overlay">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
           <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
