@@ -50,6 +50,9 @@ function onDeviceReady(){
                                 setAudioPosition((position) + " sec");
                             }
 							
+							if (mediaTimer>15){
+								 my_media.pause();
+							}
 																				
                         },
                         // error callback
