@@ -163,26 +163,79 @@ $( document ).on( "pagecreate", function() {
 
 </div>
 
-<div data-role="page" id="page2" style="background-image: url('imagenes/03-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+<div data-role="page" id="page2" >
 	
+    <div data-role="header" data-theme="b" data-position="fixed">
+		<h1>Municipalidad de Barranco</h1>
+        <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+      <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
+	</div>
+    
 	<div data-role="content">	
-	<a href="#page3" style="position:absolute; top:15%; left:15%;"><img src="imagenes/BOTON_PN.png" width="314" height="62" alt="natural"></a>
+    
+    
+    <div class="fondo3">
+    <a href="#page3" style="position:absolute; top:15%; left:15%;"><img src="imagenes/BOTON_PN.png" width="314" height="62" alt="natural"></a>
     <a href="#page3" style="position:absolute; top:15%; left:63%;"><img src="imagenes/BOTON_PJ.png" width="314" height="62" alt="juridico"></a>
+   </div>
+   
 
 	</div>
-	
+    
+    <div data-role="panel" id="bars" data-theme="c" data-display="overlay">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
+          <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
+          <li ><a href="#" class="ui-btn ui-btn-icon-left ui-icon-audio" style="background-color:#C6E2FF">TRÁMITES</a></li>
+          <li data-role="list-divider" style="height:2em;background-color:#f6f6f6"></li>
+          <li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li>
+         <li><a href="#" class="ui-btn ui-btn-icon-left ui-icon-delete" data-rel="close">SALIR</a></li>
+        </ul>
+    </div>
+    
+  
+    
+     <!--<div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay"> -->
+     
+
 </div>
 
 <div data-role="page" id="page3" style="background-image: url('imagenes/04-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+
+ <div data-role="header" data-theme="b" data-position="fixed">
+		<h1>Municipalidad de Barranco</h1>
+        <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+      <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
+	</div>
+
 	
 	<div data-role="content">	
 				<a data-role="button" href="#page4" data-transition="pop" style="position:absolute;">Siguiente</a>
 	</div>
 	
+    
+    <div data-role="panel" id="bars" data-theme="c" data-display="overlay">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
+          <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
+          <li ><a href="#" class="ui-btn ui-btn-icon-left ui-icon-audio" style="background-color:#C6E2FF">TRÁMITES</a></li>
+          <li data-role="list-divider" style="height:2em;background-color:#f6f6f6"></li>
+          <li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li>
+         <li><a href="#" class="ui-btn ui-btn-icon-left ui-icon-delete" data-rel="close">SALIR</a></li>
+        </ul>
+    </div>
+    
+    
 </div>
 
 <div data-role="page" id="page4" style="background-image: url('imagenes/05-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 	
+     <div data-role="header" data-theme="b" data-position="fixed">
+		<h1>Municipalidad de Barranco</h1>
+        <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+      <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
+	</div>
+    
 	<div data-role="content">
       
      <div class="margenes">
@@ -197,13 +250,31 @@ $( document ).on( "pagecreate", function() {
              <div class="posicion2" id="bloque22"><a href="#page7" data-transition="slide"><img src="imagenes/Defensa_Civ_Turquesa.png" alt="bloque22"></a></div> 
              <div class="posicion2" id="bloque23"><a><img src="imagenes/Autorizaciones_Beige.png" alt="bloque23"></a></div>
              <div class="posicion2" id="bloque24"><a><img src="imagenes/Busca por palabra_AzulMarino.png" alt="bloque24"></a></div>
-      </div>    
-            
+      </div>  
+      
+    
 	</div>
+    
+    <div data-role="panel" id="bars" data-theme="c" data-display="overlay">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
+          <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
+          <li ><a href="#" class="ui-btn ui-btn-icon-left ui-icon-audio" style="background-color:#C6E2FF">TRÁMITES</a></li>
+          <li data-role="list-divider" style="height:2em;background-color:#f6f6f6"></li>
+          <li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li>
+         <li><a href="#" class="ui-btn ui-btn-icon-left ui-icon-delete" data-rel="close">SALIR</a></li>
+        </ul>
+    </div>
 	
 </div>
 
 <div data-role="page" id="page5" style="background-image: url('imagenes/06-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+
+<div data-role="header" data-theme="b" data-position="fixed">
+		<h1>Municipalidad de Barranco</h1>
+        <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+      <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
+	</div>
 
   <div data-role="content">
 
@@ -231,10 +302,29 @@ $( document ).on( "pagecreate", function() {
 
   </div>
   
+  
+  
+  <div data-role="panel" id="bars" data-theme="c" data-display="overlay">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
+          <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
+          <li ><a href="#" class="ui-btn ui-btn-icon-left ui-icon-audio" style="background-color:#C6E2FF">TRÁMITES</a></li>
+          <li data-role="list-divider" style="height:2em;background-color:#f6f6f6"></li>
+          <li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li>
+         <li><a href="#" class="ui-btn ui-btn-icon-left ui-icon-delete" data-rel="close">SALIR</a></li>
+        </ul>
+    </div>
+  
 </div>
 
 
 <div data-role="page" id="page6" style="background-image: url('imagenes/07-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed">
+		<h1>Municipalidad de Barranco</h1>
+        <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+      <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
+	</div>
   
   <div data-role="content">
   
@@ -282,34 +372,38 @@ $( document ).on( "pagecreate", function() {
     <div class="ui-block-a"><div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga" style="max-height:80px;"></a></div></div>
     <div class="ui-block-b"></div>
 
-  
-  
-  
-  
-  
-  
+
   
 </div>
 
-    
-    
-    
-    
-    
-  
-    
-     
 
 </div>
 	
 
   </div>
   
+  
+    <div data-role="panel" id="bars" data-theme="c" data-display="overlay">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
+          <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
+          <li ><a href="#" class="ui-btn ui-btn-icon-left ui-icon-audio" style="background-color:#C6E2FF">TRÁMITES</a></li>
+          <li data-role="list-divider" style="height:2em;background-color:#f6f6f6"></li>
+          <li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li>
+         <li><a href="#" class="ui-btn ui-btn-icon-left ui-icon-delete" data-rel="close">SALIR</a></li>
+        </ul>
+    </div>
+  
 </div>
 
 
 <div data-role="page" id="page7" style="background-image: url('imagenes/06-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 
+ <div data-role="header" data-theme="b" data-position="fixed">
+		<h1>Municipalidad de Barranco</h1>
+        <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+      <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
+	</div>
 
  <div data-role="content">
  
@@ -358,12 +452,20 @@ $( document ).on( "pagecreate", function() {
  </div>
 
 
+
+<div data-role="panel" id="bars" data-theme="c" data-display="overlay">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
+          <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
+          <li ><a href="#" class="ui-btn ui-btn-icon-left ui-icon-audio" style="background-color:#C6E2FF">TRÁMITES</a></li>
+          <li data-role="list-divider" style="height:2em;background-color:#f6f6f6"></li>
+          <li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li>
+         <li><a href="#" class="ui-btn ui-btn-icon-left ui-icon-delete" data-rel="close">SALIR</a></li>
+        </ul>
+    </div>
+
+
 </div>
-
-
-
-
-
 
 
 

@@ -17,6 +17,7 @@ function onDeviceReady(){
         //
         var my_media = null;
         var mediaTimer = null;
+		var timerr=0;
 
         // Play audio
         //
@@ -47,7 +48,13 @@ function onDeviceReady(){
                         function(position) {
                             if (position > -1) {
                                 setAudioPosition((position) + " sec");
+								timerr=timerr + 1;
                             }
+							
+							if(timerr>10){
+								my_media.pause();
+							}
+													
                         },
                         // error callback
                         function(e) {
