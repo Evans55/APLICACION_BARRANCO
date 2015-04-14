@@ -60,13 +60,6 @@ function onDeviceReady(){
                 }, 1000);
             }
 			
-			if (mediaTimer > 15){
-				  my_media.stop();
-				  clearInterval(mediaTimer);
-                 mediaTimer = null;
-							}
-							
-			
         }
 
         // Pause audio
