@@ -23,7 +23,7 @@
 <script src="js/testing_PG.js" type="text/javascript"></script>
 
 
-<script language="javascript">
+<!--<script language="javascript">
  var AEdo = new Array();
       var amun = new Array();
 	  
@@ -90,68 +90,9 @@
           }
         }
       }
-  //-->
-  
-  
-  
-  
-  </script>
 
+  </script> -->
 
-<script language="javascript">
-
-var resizeTime = 100;     // total duration of the resize effect, 0 is instant
-var resizeDelay = 100;    // time to wait before checking the window size again
-                          // the shorter the time, the more reactive it will be.
-                          // short or 0 times could cause problems with old browsers.
-                          
-$('img').mapster({
-    mapKey: 'state'
-});
-
-// Resize the map to fit within the boundaries provided
-
-function resize(maxWidth,maxHeight) {
-     var image =  $('img'),
-        imgWidth = image.width(),
-        imgHeight = image.height(),
-        newWidth=0,
-        newHeight=0;
-
-    if (imgWidth/maxWidth>imgHeight/maxHeight) {
-        newWidth = maxWidth;
-    } else {
-        newHeight = maxHeight;
-    }
-    image.mapster('resize',newWidth,newHeight,resizeTime);   
-}
-
-// Track window resizing events, but only actually call the map resize when the
-// window isn't being resized any more
-
-function onWindowResize() {
-    
-    var curWidth = $(window).width(),
-        curHeight = $(window).height(),
-        checking=false;
-    if (checking) {
-        return;
-            }
-    checking = true;
-    window.setTimeout(function() {
-        var newWidth = $(window).width(),
-           newHeight = $(window).height();
-        if (newWidth === curWidth &&
-            newHeight === curHeight) {
-            resize(newWidth,newHeight); 
-        }
-        checking=false;
-    },resizeDelay );
-}
-
-$(window).bind('resize',onWindowResize);
-
-</script>
 
 <script>
 
@@ -559,12 +500,12 @@ $( document ).on( "pagecreate", "#page7", function() {
  <div data-role="content">
  
   
-  <img id="usemap" src="imagenes/mapa.png" usemap="#Map" class="mapa">
+  <img id="usemap" src="imagenes/mapa.png" class="mapa">
   
   
-  <map name="Map">
+ <!-- <map name="Map">
     <area shape="poly" coords="182,175,199,175,209,176,227,176,241,175,256,175,269,174,276,174,278,167,274,162,268,156,268,150,269,145,271,138,271,132,273,127,274,120,279,112,280,106,272,101,268,96,262,92,256,87,251,84,212,125,182,158,172,170,177,173" href="javascript:actualiza('01')" alt="Zona Comercial">
-  </map>
+  </map> -->
   
   
   
