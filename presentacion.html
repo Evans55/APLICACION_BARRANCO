@@ -154,14 +154,36 @@ $(document).on('change', '#selectmenu2', function(){
 	   
 	   
 	   if(val=="Brasilia"){
-		    $("select#selectmenu3 option[value='1']").remove(); 
-		   $("select#selectmenu3 option[value='2']").remove();
-		   $("select#selectmenu3 option[value='3']").remove();
+		    $("select#selectmenu4 option[value='1']").remove(); 
+		   $("select#selectmenu4 option[value='2']").remove();
+		   $("select#selectmenu4 option[value='3']").remove();
 		   
-		 $("#selectmenu3").append($("<option>").attr("value", "1").attr("selected", "selected").text("Valparaiso"));
-		 $("#selectmenu3").append($("<option>").attr("value", "2").attr("selected", "selected").text("Alexania"));
-		  $("#selectmenu3").append($("<option>").attr("value", "3").attr("selected", "selected").text("Brasilia"));
-         $('#selectmenu3').selectmenu('refresh');
+		 $("#selectmenu4").append($("<option>").attr("value", "1").attr("selected", "selected").text("Valparaiso"));
+		 $("#selectmenu4").append($("<option>").attr("value", "2").attr("selected", "selected").text("Alexania"));
+		  $("#selectmenu4").append($("<option>").attr("value", "3").attr("selected", "selected").text("Brasilia"));
+         $('#selectmenu4').selectmenu('refresh');
+	   }
+	   
+	   if(val=="Porto Alegre"){
+		    $("select#selectmenu4 option[value='1']").remove(); 
+		   $("select#selectmenu4 option[value='2']").remove();
+		   $("select#selectmenu4 option[value='3']").remove();
+		   
+		 $("#selectmenu4").append($("<option>").attr("value", "1").attr("selected", "selected").text("Distrito13"));
+		 $("#selectmenu4").append($("<option>").attr("value", "2").attr("selected", "selected").text("Distrito14"));
+		  $("#selectmenu4").append($("<option>").attr("value", "3").attr("selected", "selected").text("Distrito15"));
+         $('#selectmenu4').selectmenu('refresh');
+	   }
+	   
+	   if(val=="Sao Paulo"){
+		    $("select#selectmenu4 option[value='1']").remove(); 
+		   $("select#selectmenu4 option[value='2']").remove();
+		   $("select#selectmenu4 option[value='3']").remove();
+		   
+		 $("#selectmenu4").append($("<option>").attr("value", "1").attr("selected", "selected").text("Distrito16"));
+		 $("#selectmenu4").append($("<option>").attr("value", "2").attr("selected", "selected").text("Distrito17"));
+		  $("#selectmenu4").append($("<option>").attr("value", "3").attr("selected", "selected").text("Distrito18"));
+         $('#selectmenu4').selectmenu('refresh');
 	   }
 	   
 	   
