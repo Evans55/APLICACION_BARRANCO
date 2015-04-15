@@ -22,77 +22,152 @@
  
 <script src="js/testing_PG.js" type="text/javascript"></script>
 
+<script>
 
-<!--<script language="javascript">
- var AEdo = new Array();
-      var amun = new Array();
+
+$(document).on('change', '#selectmenu2', function(){    
+        //alert($(this).find("option:selected").text());
+	   
+	   var val = $(this).find("option:selected").text();
 	  
-	  amun[1] = new prop('01',1,'Item01');
-      amun[2] = new prop('01',2,'Item02');
-	  amun[3] = new prop('01',3,'Item03');
-      
-      amun[4] = new prop('02',4,'Item04');
-      
-      amun[5] = new prop('02',5,'Item05');
-      
-      amun[6] = new prop('02',6,'Item06');
-      
-      amun[7] = new prop('02',7,'Item07');
-      
-      amun[8] = new prop('03',8,'Item08');
-      
-      amun[9] = new prop('03',9,'Item09');
-
+	   
+	   if(val=="Perú"){
+		   
+		    $("select#selectmenu3 option[value='1']").remove(); 
+		   $("select#selectmenu3 option[value='2']").remove();
+		   $("select#selectmenu3 option[value='3']").remove();
+		   
+		 $("#selectmenu3").append($("<option>").attr("value", "1").attr("selected", "selected").text("Lima"));
+		 $("#selectmenu3").append($("<option>").attr("value", "2").attr("selected", "selected").text("Piura"));
+		  $("#selectmenu3").append($("<option>").attr("value", "3").attr("selected", "selected").text("Arequipa"));
+         $('#selectmenu3').selectmenu('refresh');
+	   }
+	   
+	   
+	   if(val=="Argentina"){
+		   $("select#selectmenu3 option[value='1']").remove(); 
+		   $("select#selectmenu3 option[value='2']").remove();
+		   $("select#selectmenu3 option[value='3']").remove();
+		   
+		  $("#selectmenu3").append($("<option>").attr("value", "1").attr("selected", "selected").text("Buenos Aires"));
+		 $("#selectmenu3").append($("<option>").attr("value", "2").attr("selected", "selected").text("Santa Cruz"));
+		  $("#selectmenu3").append($("<option>").attr("value", "3").attr("selected", "selected").text("Córdoba"));
+         $('#selectmenu3').selectmenu('refresh');
+	   }
+	   
+	   if(val=="Brasil"){
+		    $("select#selectmenu3 option[value='1']").remove(); 
+		   $("select#selectmenu3 option[value='2']").remove();
+		   $("select#selectmenu3 option[value='3']").remove();
+		   
+		 $("#selectmenu3").append($("<option>").attr("value", "1").attr("selected", "selected").text("Brasilia"));
+		 $("#selectmenu3").append($("<option>").attr("value", "2").attr("selected", "selected").text("Porto Alegre"));
+		  $("#selectmenu3").append($("<option>").attr("value", "3").attr("selected", "selected").text("Sao Paulo"));
+         $('#selectmenu3').selectmenu('refresh');
+	   }
+	   
+	   
+    });
+	
+	
+	
+	$(document).on('change', '#selectmenu3', function(){    
+        //alert($(this).find("option:selected").text());
+	   
+	   var val = $(this).find("option:selected").text();
 	  
-	    AEdo[1] = "Zona de uso comercial";
-      
-          AEdo[2] = "Zona de uso mixto";
-      
-          AEdo[3] = "Zona de recreación pública";
+	   
+	   if(val=="Lima"){
+		   
+		    $("select#selectmenu4 option[value='1']").remove(); 
+		   $("select#selectmenu4 option[value='2']").remove();
+		   $("select#selectmenu4 option[value='3']").remove();
+		   
+		 $("#selectmenu4").append($("<option>").attr("value", "1").attr("selected", "selected").text("SMP"));
+		 $("#selectmenu4").append($("<option>").attr("value", "2").attr("selected", "selected").text("Breña"));
+		  $("#selectmenu4").append($("<option>").attr("value", "3").attr("selected", "selected").text("Pueblo Libre"));
+         $('#selectmenu4').selectmenu('refresh');
+	   }
+	   
+	   
+	   if(val=="Piura"){
+		   
+		    $("select#selectmenu4 option[value='1']").remove(); 
+		   $("select#selectmenu4 option[value='2']").remove();
+		   $("select#selectmenu4 option[value='3']").remove();
+		   
+		 $("#selectmenu4").append($("<option>").attr("value", "1").attr("selected", "selected").text("Distrito1"));
+		 $("#selectmenu4").append($("<option>").attr("value", "2").attr("selected", "selected").text("Distrito2"));
+		  $("#selectmenu4").append($("<option>").attr("value", "3").attr("selected", "selected").text("Distrito3"));
+         $('#selectmenu4').selectmenu('refresh');
+	   }
+	   
+	   
+	   if(val=="Arequipa"){
+		   
+		    $("select#selectmenu4 option[value='1']").remove(); 
+		   $("select#selectmenu4 option[value='2']").remove();
+		   $("select#selectmenu4 option[value='3']").remove();
+		   
+		 $("#selectmenu4").append($("<option>").attr("value", "1").attr("selected", "selected").text("Distrito4"));
+		 $("#selectmenu4").append($("<option>").attr("value", "2").attr("selected", "selected").text("Distrito5"));
+		  $("#selectmenu4").append($("<option>").attr("value", "3").attr("selected", "selected").text("Distrito6"));
+         $('#selectmenu4').selectmenu('refresh');
+	   }
+	   
+	   
+	   if(val=="Buenos Aires"){
+		   $("select#selectmenu4 option[value='1']").remove(); 
+		   $("select#selectmenu4 option[value='2']").remove();
+		   $("select#selectmenu4 option[value='3']").remove();
+		   
+		  $("#selectmenu4").append($("<option>").attr("value", "1").attr("selected", "selected").text("Palermo"));
+		 $("#selectmenu4").append($("<option>").attr("value", "2").attr("selected", "selected").text("Flores"));
+		  $("#selectmenu4").append($("<option>").attr("value", "3").attr("selected", "selected").text("Recoleta"));
+         $('#selectmenu4').selectmenu('refresh');
+	   }
+	   
+	   
+	   if(val=="Santa Cruz"){
+		   $("select#selectmenu4 option[value='1']").remove(); 
+		   $("select#selectmenu4 option[value='2']").remove();
+		   $("select#selectmenu4 option[value='3']").remove();
+		   
+		  $("#selectmenu4").append($("<option>").attr("value", "1").attr("selected", "selected").text("Distrito7"));
+		 $("#selectmenu4").append($("<option>").attr("value", "2").attr("selected", "selected").text("Distrito8"));
+		  $("#selectmenu4").append($("<option>").attr("value", "3").attr("selected", "selected").text("Distrito9"));
+         $('#selectmenu4').selectmenu('refresh');
+	   }
+	   
+	   
+	   if(val=="Córdoba"){
+		   $("select#selectmenu4 option[value='1']").remove(); 
+		   $("select#selectmenu4 option[value='2']").remove();
+		   $("select#selectmenu4 option[value='3']").remove();
+		   
+		  $("#selectmenu4").append($("<option>").attr("value", "1").attr("selected", "selected").text("Distrito10"));
+		 $("#selectmenu4").append($("<option>").attr("value", "2").attr("selected", "selected").text("Distrito11"));
+		  $("#selectmenu4").append($("<option>").attr("value", "3").attr("selected", "selected").text("Distrito12"));
+         $('#selectmenu4').selectmenu('refresh');
+	   }
+	   
+	   
+	   
+	   if(val=="Brasilia"){
+		    $("select#selectmenu3 option[value='1']").remove(); 
+		   $("select#selectmenu3 option[value='2']").remove();
+		   $("select#selectmenu3 option[value='3']").remove();
+		   
+		 $("#selectmenu3").append($("<option>").attr("value", "1").attr("selected", "selected").text("Valparaiso"));
+		 $("#selectmenu3").append($("<option>").attr("value", "2").attr("selected", "selected").text("Alexania"));
+		  $("#selectmenu3").append($("<option>").attr("value", "3").attr("selected", "selected").text("Brasilia"));
+         $('#selectmenu3').selectmenu('refresh');
+	   }
+	   
+	   
+    });
 
-
-
- function prop(a,b,c){
-        this.Estado = a;
-        this.Municipio = b;
-        this.Descripcion = c;
-      }
-
-      function actualiza(qedo){
-        if( qedo.substring(0,1) == 0 )
-          vedo = qedo.substring(1,2)
-        else
-          vedo = qedo.substring(0,2)
-        document.frmguias.txtedo.value = AEdo[vedo];
-        document.frmguias.cmbedo.value = qedo;
-        var ntedo = 0;
-        document.frmguias.cmbmuni.length=0;
-        for(var x=1; x<=amun.length-1; x++){
-          if(amun[x].Estado == qedo){
-            document.frmguias.cmbmuni.length = document.frmguias.cmbmuni.length+1;
-            document.frmguias.cmbmuni.options[document.frmguias.cmbmuni.length-1].value=amun[x].Municipio;
-            document.frmguias.cmbmuni.options[document.frmguias.cmbmuni.length-1].text=amun[x].Descripcion;
-          }
-        }
-      }
-
-      function ok(){
-        if(document.frmguias.cmbmuni.length == 0){
-          alert("Lo sentimos, " + document.frmguias.txtedo.value + " no cuenta actualmente con guias");
-        }else{
-          if( document.frmguias.cmbmuni.selectedIndex == -1)
-            alert("Seleccione un municipio");
-          else{
-            if( document.frmguias.cmbmuni.options[document.frmguias.cmbmuni.selectedIndex].value != 0)
-              document.forms[0].submit();
-            else
-              alert("Seleccione un estado");
-          }
-        }
-      }
-
-  </script> -->
-
+</script>
 
 <script language="javascript">
 
@@ -250,7 +325,7 @@ $( document ).on( "pagecreate", "#page7", function() {
      <div class="grassfondoder"></div>
      <div class="grassder"></div>
   
-<!--   <div class="spritearbol"></div> -->
+ <div class="spritearbolfinal"></div>
   
   
   <div class="background">
@@ -516,48 +591,51 @@ $( document ).on( "pagecreate", "#page7", function() {
 	</div>
 
  <div data-role="content">
- 
-  
-  <img id="usemap" src="imagenes/mapa.png" class="mapa">
-  
-  
- <!-- <map name="Map">
-    <area shape="poly" coords="182,175,199,175,209,176,227,176,241,175,256,175,269,174,276,174,278,167,274,162,268,156,268,150,269,145,271,138,271,132,273,127,274,120,279,112,280,106,272,101,268,96,262,92,256,87,251,84,212,125,182,158,172,170,177,173" href="javascript:actualiza('01')" alt="Zona Comercial">
-  </map> -->
-  
-  
-  
-    <div>
-    
-    
-     <form name="frmguias" action="#" method="POST">
-    <input type="hidden" name="cmbedo">
+   <div class="ui-grid-a" style="margin-top:10%; margin-left:18%">
+     <div class="ui-block-a"><img id="imagemap" src="imagenes/mapa.png" class="mapa" ></div>
+     <div class="ui-block-b" style="width:30%">
+     
+     <form name="frmguias" action="#" method="get">
 
- <table border="0" cellspacing="2" cellpadding="0">
+    <div data-role="fieldcontain">
+   
+      <label for="selectmenu" class="select">Paso 1</label>
 
-<tr>
-              <td class="letraverdanamaschica">Estado <br>
-                <input type="text" name="txtedo" value="" size="22 " onFocus="blur();">
-              </td>
-    </tr>
-            
-            
-            <tr>
-              <td class="letraverdanamaschica">Delegaciones ó Municipios <br>
-                
-       <select name="cmbmuni">
-      <option selected="" value="0"> Seleccione primero un estado... </option>
-    </select>
-              </td>
-            </tr>
-</table>
+      <select name="selectmenu2" id="selectmenu2" data-native-menu="false">
+        <option value="0" data-placeholder="true">Seleccione País</option>
+        <option value="1">Perú</option>
+        <option value="2">Argentina</option>
+        <option value="3">Brasil</option>
 
-</form>
-    
-    
+      </select>
+      
+       <label for="selectmenu" class="select">Paso 2</label>
+      
+     <select name="selectmenu3" id="selectmenu3" data-native-menu="false">
+        <option value="0" data-placeholder="true">Seleccione Región</option>
+      </select> 
+      
+       <label for="selectmenu" class="select">Paso 3</label>
+       
+      <select name="selectmenu4" id="selectmenu4" data-native-menu="false">
+        <option value="0" data-placeholder="true">Seleccione Distrito</option>
+       </select>
+      
     
     </div>
+  </form>
+     
+     <a data-role="button" href="#page6">Continuar</a>
+     
+     </div>
+   </div>
+ 
+ 
   
+  
+  
+  
+   
 
  </div>
 

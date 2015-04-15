@@ -341,11 +341,8 @@ transform:scale(0.8) translateY(3px);
 
 
 .mapa {
-	width: 45%; 
+	width: 100%; 
 	height:auto;
-	margin-top:11%;
-	margin-left:19%;
-	
 }
 
 
@@ -724,17 +721,17 @@ transform:scale(0.8) translateY(3px);
 
 
 .spritearbolfinal {
-  background:  url(../imagenes/arbolfinal.png) 0 100%;
+  background:  url(../imagenes/arbolito_final-01.png) 0 100%;
   
-  margin-left: 55%;
+  margin-left: 25%;
   z-index: 3;
-  height:2200px;
-  width:800px;
+  height:580px;
+  width:915px;
   position: absolute;
-  top: -10%; left: 0;
+  left: 0;
 
   
-   -webkit-animation: spritearbolfinal 5s steps(19, end) infinite;
+   -webkit-animation: spritearbolfinal 2s steps(19, end) infinite;
    
  -webkit-animation-delay: 0s;
   
@@ -743,7 +740,7 @@ transform:scale(0.8) translateY(3px);
 
 @keyframes spritearbolfinal {  
   from {background-position-x: 0px; } 
-  to {background-position-x: -27300px; } 
+  to {background-position-x: -16264px; } 
 }
 
 @keyframes spritearbol {  
@@ -755,7 +752,7 @@ transform:scale(0.8) translateY(3px);
 
 @-webkit-keyframes spritearbolfinal {  
   from {background-position: 0px; } 
-  to {background-position: -27300px; } 
+  to {background-position: -15803px; } 
 }
 
 @-webkit-keyframes spritearbol {  
