@@ -590,7 +590,7 @@ transform:scale(0.8) translateY(3px);
 }
 
 .fondo3 {
-  background: url(../imagenes/03-Fondo.png)0 100% no-repeat;
+  background: url(../imagenes/03Ventanillas.png)0 100% no-repeat;
   z-index: 1;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -721,22 +721,49 @@ transform:scale(0.8) translateY(3px);
 
 
 .spritearbolfinal {
-  background:  url(../imagenes/arbolito_sprite_final-01.png) 0 100%;
+  background:  url(../imagenes/arbolito_sprite_final2-01.png) 0 100%;
   
 
   z-index: 3;
   height:700px;
-  width:350px;
+  width:377px;
   position: absolute;
   left: 0;
+  margin-left:60%;
+  margin-top:-4%;
 
   
-   -webkit-animation: spritearbolfinal 2s steps(18, end) ;
+   -webkit-animation: spritearbolfinal 0.6s steps(18, end) ;
     -webkit-animation-fill-mode:forwards;
  -webkit-animation-delay: 0s;
   
 }
 
+
+.spritepalmera {
+  background:  url(../imagenes/palmera_sprite_final.png) 0 100%;
+  
+
+  z-index: 3;
+  height:700px;
+  width:377px;
+  position: absolute;
+  left: 0;
+  margin-left:15%;
+  margin-top:-4%;
+
+  
+   -webkit-animation: spritepalmera 0.6s steps(18, end) ;
+    -webkit-animation-fill-mode:forwards;
+ -webkit-animation-delay: 0s;
+  
+}
+
+
+@keyframes spritepalmera {  
+  from {background-position-x: 0px; } 
+  to {background-position-x: -6786px; } 
+}
 
 @keyframes spritearbolfinal {  
   from {background-position-x: 0px; } 
@@ -748,6 +775,12 @@ transform:scale(0.8) translateY(3px);
   to {background-position: -9060px; } 
 }
 
+
+
+@-webkit-keyframes spritepalmera {  
+  from {background-position-x: 0px; } 
+  to {background-position-x: -6786px; } 
+}
 
 
 @-webkit-keyframes spritearbolfinal {  
@@ -1440,6 +1473,47 @@ and (orientation : landscape)
 
 .imagemobile{
   max-height: 80px;	
+}
+	
+	
+	
+	.spritepalmera {
+  background:  url(../imagenes/palmera_sprite_final.png) 0 100%;
+  
+
+  z-index: 3;
+  height:700px;
+  width:377px;
+  position: absolute;
+  left: 0;
+  margin-left:7%;
+  margin-top:-10%;
+
+  
+   -webkit-animation: spritepalmera 0.6s steps(18, end) ;
+    -webkit-animation-fill-mode:forwards;
+ -webkit-animation-delay: 0s;
+  
+}
+	
+	
+	.spritearbolfinal {
+  background:  url(../imagenes/arbolito_sprite_final2-01.png) 0 100%;
+  
+
+  z-index: 3;
+  height:700px;
+  width:377px;
+  position: absolute;
+  left: 0;
+  margin-left:58%;
+  margin-top:-10%;
+
+  
+   -webkit-animation: spritearbolfinal 0.6s steps(18, end) ;
+    -webkit-animation-fill-mode:forwards;
+ -webkit-animation-delay: 0s;
+  
 }
 	
 }
