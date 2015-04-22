@@ -735,7 +735,7 @@ transform:scale(0.8) translateY(3px);
   
    -webkit-animation: spritearbolfinal 0.6s steps(18, end) ;
     -webkit-animation-fill-mode:forwards;
- -webkit-animation-delay: 5s;
+ -webkit-animation-delay: 8s;
   
 }
 
@@ -755,7 +755,7 @@ transform:scale(0.8) translateY(3px);
   
    -webkit-animation: spritepalmera 0.6s steps(18, end) ;
     -webkit-animation-fill-mode:forwards;
- -webkit-animation-delay: 5s;
+ -webkit-animation-delay: 8s;
   
 }
 
