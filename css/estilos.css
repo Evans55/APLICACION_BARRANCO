@@ -733,9 +733,21 @@ transform:scale(0.8) translateY(3px);
   margin-top:-4%;
 
   
-   -webkit-animation: spritearbolfinal 2s steps(18, end) ;
+   -webkit-animation: spritearbolfinal 5s steps(18, end) ;
     -webkit-animation-fill-mode:forwards;
- -webkit-animation-delay: 10s;
+ -webkit-animation-delay: 5s;
+ 
+  -moz-animation: spritearbolfinal 5s steps(18, end) ;
+    -moz-animation-fill-mode:forwards;
+ -moz-animation-delay: 5s;
+ 
+ -ms-animation: spritearbolfinal 5s steps(18, end) ;
+ -ms-animation-fill-mode:forwards;
+ -ms-animation-delay: 5s;
+ 
+ -o-animation: spritearbolfinal 5s steps(18, end) ;
+ -o-animation-fill-mode:forwards;
+ -o-animation-delay: 5s;
   
 }
 
@@ -753,9 +765,21 @@ transform:scale(0.8) translateY(3px);
   margin-top:-4%;
 
   
-   -webkit-animation: spritepalmera 2s steps(18, end) ;
+   -webkit-animation: spritepalmera 5s steps(18, end) ;
     -webkit-animation-fill-mode:forwards;
- -webkit-animation-delay: 10s;
+ -webkit-animation-delay: 5s;
+ 
+  -moz-animation: spritepalmera 5s steps(18, end) ;
+    -moz-animation-fill-mode:forwards;
+ -moz-animation-delay: 5s;
+ 
+  -ms-animation: spritepalmera 5s steps(18, end) ;
+    -ms-animation-fill-mode:forwards;
+ -ms-animation-delay: 5s;
+ 
+  -o-animation: spritepalmera 5s steps(18, end) ;
+    -o-animation-fill-mode:forwards;
+ -o-animation-delay: 5s;
   
 }
 
@@ -794,6 +818,53 @@ transform:scale(0.8) translateY(3px);
 }
 
 
+@-moz-keyframes spritepalmera {  
+  from {background-position-x: 0px; } 
+  to {background-position-x: -6786px; } 
+}
+
+
+@-moz-keyframes spritearbolfinal {  
+  from {background-position: 0px; } 
+  to {background-position: -6786px; } 
+}
+
+@-moz-keyframes spritearbol {  
+  from {background-position: 0px; } 
+  to {background-position: -9060px; } 
+}
+
+@-ms-keyframes spritepalmera {  
+  from {background-position-x: 0px; } 
+  to {background-position-x: -6786px; } 
+}
+
+
+@-ms-keyframes spritearbolfinal {  
+  from {background-position: 0px; } 
+  to {background-position: -6786px; } 
+}
+
+@-ms-keyframes spritearbol {  
+  from {background-position: 0px; } 
+  to {background-position: -9060px; } 
+}
+
+@-o-keyframes spritepalmera {  
+  from {background-position-x: 0px; } 
+  to {background-position-x: -6786px; } 
+}
+
+
+@-o-keyframes spritearbolfinal {  
+  from {background-position: 0px; } 
+  to {background-position: -6786px; } 
+}
+
+@-o-keyframes spritearbol {  
+  from {background-position: 0px; } 
+  to {background-position: -9060px; } 
+}
 
 .background {
   background: url(../imagenes/Cielo.png)0 100% no-repeat;
@@ -1492,7 +1563,19 @@ and (orientation : landscape)
   
    -webkit-animation: spritepalmera 0.6s steps(18, end) ;
     -webkit-animation-fill-mode:forwards;
- -webkit-animation-delay: 0s;
+ -webkit-animation-delay: 5s;
+ 
+ -moz-animation: spritepalmera 0.6s steps(18, end) ;
+    -moz-animation-fill-mode:forwards;
+ -moz-animation-delay: 5s;
+ 
+  -ms-animation: spritepalmera 0.6s steps(18, end) ;
+    -ms-animation-fill-mode:forwards;
+ -ms-animation-delay: 5s;
+ 
+  -o-animation: spritepalmera 0.6s steps(18, end) ;
+    -o-animation-fill-mode:forwards;
+ -o-animation-delay: 5s;
   
 }
 	
@@ -1512,7 +1595,19 @@ and (orientation : landscape)
   
    -webkit-animation: spritearbolfinal 0.6s steps(18, end) ;
     -webkit-animation-fill-mode:forwards;
- -webkit-animation-delay: 0s;
+ -webkit-animation-delay: 5s;
+ 
+   -moz-animation: spritearbolfinal 0.6s steps(18, end) ;
+    -moz-animation-fill-mode:forwards;
+ -moz-animation-delay: 5s;
+ 
+ -ms-animation: spritearbolfinal 0.6s steps(18, end) ;
+ -ms-animation-fill-mode:forwards;
+ -ms-animation-delay: 5s;
+ 
+ -o-animation: spritearbolfinal 0.6s steps(18, end) ;
+ -o-animation-fill-mode:forwards;
+ -o-animation-delay: 5s;
   
 }
 	
