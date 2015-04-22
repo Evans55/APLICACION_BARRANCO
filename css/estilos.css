@@ -733,9 +733,9 @@ transform:scale(0.8) translateY(3px);
   margin-top:-4%;
 
   
-   -webkit-animation: spritearbolfinal 1s steps(18, end) ;
+   -webkit-animation: spritearbolfinal 2s steps(18, end) ;
     -webkit-animation-fill-mode:forwards;
- -webkit-animation-delay: 8s;
+ -webkit-animation-delay: 10s;
   
 }
 
@@ -753,9 +753,9 @@ transform:scale(0.8) translateY(3px);
   margin-top:-4%;
 
   
-   -webkit-animation: spritepalmera 1s steps(18, end) ;
+   -webkit-animation: spritepalmera 2s steps(18, end) ;
     -webkit-animation-fill-mode:forwards;
- -webkit-animation-delay: 8s;
+ -webkit-animation-delay: 10s;
   
 }
 
