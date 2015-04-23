@@ -2,6 +2,7 @@
 
 function onBodyLoad(){
 document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("backbutton", onBackKeyDown, false);
 }
 
 	
@@ -100,3 +101,16 @@ function onDeviceReady(){
             document.getElementById('audio_position').innerHTML = mediaTimer;
         }
 
+
+        function onBackKeyDown() {
+    var active_page = $( ":mobile-pagecontainer" ).pagecontainer( "getActivePage" );
+    var id =active_page.page().attr('id');
+    if (id==='page2') {
+        if (confirm('Do you want to exit the app? If not, use the top left button to go to Previous Page?')==true){
+            navigator.app.exitApp();
+        }
+    }
+    else{
+    navigator.app.backHistory();
+    }
+}
