@@ -219,17 +219,12 @@ $(document).on('change', '#selectmenu2', function(){
 	 function goBack() {
    if (document.getElementById('#page2')) {
      // yourAudioplayer.stop(); 
-      if (navigator && navigator.app) {
-         navigator.app.exitApp();
-      }
-      else {
-         if (navigator && navigator.device) {
-            navigator.device.exitApp();
-	}
-      }
+     e.preventDefault();
+     navigator.app.exitApp();
    } 
    else {
-      navigator.app.backHistory();
+      //navigator.app.backHistory();
+	  history.back();
    }
 }
 
