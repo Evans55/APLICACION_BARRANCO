@@ -18,7 +18,7 @@ function onDeviceReady(){
         //
         var my_media = null;
         var mediaTimer = null;
-		var i=0;
+	
 
         // Play audio
         //
@@ -34,7 +34,7 @@ function onDeviceReady(){
  }*/
 			
             // Create Media object from src
-      if (my_media == null) {  my_media = new Media(src, onSuccess, onError); i=1; }
+      if (my_media == null) {  my_media = new Media(src, onSuccess, onError); }
 
             // Play audio
             my_media.play();
@@ -67,13 +67,10 @@ function onDeviceReady(){
         //
         function pauseAudio() {
 			
-            if (my_media && i==1) {
+            if (my_media) {
                 my_media.pause();
 				
             }
-			else {
-			  alert ('El audio ya se pausó anteriormente');	
-			}
         }
 
         // Stop audio
