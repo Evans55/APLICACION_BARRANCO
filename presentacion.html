@@ -217,14 +217,14 @@ $(document).on('change', '#selectmenu2', function(){
 	 
 	 
 	 function goBack() {
-   if (document.getElementById('#page2')) {
+   if (document.getElementById('#page3')) {
      // yourAudioplayer.stop(); 
      e.preventDefault();
      navigator.app.exitApp();
    } 
    else {
-      //navigator.app.backHistory();
-	  history.back();
+      navigator.app.backHistory();
+	  //history.back();
    }
 }
 
