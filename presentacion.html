@@ -334,7 +334,7 @@ $( document ).on( "pagecreate", "#page7", function() {
 </script>
 
 </head> 
-<body > 
+<body onLoad="onBodyLoad()"> 
 
 <div data-role="page" id="page">
 	
@@ -372,7 +372,7 @@ $( document ).on( "pagecreate", "#page7", function() {
 
 
 <div class="ui-grid-solo">
-    <div class="ui-block-a"><a data-role="button" href="#page2" id="skip" data-icon="arrow-r" class="ui-btn-right ui-btn-inline" >SKIP INTRO</a></div>
+    <div class="ui-block-a"><a data-role="button" href="#page2" id="skip" data-icon="arrow-r" class="ui-btn-right ui-btn-inline" onclick="stopAudio();">SKIP INTRO</a></div>
 </div>
 	</div>
 
@@ -419,7 +419,7 @@ $( document ).on( "pagecreate", "#page7", function() {
 
  <div data-role="header" data-theme="b" data-position="fixed">
 		<h1>Municipalidad de Barranco</h1>
-        <a href="#" data-role="button" data-icon="back" data-rel="back" data-theme="a" data-add-back-btn="true">Atras</a>
+        <a href="#" data-role="button" data-icon="back" data-rel="back" data-theme="a" data-add-back-btn="true" onclick="playAudio();">Atras</a>
         <a href="#left-panel2" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
       <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
 	</div>
