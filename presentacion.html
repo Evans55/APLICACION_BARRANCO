@@ -374,9 +374,23 @@ $( document ).on( "pagecreate", "#page7", function() {
 
 
 
-<div class="ui-grid-solo">
-    <div class="ui-block-a"><a data-role="button" href="#page2" id="skip" data-icon="arrow-r" class="ui-btn-right ui-btn-inline" onclick="pauseAudio();" data-transition="customFlip">SKIP INTRO</a></div>
+<!--<div class="ui-grid-solo">
+    <div class="ui-block-a">
+  <a data-role="button" href="#page2" id="skip" data-icon="arrow-r" class="ui-btn-right ui-btn-inline" onclick="pauseAudio();" data-transition="customFlip">SKIP INTRO</a>
+  </div>
+</div> -->
+
+<div class="ui-grid-c">
+  <div class="ui-block-a"><a data-role="button" id="skip" data-icon="arrow-r" onclick="pauseAudio();" data-transition="customFlip">Pause</a></div>
+  <div class="ui-block-b"><a data-role="button" data-icon="arrow-r" id="skip" onclick="playAudio('file:///android_asset/www/audio/Ellie_Goulding_Outside.mp3');">Play</a></div>
+  <div class="ui-block-c"><a data-role="button" data-icon="arrow-r" id="skip" onclick="stopAudio();">Stop</a></div>
+  <div class="ui-block-d"> <a data-role="button" href="#page2" id="skip" data-icon="arrow-r" data-transition="customFlip">Siguiente</a></div>
 </div>
+
+
+
+
+
 	</div>
 
 </div>
