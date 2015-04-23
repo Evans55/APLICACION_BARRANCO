@@ -18,7 +18,7 @@ function onDeviceReady(){
         //
         var my_media = null;
         var mediaTimer = null;
-		
+		var i=0;
 
         // Play audio
         //
@@ -67,7 +67,7 @@ function onDeviceReady(){
         //
         function pauseAudio() {
 			
-            if (my_media != null) {
+            if (my_media && i==0) {
                 my_media.pause();
 				
             }
