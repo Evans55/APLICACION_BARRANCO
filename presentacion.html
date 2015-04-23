@@ -213,6 +213,25 @@ $(document).on('change', '#selectmenu2', function(){
      function exitFromApp(buttonIndex) {
             if (buttonIndex==2){ navigator.app.exitApp();}
      }
+	 
+	 
+	 
+	 function goBack() {
+   if (document.getElementById('#page2')) {
+     // yourAudioplayer.stop(); 
+      if (navigator && navigator.app) {
+         navigator.app.exitApp();
+      }
+      else {
+         if (navigator && navigator.device) {
+            navigator.device.exitApp();
+	}
+      }
+   } 
+   else {
+      navigator.app.backHistory();
+   }
+}
 
 </script>
 
@@ -382,7 +401,7 @@ $( document ).on( "pagecreate", "#page7", function() {
 	
     <div data-role="header" data-theme="b" data-position="fixed">
 		<h1>Municipalidad de Barranco</h1>
-        <a href="#" data-role="button" data-icon="back" data-rel="back" data-theme="a" data-add-back-btn="true">Atras</a>
+        <a href="#" data-role="button" data-icon="back" data-rel="back" data-theme="a" data-add-back-btn="true" onClick="goBack();">Atras</a>
         <a href="#left-panel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
       <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
 	</div>
@@ -419,7 +438,7 @@ $( document ).on( "pagecreate", "#page7", function() {
 
  <div data-role="header" data-theme="b" data-position="fixed">
 		<h1>Municipalidad de Barranco</h1>
-        <a href="#" data-role="button" data-icon="back" data-rel="back" data-theme="a" data-add-back-btn="true" onclick="playAudio();">Atras</a>
+        <a href="#" data-role="button" data-icon="back" data-rel="back" data-theme="a" data-add-back-btn="true" onClick="goBack();">Atras</a>
         <a href="#left-panel2" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
       <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
 	</div>
