@@ -72,9 +72,6 @@ function onDeviceReady(){
 				
             }
 			
-			else {
-				alert ("Mensajeeeeeeeeee");
-			}
         }
 
         // Stop audio
