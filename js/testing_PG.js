@@ -69,6 +69,9 @@ function onDeviceReady(){
             if (my_media) {
                 my_media.pause();
             }
+			else {
+			  alert ('El audio ya se pausó anteriormente');	
+			}
         }
 
         // Stop audio
