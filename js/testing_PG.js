@@ -71,6 +71,10 @@ function onDeviceReady(){
                 my_media.pause();
 				
             }
+			
+			else {
+				alert ("Mensajeeeeeeeeee");
+			}
         }
 
         // Stop audio
@@ -99,8 +103,8 @@ function onDeviceReady(){
         // Set audio position
         //
 		
-        function setAudioPosition(mediaTimer) {
-            document.getElementById('audio_position').innerHTML = mediaTimer;
+        function setAudioPosition(position) {
+            document.getElementById('audio_position').innerHTML = position;
         }
 
 
