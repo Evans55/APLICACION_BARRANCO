@@ -102,7 +102,7 @@ function onDeviceReady(){
         }
 
 
-  /*      function onBackKeyDown() {
+       function onBackKeyDown() {
     var active_page = $( ":mobile-pagecontainer" ).pagecontainer( "getActivePage" );
     var id =active_page.page().attr('id');
     if (id==='page2') {
@@ -113,4 +113,4 @@ function onDeviceReady(){
     else{
     navigator.app.backHistory();
     }
-}*/
+}
