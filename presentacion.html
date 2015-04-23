@@ -336,6 +336,21 @@ $( document ).on( "pagecreate", "#page7", function() {
 });
 </script>
 
+
+<script>
+
+function cambiardisplay(){
+	document.getElementById('skip2').style.display = 'block';
+	document.getElementById('skip').style.display = 'none';
+}
+
+function cambiardisplay2(){
+	document.getElementById('skip').style.display = 'block';
+	document.getElementById('skip2').style.display = 'none';
+}
+
+</script>
+
 </head> 
 <body onLoad="onBodyLoad()"> 
 
@@ -389,8 +404,8 @@ $( document ).on( "pagecreate", "#page7", function() {
 </div> -->
 
 <div class="ui-grid-a">
-      <div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip" onclick="playAudio('file:///android_asset/www/audio/Ellie_Goulding_Outside.mp3');">Play</a></div>
-      <div class="ui-block-b"><a data-role="button" href="#page2" id="skip" data-icon="arrow-r" data-transition="customFlip" onclick="stopAudio();" >Siguiente</a></div>
+      <div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/Ellie_Goulding_Outside.mp3'),cambiardisplay2();">Play</a></div>
+      <div class="ui-block-b"><a data-role="button" href="#page2" id="skip" data-icon="arrow-r" data-transition="customFlip" onclick="stopAudio(),cambiardisplay();" >Siguiente</a></div>
 </div>
 
 

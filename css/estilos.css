@@ -424,8 +424,15 @@ transform:scale(0.8) translateY(3px);
 	z-index:6; 
 	position:absolute;
 	top:80%;
+	display:block;
 	}
-	
+
+#skip2 {
+	z-index:6; 
+	position:absolute;
+	top:80%;
+	display:none;
+	}	
 	
 #bloque11 {
   -webkit-animation-duration: 0.4s;
