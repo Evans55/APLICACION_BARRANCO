@@ -2,7 +2,7 @@
 
 function onBodyLoad(){
 document.addEventListener("deviceready", onDeviceReady, false);
-//document.addEventListener("backbutton", onBackKeyDown, false);
+document.addEventListener("backbutton", onBackKeyDown, false);
 }
 
 	
@@ -105,7 +105,7 @@ function onDeviceReady(){
        function onBackKeyDown() {
     var active_page = $( ":mobile-pagecontainer" ).pagecontainer( "getActivePage" );
     var id =active_page.page().attr('id');
-    if (id==='page2') {
+    if (id==='page') {
         if (confirm('¿Seguro que quieres cerrar la aplicación?')==true){
             navigator.app.exitApp();
         }
