@@ -9,7 +9,7 @@ document.addEventListener("backbutton", onBackKeyDown, false);
 
 function onDeviceReady(){
 	
-	playAudio('file:///android_asset/www/audio/Ellie_Goulding_Outside.mp3');
+	playAudio('file:///android_asset/www/audio/01.mp3');
 }
 
 
