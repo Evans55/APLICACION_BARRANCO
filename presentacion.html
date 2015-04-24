@@ -404,7 +404,7 @@ function cambiardisplay2(){
 </div> -->
 
 <div class="ui-grid-a">
-      <div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/Ellie_Goulding_Outside.mp3'),cambiardisplay2();">Play</a></div>
+      <div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/intro.mp3'),cambiardisplay2();">Play</a></div>
       <div class="ui-block-b"><a data-role="button" href="#page2" id="skip" data-icon="arrow-r" data-transition="customFlip" onclick="stopAudio(),cambiardisplay();" >Siguiente</a></div>
 </div>
 
@@ -419,15 +419,15 @@ function cambiardisplay2(){
     <div data-role="header" data-theme="b" data-position="fixed">
 		
     <!--    <a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
-        <a href="#left-panel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-      <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
+     <a href="#left-panel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a> 
+       <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
 	</div>
     
 	<div data-role="content">	
 
     <div class="fondo3">
-    <a href="#page3" style="position:absolute; top:15%; left:15%;"><img src="imagenes/BotonPN.png" width="314" height="62" alt="natural"></a>
-    <a href="#page3" style="position:absolute; top:15%; left:63%;"><img src="imagenes/BotonPJ.png" width="314" height="62" alt="juridico"></a>
+    <a href="#page3" class="btnatural"><img src="imagenes/BotonPN.png" width="314" height="62" alt="natural"></a>
+    <a href="#page3" class="btjuridico"><img src="imagenes/BotonPJ.png" width="314" height="62" alt="juridico"></a>
    </div>
    
 
@@ -446,7 +446,37 @@ function cambiardisplay2(){
     
   
     
-     <!--<div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay"> -->
+      <div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay">
+   
+   <form class="ui-filterable">
+    <input id="inset-autocomplete-input" data-type="search" placeholder="Buscar...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Chrysler</a></li>
+    <li><a href="#">Dodge</a></li>
+    <li><a href="#">Ferrari</a></li>
+    <li><a href="#">Ford</a></li>
+    <li><a href="#">GMC</a></li>
+    <li><a href="#">Honda</a></li>
+    <li><a href="#">Hyundai</a></li>
+    <li><a href="#">Infiniti</a></li>
+    <li><a href="#">Jeep</a></li>
+    <li><a href="#">Kia</a></li>
+    <li><a href="#">Lexus</a></li>
+    <li><a href="#">Mini</a></li>
+    <li><a href="#">Nissan</a></li>
+    <li><a href="#">Porsche</a></li>
+    <li><a href="#">Subaru</a></li>
+    <li><a href="#">Toyota</a></li>
+    <li><a href="#">Volkswagen</a></li>
+    <li><a href="#">Volvo</a></li>
+</ul>
+   
+    </div><!-- /panel -->
      
 
 </div>
@@ -454,10 +484,10 @@ function cambiardisplay2(){
 <div data-role="page" id="page3" style="background-image: url('imagenes/04-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 
  <div data-role="header" data-theme="b" data-position="fixed">
-		<h1>Municipalidad de Barranco</h1>
+		<!--<h1>Municipalidad de Barranco</h1> -->
         <!--<a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
         <a href="#left-panel2" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-      <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
+       <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
 	</div>
 
 	
@@ -478,16 +508,47 @@ function cambiardisplay2(){
         </ul>
     </div>
     
+     <div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay">
+   
+   <form class="ui-filterable">
+    <input id="inset-autocomplete-input2" data-type="search" placeholder="Buscar...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input2">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Chrysler</a></li>
+    <li><a href="#">Dodge</a></li>
+    <li><a href="#">Ferrari</a></li>
+    <li><a href="#">Ford</a></li>
+    <li><a href="#">GMC</a></li>
+    <li><a href="#">Honda</a></li>
+    <li><a href="#">Hyundai</a></li>
+    <li><a href="#">Infiniti</a></li>
+    <li><a href="#">Jeep</a></li>
+    <li><a href="#">Kia</a></li>
+    <li><a href="#">Lexus</a></li>
+    <li><a href="#">Mini</a></li>
+    <li><a href="#">Nissan</a></li>
+    <li><a href="#">Porsche</a></li>
+    <li><a href="#">Subaru</a></li>
+    <li><a href="#">Toyota</a></li>
+    <li><a href="#">Volkswagen</a></li>
+    <li><a href="#">Volvo</a></li>
+</ul>
+   
+    </div><!-- /panel -->
     
 </div>
 
 <div data-role="page" id="page4" style="background-image: url('imagenes/05-Fondo2.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 	
      <div data-role="header" data-theme="b" data-position="fixed">
-		<h1>Municipalidad de Barranco</h1>
+		<!--<h1>Municipalidad de Barranco</h1> -->
        
         <a href="#left-panel3" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-      <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
+      <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
 	</div>
     
 	<div data-role="content">
@@ -519,15 +580,49 @@ function cambiardisplay2(){
          <li><a onclick="showConfirm(); return false;" href="#" class="ui-btn ui-btn-icon-left ui-icon-power" data-rel="close">SALIR</a></li>
         </ul>
     </div>
+    
+    
+         <div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay">
+   
+   <form class="ui-filterable">
+    <input id="inset-autocomplete-input3" data-type="search" placeholder="Buscar...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input3">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Chrysler</a></li>
+    <li><a href="#">Dodge</a></li>
+    <li><a href="#">Ferrari</a></li>
+    <li><a href="#">Ford</a></li>
+    <li><a href="#">GMC</a></li>
+    <li><a href="#">Honda</a></li>
+    <li><a href="#">Hyundai</a></li>
+    <li><a href="#">Infiniti</a></li>
+    <li><a href="#">Jeep</a></li>
+    <li><a href="#">Kia</a></li>
+    <li><a href="#">Lexus</a></li>
+    <li><a href="#">Mini</a></li>
+    <li><a href="#">Nissan</a></li>
+    <li><a href="#">Porsche</a></li>
+    <li><a href="#">Subaru</a></li>
+    <li><a href="#">Toyota</a></li>
+    <li><a href="#">Volkswagen</a></li>
+    <li><a href="#">Volvo</a></li>
+</ul>
+   
+    </div><!-- /panel -->
+    
 	
 </div>
 
 <div data-role="page" id="page5" style="background-image: url('imagenes/06-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 
 <div data-role="header" data-theme="b" data-position="fixed">
-		<h1>Municipalidad de Barranco</h1>
+		<!--<h1>Municipalidad de Barranco</h1> -->
         <a href="#left-panel4" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-      <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
+       <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> 
 	</div>
 
   <div data-role="content">
@@ -569,15 +664,49 @@ function cambiardisplay2(){
         </ul>
     </div>
   
+  
+  <div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay">
+   
+   <form class="ui-filterable">
+    <input id="inset-autocomplete-input4" data-type="search" placeholder="Buscar...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input4">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Chrysler</a></li>
+    <li><a href="#">Dodge</a></li>
+    <li><a href="#">Ferrari</a></li>
+    <li><a href="#">Ford</a></li>
+    <li><a href="#">GMC</a></li>
+    <li><a href="#">Honda</a></li>
+    <li><a href="#">Hyundai</a></li>
+    <li><a href="#">Infiniti</a></li>
+    <li><a href="#">Jeep</a></li>
+    <li><a href="#">Kia</a></li>
+    <li><a href="#">Lexus</a></li>
+    <li><a href="#">Mini</a></li>
+    <li><a href="#">Nissan</a></li>
+    <li><a href="#">Porsche</a></li>
+    <li><a href="#">Subaru</a></li>
+    <li><a href="#">Toyota</a></li>
+    <li><a href="#">Volkswagen</a></li>
+    <li><a href="#">Volvo</a></li>
+</ul>
+   
+    </div>
+  
+  
 </div>
 
 
 <div data-role="page" id="page6" style="background-image: url('imagenes/07-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
   
   <div data-role="header" data-theme="b" data-position="fixed">
-		<h1>Municipalidad de Barranco</h1>
+		<!--<h1>Municipalidad de Barranco</h1> -->
         <a href="#left-panel5" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-      <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
+      <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
 	</div>
   
   <div data-role="content">
@@ -590,7 +719,7 @@ function cambiardisplay2(){
   <div class="botonconsulta" id="botonconsulta" data-role="button"><a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a></div>
   
   
-  <div data-role="popup" id="popupPhotoLandscape" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" style="background-image: url('imagenes/07-Popup.png');  background-repeat: no-repeat; background-size: 100% 100%;  max-width: 1090px;  max-height: 691px;">
+  <div data-role="popup" id="popupPhotoLandscape" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup">
     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
 
 <!--<img src="imagenes/Pantalla7_POPup.png" alt="Photo landscape"> -->
@@ -647,6 +776,38 @@ function cambiardisplay2(){
          <li><a onclick="showConfirm(); return false;" href="#" class="ui-btn ui-btn-icon-left ui-icon-power" data-rel="close">SALIR</a></li>
         </ul>
     </div>
+    
+    <div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay">
+   
+   <form class="ui-filterable">
+    <input id="inset-autocomplete-input5" data-type="search" placeholder="Buscar...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input5">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Chrysler</a></li>
+    <li><a href="#">Dodge</a></li>
+    <li><a href="#">Ferrari</a></li>
+    <li><a href="#">Ford</a></li>
+    <li><a href="#">GMC</a></li>
+    <li><a href="#">Honda</a></li>
+    <li><a href="#">Hyundai</a></li>
+    <li><a href="#">Infiniti</a></li>
+    <li><a href="#">Jeep</a></li>
+    <li><a href="#">Kia</a></li>
+    <li><a href="#">Lexus</a></li>
+    <li><a href="#">Mini</a></li>
+    <li><a href="#">Nissan</a></li>
+    <li><a href="#">Porsche</a></li>
+    <li><a href="#">Subaru</a></li>
+    <li><a href="#">Toyota</a></li>
+    <li><a href="#">Volkswagen</a></li>
+    <li><a href="#">Volvo</a></li>
+</ul>
+   
+    </div>
   
 </div>
 
@@ -654,15 +815,15 @@ function cambiardisplay2(){
 <div data-role="page" id="page7" style="background-image: url('imagenes/06-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 
  <div data-role="header" data-theme="b" data-position="fixed">
-		<h1>Municipalidad de Barranco</h1>
+		<!--<h1>Municipalidad de Barranco</h1> -->
         <a href="#left-panel6" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-      <!--  <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
+     <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
 	</div>
 
  <div data-role="content">
-   <div class="ui-grid-a" style="margin-top:10%; margin-left:18%">
+   <div class="ui-grid-a" id="form1">
      <div class="ui-block-a"><img id="imagemap" src="imagenes/mapa.png" class="mapa" ></div>
-     <div class="ui-block-b" style="width:30%">
+     <div class="ui-block-b" id="form2">
      
      <form name="frmguias" action="#" method="get">
 
@@ -721,6 +882,39 @@ function cambiardisplay2(){
         </ul>
     </div>
 
+
+
+<div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay">
+   
+   <form class="ui-filterable">
+    <input id="inset-autocomplete-input6" data-type="search" placeholder="Buscar...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input6">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Chrysler</a></li>
+    <li><a href="#">Dodge</a></li>
+    <li><a href="#">Ferrari</a></li>
+    <li><a href="#">Ford</a></li>
+    <li><a href="#">GMC</a></li>
+    <li><a href="#">Honda</a></li>
+    <li><a href="#">Hyundai</a></li>
+    <li><a href="#">Infiniti</a></li>
+    <li><a href="#">Jeep</a></li>
+    <li><a href="#">Kia</a></li>
+    <li><a href="#">Lexus</a></li>
+    <li><a href="#">Mini</a></li>
+    <li><a href="#">Nissan</a></li>
+    <li><a href="#">Porsche</a></li>
+    <li><a href="#">Subaru</a></li>
+    <li><a href="#">Toyota</a></li>
+    <li><a href="#">Volkswagen</a></li>
+    <li><a href="#">Volvo</a></li>
+</ul>
+   
+    </div>
 
 </div>
 
