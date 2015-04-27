@@ -351,8 +351,23 @@ function cambiardisplay2(){
 
 </script>
 
+
+<script type="text/javascript">
+
+function enviodato (){
+	var est ='encendido' ;
+	
+	window.localStorage.setItem("estado",est);
+	  $.mobile.changePage(" #page2", { reverse:false, transition: "slide" });
+	  $('#output').html("Estado:" + window.localStorage.getItem("estado"));
+	  return false;
+}
+
+</script>
+
+
 </head> 
-<body onLoad="onBodyLoad()"> 
+<body onLoad="onBodyLoad()" style="background-color: #333;"> 
 
 <div data-role="page" id="page">
 	
@@ -374,7 +389,8 @@ function cambiardisplay2(){
      <div class="grassder"></div>
   
  <div class="spritearbolfinal"></div>
-  <div class="spritepalmera"></div>
+  <div class="spritepalmeramov"></div>
+  <div class="spritechabelita"></div>
   
   <div class="background">
   <div class="nube1" id="nube1"></div>
@@ -384,7 +400,7 @@ function cambiardisplay2(){
   <div class="nube5" id="nube5"></div>
   </div>
 
-<p id="audio_position"></p>
+<!--<p id="audio_position"></p> -->
 <!--<a data-role="button" href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"  style="z-index:6">Descargar PDF</a><br><br><br> -->
 
 
@@ -405,7 +421,7 @@ function cambiardisplay2(){
 
 <div class="ui-grid-a">
       <div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/intro.mp3'),cambiardisplay2();">Play</a></div>
-      <div class="ui-block-b"><a data-role="button" href="#page2" id="skip" data-icon="arrow-r" data-transition="customFlip" onclick="stopAudio(),cambiardisplay();" >Siguiente</a></div>
+      <div class="ui-block-b"><a data-role="button" href="#page2" id="skip" data-icon="arrow-r" data-transition="customFlip" onclick="stopAudio(),cambiardisplay(),enviodato();" >Siguiente</a></div>
 </div>
 
 
@@ -416,7 +432,7 @@ function cambiardisplay2(){
 
 <div data-role="page" id="page2" >
 	
-    <div data-role="header" data-theme="b" data-position="fixed">
+    <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
 		
     <!--    <a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
      <a href="#left-panel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a> 
@@ -428,6 +444,7 @@ function cambiardisplay2(){
     <div class="fondo3">
     <a href="#page3" class="btnatural"><img src="imagenes/BotonPN.png" width="314" height="62" alt="natural"></a>
     <a href="#page3" class="btjuridico"><img src="imagenes/BotonPJ.png" width="314" height="62" alt="juridico"></a>
+   <div id="output"></div>
    </div>
    
 
@@ -481,9 +498,9 @@ function cambiardisplay2(){
 
 </div>
 
-<div data-role="page" id="page3" style="background-image: url('imagenes/04-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+<div data-role="page" id="page3">
 
- <div data-role="header" data-theme="b" data-position="fixed">
+ <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
 		<!--<h1>Municipalidad de Barranco</h1> -->
         <!--<a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
         <a href="#left-panel2" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
@@ -492,8 +509,12 @@ function cambiardisplay2(){
 
 	
 	<div data-role="content">	
-				<a data-role="button" href="#page4" data-transition="pop" style="position:absolute;">Siguiente</a>
-         
+    
+      <div class="fondo4">
+    <a data-role="button" href="#page4" data-transition="pop" style="position:absolute;  margin-top: 2%; margin-left: 10%;">Siguiente</a>
+     </div>
+    
+				        
 	</div>
 	
     

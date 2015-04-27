@@ -1,6 +1,24 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+
+#page2{
+max-width:1300px;
+margin:0 auto;
+position:relative;
+
+}
+
+#page3{
+max-width:1300px;
+margin:0 auto;
+position:relative;
+
+}
+
+
+
 #form2{
 width:30%;	
 }
@@ -596,7 +614,7 @@ transform:scale(0.8) translateY(3px);
 }	
 
 
-.foreground, .midground, .background, .fachadaiz, .fachadader, .grassiz, .grassder, .grassfondoiz, .grassfondoder, .plantasiz, .plantasder, .fondo3, .logomenu {
+.foreground, .midground, .background, .fachadaiz, .fachadader, .grassiz, .grassder, .grassfondoiz, .grassfondoder, .plantasiz, .plantasder, .logomenu, .fondo3, .fondo4 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -633,9 +651,17 @@ transform:scale(0.8) translateY(3px);
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
 -o-background-size: 100% 100%;
-
-
 }
+
+.fondo4 {
+  background: url(../imagenes/04-Fondo.png)0 100% no-repeat;
+  z-index: 1;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+-o-background-size: 100% 100%;
+}
+
+
 
 .foreground {
   background:  url(../imagenes/Piso.png) 0 100% no-repeat;
@@ -806,10 +832,97 @@ transform:scale(0.8) translateY(3px);
 }
 
 
+
+.spritepalmeramov {
+  background:  url(../imagenes/palmera-movimiento.png) 0 100%;
+  
+
+  z-index: 3;
+  height:701px;
+  width:377px;
+  position: absolute;
+  left: 0;
+  margin-left:9%;
+  margin-top:-19%;
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+  
+   -webkit-animation: spritepalmeramov 15s steps(19, end) infinite ;
+ -webkit-animation-delay: 0.5s;
+ 
+  -moz-animation: spritepalmeramov 15s steps(19, end) infinite;
+ -moz-animation-delay: 0.5s;
+ 
+  -ms-animation: spritepalmeramov 15s steps(19, end) infinite;
+ -ms-animation-delay: 0.5s;
+ 
+  -o-animation: spritepalmeramov 15s steps(19, end) infinite;
+ -o-animation-delay: 0.5s;
+  
+}
+
+
+
+.spritechabelita {
+  background:  url(../imagenes/sprite-chabelita-final4.png) 0 100%;
+  
+
+  z-index: 3;
+  height:500px;
+  width:300px;
+  position: absolute;
+  left: 0;
+  margin-top:21%;
+  margin-left:-12%;
+
+  
+     -webkit-animation: spritechabelita 0.7s steps(6, end) 5, curling2 3s both linear;
+     -webkit-animation-delay: 0.5s;
+ 
+ -webkit-animation-fill-mode:forwards;
+  
+}
+
+
+@-webkit-keyframes curling2{
+	0%{-webkit-transform:translateX(0);transform:translateX(0)}
+	50%{-webkit-transform:translateX(300px);transform:translateX(300px)}
+	100%{-webkit-transform:translateX(600px);transform:translateX(600px)}}
+	
+@keyframes curling2{
+0%{-webkit-transform:translateX(0);transform:translateX(0)}
+	50%{-webkit-transform:translateX(300px);transform:translateX(300px)}
+	100%{-webkit-transform:translateX(600px);transform:translateX(600px)}}
+
+@keyframes spritechabelita {  
+  from {background-position-x: 0px; } 
+  to {background-position-x: -1800px; } 
+}
+
+@-webkit-keyframes spritechabelita {  
+  from {background-position-x: 0px; } 
+  to {background-position-x: -1800px; } 
+}
+
+
+
+@keyframes spritepalmeramov {  
+  from {background-position-x: 0px; } 
+  to {background-position-x: -7163px; } 
+}
+
+@-webkit-keyframes spritepalmeramov {  
+  from {background-position-x: 0px; } 
+  to {background-position-x: -7163px; } 
+}
+
+
 @keyframes spritepalmera {  
   from {background-position-x: 0px; } 
   to {background-position-x: -6786px; } 
 }
+
+
 
 @keyframes spritearbolfinal {  
   from {background-position-x: 0px; } 
