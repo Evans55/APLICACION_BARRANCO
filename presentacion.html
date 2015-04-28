@@ -363,7 +363,7 @@ function enviodato (){
 	var est ='encendido' ;
 	
 	window.localStorage.setItem("estado",est);
-	  //$.mobile.changePage(" #page2", { reverse:false, transition: "slide" });
+	  $.mobile.changePage("#page2", { reverse:false, transition: "customFlip" });
 	  //$('#output').html("Estado: " + window.localStorage.getItem("estado"));
 	  return false;
 }
@@ -386,13 +386,24 @@ function mostrardato (){
 }
 </script> -->
 
-<script>
+<!--<script>
 $( document ).on( "pageload", "#page", function( event ) {
   if(window.localStorage.getItem("estado") != null){
 	document.getElementById('spritechabelita').style.display = 'none';
 	}
 });
-</script>  
+</script>   -->
+
+<script>
+$(document).on("pagecontainerload", function (e, ui) {
+  var loadedPage = $(ui.page),
+      pageID = loadedPage[0].id;
+
+  if (pageID == "page" && window.localStorage.getItem("estado") != null) {
+   document.getElementById('spritechabelita').style.display = 'none';
+  }
+});
+</script>
 
 
 </head> 
@@ -452,7 +463,7 @@ $( document ).on( "pageload", "#page", function( event ) {
 <div class="ui-grid-a">
       <!--<div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/intro.mp3'),cambiardisplay2();">Play</a></div> -->
 <div class="ui-block-b">
-<a data-role="button" href="#page2" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" data-transition="customFlip" onclick="enviodato(),cambiardisplay();" >Siguiente</a>
+<a data-role="button" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="enviodato(),cambiardisplay();" >Siguiente</a>
 </div>
 </div>
 
