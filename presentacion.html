@@ -359,10 +359,18 @@ function enviodato (){
 	
 	window.localStorage.setItem("estado",est);
 	  $.mobile.changePage(" #page2", { reverse:false, transition: "slide" });
-	  $('#output').html("Estado:" + window.localStorage.getItem("estado"));
+	  $('#output').html("Estado: " + window.localStorage.getItem("estado"));
 	  return false;
 }
 
+</script>
+
+<script>
+$(document).on( "pageshow",'#page', function(e) { 
+ 
+  $('#output2').html("Estado: " + window.localStorage.getItem("estado"));
+ 
+});
 </script>
 
 
@@ -391,6 +399,7 @@ function enviodato (){
  <div class="spritearbolfinal"></div>
   <div class="spritepalmeramov"></div>
   <div class="spritechabelita"></div>
+  <div id="output2"></div>
   
   <div class="background">
   <div class="nube1" id="nube1"></div>
