@@ -1,7 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
-
+#activo{
+	display:none;	
+}
 
 #page2{
 max-width:1300px;

@@ -347,12 +347,14 @@ function cambiardisplay(){
 		document.getElementById('spritechabelita').style.display = 'none';
 	}
 	
+	document.getElementById('activo').style.display = 'block';
+	
 }
 
-/*function cambiardisplay2(){
-	document.getElementById('skip').style.display = 'block';
-	document.getElementById('skip2').style.display = 'none';
-}*/
+function cambiardisplay2(){
+	document.getElementById('spritechabelita').style.display = 'block';
+	playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
+}
 
 </script> 
 
@@ -396,6 +398,13 @@ $(document).on("pagecontainerload", function (e, ui) {
 
 <div data-role="page" id="page">
 	
+       <div data-role="header" data-theme="b" data-position="fixed">
+		
+    <!--    <a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
+     <a href="#left-panel11" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a> 
+       <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
+	</div>
+    
 	<div data-role="content">	
 			
   <div class="foreground">
@@ -455,6 +464,53 @@ $(document).on("pagecontainerload", function (e, ui) {
 
 
 	</div>
+    
+    
+    <div data-role="panel" id="left-panel11" data-theme="c" data-display="overlay">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
+          <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
+          <li ><a href="#page4" class="ui-btn ui-btn-icon-left ui-icon-grid" style="background-color:#C6E2FF">TRÁMITES</a></li>
+          <li id="activo"><a data-role="button" class="ui-btn ui-btn-icon-left ui-icon-user" style="background-color:#C6E2FF" onclick="cambiardisplay2();">ACTIVAR TUTORIAL</a></li>
+          <li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li>
+         <li><a onclick="showConfirm(); return false;" href="#" class="ui-btn ui-btn-icon-left ui-icon-power" data-rel="close">SALIR</a></li>
+        </ul>
+    </div>
+    
+    
+    <div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay">
+   
+   <form class="ui-filterable">
+    <input id="inset-autocomplete-input" data-type="search" placeholder="Buscar...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Chrysler</a></li>
+    <li><a href="#">Dodge</a></li>
+    <li><a href="#">Ferrari</a></li>
+    <li><a href="#">Ford</a></li>
+    <li><a href="#">GMC</a></li>
+    <li><a href="#">Honda</a></li>
+    <li><a href="#">Hyundai</a></li>
+    <li><a href="#">Infiniti</a></li>
+    <li><a href="#">Jeep</a></li>
+    <li><a href="#">Kia</a></li>
+    <li><a href="#">Lexus</a></li>
+    <li><a href="#">Mini</a></li>
+    <li><a href="#">Nissan</a></li>
+    <li><a href="#">Porsche</a></li>
+    <li><a href="#">Subaru</a></li>
+    <li><a href="#">Toyota</a></li>
+    <li><a href="#">Volkswagen</a></li>
+    <li><a href="#">Volvo</a></li>
+</ul>
+   
+    </div>
+    
+    
 
 </div>
 
