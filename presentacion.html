@@ -373,6 +373,12 @@ $(document).on( "pageshow",'#page', function(e) {
 });
 </script>
 
+<script>
+$( document ).on( "pageinit", "#aboutPage", function( event ) {
+  alert( window.localStorage.getItem("estado") );
+});
+</script>
+
 
 </head> 
 <body onLoad="onBodyLoad()" style="background-color: #333;"> 
