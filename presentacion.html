@@ -386,13 +386,13 @@ function mostrardato (){
 }
 </script> -->
 
-<script>
+<!--<script>
 $( document ).on( "pageload", "#page", function( event ) {
   if(window.localStorage.getItem("estado") != null){
 	document.getElementById('spritechabelita').style.display = 'none';
 	}
 });
-</script> 
+</script>  -->
 
 
 </head> 
@@ -452,7 +452,7 @@ $( document ).on( "pageload", "#page", function( event ) {
 <div class="ui-grid-a">
       <!--<div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/intro.mp3'),cambiardisplay2();">Play</a></div> -->
 <div class="ui-block-b">
-<a data-role="button" href="#page2" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" data-transition="customFlip" onclick="enviodato();" >Siguiente</a>
+<a data-role="button" href="#page2" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" data-transition="customFlip" onclick="enviodato(),cambiardisplay();" >Siguiente</a>
 </div>
 </div>
 
