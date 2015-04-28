@@ -874,6 +874,7 @@ transform:scale(0.8) translateY(3px);
   left: 0;
   margin-top:21%;
   margin-left:-12%;
+  display:none;
 
   
      -webkit-animation: spritechabelita 0.7s steps(6, end) 5, curling2 3s both linear;
