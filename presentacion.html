@@ -362,7 +362,7 @@ function cambiardisplay(){
 function enviodato (){
 	var est ='encendido' ;
 	
-	window.localStorage.setItem("estado",est);
+	window.localStorage.setItem("estado2",est);
 	  $.mobile.changePage("#page2", { reverse:false, transition: "customFlip" });
 	  //$('#output').html("Estado: " + window.localStorage.getItem("estado"));
 	  return false;
@@ -372,8 +372,8 @@ function enviodato (){
 
 
 <script>
-$( document ).on( "pageinit", "#page", function( event ) {
-  if(window.localStorage.getItem("estado") != null){
+$( document ).on( "pageload", "#page", function( event ) {
+  if(window.localStorage.getItem("estado2") != null){
 	document.getElementById('spritechabelita').style.display = 'none';
 	}
 });
