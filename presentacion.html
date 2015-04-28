@@ -374,10 +374,18 @@ $(document).on( "pageshow",'#page', function(e) {
 </script>
 
 <script>
+function mostrardato (){
+
+	  $('#output2').html("Estado: " + window.localStorage.getItem("estado"));
+	  return false;
+}
+</script>
+
+<!--<script>
 $( document ).on( "pageinit", "#page", function( event ) {
   alert( window.localStorage.getItem("estado") );
 });
-</script>
+</script> -->
 
 
 </head> 
@@ -420,11 +428,11 @@ $( document ).on( "pageinit", "#page", function( event ) {
 
 
 
-<!--<div class="ui-grid-solo">
+<div class="ui-grid-solo">
     <div class="ui-block-a">
-  <a data-role="button" href="#page2" id="skip" data-icon="arrow-r" class="ui-btn-right ui-btn-inline" onclick="pauseAudio();" data-transition="customFlip">SKIP INTRO</a>
+  <a data-role="button" id="skip" data-icon="arrow-r" class="ui-btn-right ui-btn-inline" onclick="mostrardato ();" >Mostrar dato</a>
   </div>
-</div> -->
+</div>
 
 <!--<div class="ui-grid-c">
   <div class="ui-block-a"><a data-role="button" id="skip" data-icon="arrow-r" onclick="pauseAudio();" data-transition="customFlip">Pause</a></div>
