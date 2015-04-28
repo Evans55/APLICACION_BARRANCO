@@ -370,31 +370,16 @@ function enviodato (){
 
 </script>
 
-<!--<script>
-$(document).on( "pageshow",'#page', function(e) { 
- 
-  $('#output2').html("Estado: " + window.localStorage.getItem("estado"));
- 
-});
-</script> -->
 
-<!--<script>
-function mostrardato (){
-
-	  $('#output2').html("Estado: " + window.localStorage.getItem("estado"));
-	  return false;
-}
-</script> -->
-
-<!--<script>
-$( document ).on( "pageload", "#page", function( event ) {
+<script>
+$( document ).on( "pageinit", "#page", function( event ) {
   if(window.localStorage.getItem("estado") != null){
 	document.getElementById('spritechabelita').style.display = 'none';
 	}
 });
-</script>   -->
+</script>   
 
-<script>
+<!--<script>
 $(document).on("pagecontainerload", function (e, ui) {
   var loadedPage = $(ui.page),
       pageID = loadedPage[0].id;
@@ -404,7 +389,7 @@ $(document).on("pagecontainerload", function (e, ui) {
   }
 });
 </script>
-
+ -->
 
 </head> 
 <body onLoad="onBodyLoad()" style="background-color: #333;"> 
