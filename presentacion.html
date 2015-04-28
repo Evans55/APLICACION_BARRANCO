@@ -370,14 +370,22 @@ function enviodato (){
 
 </script>
 
+<script>
 
+$( "#page" ).on( "pagecontainerload", function( event, ui ) {
+	alert('holaaaaa');
+	} );
+
+</script>
+
+<!--
 <script>
 $( document ).on( "pageload", "#page", function( event ) {
   if(window.localStorage.getItem("estado2") != null){
 	document.getElementById('spritechabelita').style.display = 'none';
 	}
 });
-</script>   
+</script>  -->  
 
 <!--<script>
 $(document).on("pagecontainerload", function (e, ui) {
