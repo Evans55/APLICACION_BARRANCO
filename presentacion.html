@@ -337,7 +337,7 @@ $( document ).on( "pagecreate", "#page7", function() {
 </script>
 
 
-<script>
+<!--<script>
 
 function cambiardisplay(){
 	//document.getElementById('skip2').style.display = 'block';
@@ -354,7 +354,7 @@ function cambiardisplay2(){
 	document.getElementById('skip2').style.display = 'none';
 }
 
-</script>
+</script> -->
 
 
 <script type="text/javascript">
@@ -363,8 +363,8 @@ function enviodato (){
 	var est ='encendido' ;
 	
 	window.localStorage.setItem("estado",est);
-	  $.mobile.changePage(" #page2", { reverse:false, transition: "slide" });
-	  $('#output').html("Estado: " + window.localStorage.getItem("estado"));
+	  //$.mobile.changePage(" #page2", { reverse:false, transition: "slide" });
+	  //$('#output').html("Estado: " + window.localStorage.getItem("estado"));
 	  return false;
 }
 
@@ -452,7 +452,7 @@ $( document ).on( "pageload", "#page", function( event ) {
 <div class="ui-grid-a">
       <!--<div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/intro.mp3'),cambiardisplay2();">Play</a></div> -->
 <div class="ui-block-b">
-<a data-role="button" href="#page2" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" data-transition="customFlip" onclick="cambiardisplay(),enviodato();" >Siguiente</a>
+<a data-role="button" href="#page2" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" data-transition="customFlip" onclick="enviodato();" >Siguiente</a>
 </div>
 </div>
 
