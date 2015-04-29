@@ -384,9 +384,13 @@ $( document ).on( "pageinit", "#page", function( event ) {
 
 <script>
 
-$( ":mobile-pagecontainer" ).on( "pagecontainershow", function( event, ui ) {
-  alert( "This page was just hidden: " + ui.toPage );
-});
+$(document).on("pagebeforechange", function(e, data) {
+                var to_page = data.toPage[0].id;
+                if (to_page == "page") {
+                    alert('holaaaaa');
+                    e.preventDefault();
+                }
+            });
 
 //$( "#page" ).pagecontainer( "getActivePage" )
 
