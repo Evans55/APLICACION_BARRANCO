@@ -387,7 +387,10 @@ $( document ).on( "pageinit", "#page", function( event ) {
 $(document).on("pagebeforechange", function(e, data) {
                 var to_page = data.toPage[0].id;
                 if (to_page == "page") {
-                    alert('holaaaaa');
+                   
+				   if(window.localStorage.getItem("estado2") != null){
+		            document.getElementById('activo').style.display = 'block';
+	               }
                    // e.preventDefault();
                 }
             });
