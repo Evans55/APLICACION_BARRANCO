@@ -376,31 +376,14 @@ function enviodato (){
 
 
 <script>
-$( document ).on( "pageinit", "#page", function( event ) {
-  document.getElementById('spritechabelita').style.display = 'block';
-  //playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
-});
-</script>  
-
-
-<script>
-
-$(document).on("pagebeforeshow", function(e, data) {
-                var to_page = data.toPage[0].id;
-                if (to_page == "page") {
-                   
-				   alert(window.localStorage.getItem("estado2"));
-				   
-				  /* if(window.localStorage.getItem("estado2") != null){
-		            document.getElementById('activo').style.display = 'block';
-	               }*/
-                    //e.preventDefault();
-                }
-            });
-
-//$( "#page" ).pagecontainer( "getActivePage" )
-
+$(document).bind("mobileinit", function(){ 
+    $('#page').live('pageinit', function() { 
+        alert('Holaaaaa'); 
+    }); 
+});  
 </script>
+
+
 
 <!--<script>
 $(document).on("pagecontainerload", function (e, ui) {
