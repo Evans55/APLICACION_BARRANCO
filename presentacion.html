@@ -520,21 +520,21 @@ $(document).on("pagecontainerload", function (e, ui) {
 		
     <!--    <a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
      <a href="#left-panel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a> 
-       <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
+       <a href="#search2" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
 	</div>
     
 	<div data-role="content">	
 
     <div class="fondo3">
-    <a href="#page3" class="btnatural"><img src="imagenes/BotonPN.png" width="314" height="62" alt="natural"></a>
-    <a href="#page3" class="btjuridico"><img src="imagenes/BotonPJ.png" width="314" height="62" alt="juridico"></a>
+    <a href="#page3" class="btnatural"><img src="imagenes/BotonPN.png" width="314" height="90" alt="natural"></a>
+    <a href="#page3" class="btjuridico"><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
    <!--<div id="output"></div> -->
    </div>
    
 
 	</div>
     
-    <div data-role="panel" id="left-panel" data-theme="c" data-display="overlay">
+    <div data-role="panel" id="left-panel" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
           <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
@@ -547,12 +547,12 @@ $(document).on("pagecontainerload", function (e, ui) {
     
   
     
-      <div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay">
+      <div data-role="panel" id="search2" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
-    <input id="inset-autocomplete-input" data-type="search" placeholder="Buscar...">
+    <input id="inset-autocomplete-input3" data-type="search" placeholder="Buscar...">
 </form>
-<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input">
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input3">
     <li><a href="#">Acura</a></li>
     <li><a href="#">Audi</a></li>
     <li><a href="#">BMW</a></li>
