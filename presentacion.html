@@ -391,10 +391,10 @@ $(document).on("pagebeforechange", function(e, data) {
                    
 				   alert(window.localStorage.getItem("estado2"));
 				   
-				   if(window.localStorage.getItem("estado2") != null){
+				  /* if(window.localStorage.getItem("estado2") != null){
 		            document.getElementById('activo').style.display = 'block';
-	               }
-                   // e.preventDefault();
+	               }*/
+                    e.preventDefault();
                 }
             });
 
