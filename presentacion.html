@@ -377,9 +377,20 @@ function enviodato (){
 <script>
 $( document ).on( "pageinit", "#page", function( event ) {
   document.getElementById('spritechabelita').style.display = 'block';
-  playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
+  //playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
 });
 </script>  
+
+<script>
+
+//$( ".page" ).pagecontainer( "getActivePage" );
+
+$( document ).on( "pagecreate", "#page7", function() {
+	alert("holaaaaaa");
+	});
+
+</script>
+
 
 <!--<script>
 $(document).on("pagecontainerload", function (e, ui) {
