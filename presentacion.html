@@ -382,7 +382,15 @@ $( document ).on( "pageinit", "#page", function( event ) {
 </script>  
 
 
+<script>
 
+$( ":mobile-pagecontainer" ).on( "pagecontainershow", function( event, ui ) {
+  alert( "This page was just hidden: " + ui.toPage );
+});
+
+//$( "#page" ).pagecontainer( "getActivePage" )
+
+</script>
 
 <!--<script>
 $(document).on("pagecontainerload", function (e, ui) {
@@ -400,13 +408,7 @@ $(document).on("pagecontainerload", function (e, ui) {
 <body onLoad="onBodyLoad()" style="background-color: #333;"> 
 
 <div data-role="page" id="page">
-	
-    <script type="text/javascript">
-            $("#page").live('pageinit', function() {
-               alert("holaaaaaa");
-            });
-        </script>
-    
+
        <div data-role="header" data-theme="b" data-position="fixed">
 		
     <!--    <a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
@@ -416,22 +418,25 @@ $(document).on("pagecontainerload", function (e, ui) {
     
 	<div data-role="content">	
 			
-  <div class="foreground">
+ <div class="foreground">
   </div>
   
-  <div class="midground">
+<!--  <div class="midground">
   </div>
-  
-   <div class="fachadaiz"></div>
-     <div class="fachadader"></div>
+ <div class="fachadaiz"></div>
+     <div class="fachadader"></div> -->
+     
+     
+     <div class="fachadamov"></div>
+     
      <div class="plantasiz"></div>
      <div class="grassfondoiz"></div>
      <div class="grassiz"></div>
      <div class="plantasder"></div>
      <div class="grassfondoder"></div>
-     <div class="grassder"></div>
+     <div class="grassder"></div> 
   
- <div class="spritearbolfinal"></div>
+ <div class="spritearbolmov"></div>
   <div class="spritepalmeramov"></div>
   <div class="spritechabelita" id="spritechabelita"></div>
   <!--<div id="output2"></div> -->

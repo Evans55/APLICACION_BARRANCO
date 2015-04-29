@@ -768,6 +768,40 @@ transform:scale(0.8) translateY(3px);
 }
 
 
+.fachadamov {
+  background:  url(../imagenes/muni_movimiento-01.png) 0 100%;
+  
+
+  z-index: 2;
+  height:2329px;
+  width:2292px;
+  position: absolute;
+  left: 0;
+  margin-top:-88%;
+  margin-left:-13%;
+
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  
+   -webkit-animation: fachadamov 0.6s steps(5, end) ;
+    -webkit-animation-fill-mode:forwards;
+ -webkit-animation-delay: 1.5s;
+ 
+  -moz-animation: fachadamov 0.6s steps(5, end) ;
+    -moz-animation-fill-mode:forwards;
+ -moz-animation-delay: 1.5s;
+ 
+ -ms-animation: fachadamov 0.6s steps(5, end) ;
+ -ms-animation-fill-mode:forwards;
+ -ms-animation-delay: 1.5s;
+ 
+ -o-animation: fachadamov 0.6s steps(5, end) ;
+ -o-animation-fill-mode:forwards;
+ -o-animation-delay: 1.5s;
+  
+}
+
+
 .spritearbolfinal {
   background:  url(../imagenes/arbolito_sprite_final2-01.png) 0 100%;
   
@@ -863,23 +897,49 @@ transform:scale(0.8) translateY(3px);
   
 }
 
+.spritearbolmov {
+  background:  url(../imagenes/arbol-movimiento.png) 0 100%;
+  
 
+  z-index: 3;
+  height:700px;
+  width:377px;
+  position: absolute;
+  left: 0;
+  margin-left:60%;
+  margin-top:-19%;
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+  
+   -webkit-animation: spritearbolmov 15s steps(19, end) infinite ;
+ -webkit-animation-delay: 0.5s;
+ 
+  -moz-animation: spritearbolmov 15s steps(19, end) infinite;
+ -moz-animation-delay: 0.5s;
+ 
+  -ms-animation: spritearbolmov 15s steps(19, end) infinite;
+ -ms-animation-delay: 0.5s;
+ 
+  -o-animation: spritearbolmov 15s steps(19, end) infinite;
+ -o-animation-delay: 0.5s;
+  
+}
 
 .spritechabelita {
   background:  url(../imagenes/sprite-chabelita-final4.png) 0 100%;
   
 
   z-index: 3;
-  height:500px;
-  width:300px;
+  height:400px;
+  width:215px;
   position: absolute;
   left: 0;
   margin-top:21%;
   margin-left:-12%;
-  display:none;
+  /*display:none;*/
 
   
-     -webkit-animation: spritechabelita 0.7s steps(6, end) 5, curling2 3s both linear;
+     -webkit-animation: spritechabelita 0.6s steps(6, end) 10, curling2 3s both linear;
      -webkit-animation-delay: 0.5s;
  
  -webkit-animation-fill-mode:forwards;
@@ -899,14 +959,35 @@ transform:scale(0.8) translateY(3px);
 
 @keyframes spritechabelita {  
   from {background-position-x: 0px; } 
-  to {background-position-x: -1800px; } 
+  to {background-position-x: -1290px; } 
 }
 
 @-webkit-keyframes spritechabelita {  
   from {background-position-x: 0px; } 
-  to {background-position-x: -1800px; } 
+  to {background-position-x: -1290px; } 
 }
 
+
+@keyframes fachadamov {  
+  from {background-position-x: 0px; } 
+  to {background-position-x: -11460px; } 
+}
+
+@-webkit-keyframes fachadamov {  
+  from {background-position-x: 0px; } 
+  to {background-position-x: -11460px; } 
+}
+
+
+@keyframes spritearbolmov {  
+  from {background-position-x: 0px; } 
+  to {background-position-x: -7163px; } 
+}
+
+@-webkit-keyframes spritearbolmov {  
+  from {background-position-x: 0px; } 
+  to {background-position-x: -7163px; } 
+}
 
 
 @keyframes spritepalmeramov {  
@@ -1476,6 +1557,99 @@ and (orientation : landscape)
   margin-top: 13%;
   margin-left: 16%;
 }
+	
+	
+	.fachadamov {
+  background:  url(../imagenes/muni_movimiento-01.png) 0 100%;
+  
+
+  z-index: 2;
+  height:2329px;
+  width:2292px;
+  position: absolute;
+  left: 0;
+  margin-top:-109%;
+  margin-left:-42%;
+
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  
+   -webkit-animation: fachadamov 0.6s steps(5, end) ;
+    -webkit-animation-fill-mode:forwards;
+ -webkit-animation-delay: 1.5s;
+ 
+  -moz-animation: fachadamov 0.6s steps(5, end) ;
+    -moz-animation-fill-mode:forwards;
+ -moz-animation-delay: 1.5s;
+ 
+ -ms-animation: fachadamov 0.6s steps(5, end) ;
+ -ms-animation-fill-mode:forwards;
+ -ms-animation-delay: 1.5s;
+ 
+ -o-animation: fachadamov 0.6s steps(5, end) ;
+ -o-animation-fill-mode:forwards;
+ -o-animation-delay: 1.5s;
+  
+}
+	
+	
+	
+	.spritepalmeramov {
+  background:  url(../imagenes/palmera-movimiento.png) 0 100%;
+  
+
+  z-index: 3;
+  height:701px;
+  width:377px;
+  position: absolute;
+  left: 0;
+  margin-left:9%;
+  margin-top:-32%;
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+  
+   -webkit-animation: spritepalmeramov 15s steps(19, end) infinite ;
+ -webkit-animation-delay: 0.5s;
+ 
+  -moz-animation: spritepalmeramov 15s steps(19, end) infinite;
+ -moz-animation-delay: 0.5s;
+ 
+  -ms-animation: spritepalmeramov 15s steps(19, end) infinite;
+ -ms-animation-delay: 0.5s;
+ 
+  -o-animation: spritepalmeramov 15s steps(19, end) infinite;
+ -o-animation-delay: 0.5s;
+  
+}
+
+.spritearbolmov {
+  background:  url(../imagenes/arbol-movimiento.png) 0 100%;
+  
+
+  z-index: 3;
+  height:700px;
+  width:377px;
+  position: absolute;
+  left: 0;
+  margin-left:60%;
+  margin-top:-32%;
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+  
+   -webkit-animation: spritearbolmov 15s steps(19, end) infinite ;
+ -webkit-animation-delay: 0.5s;
+ 
+  -moz-animation: spritearbolmov 15s steps(19, end) infinite;
+ -moz-animation-delay: 0.5s;
+ 
+  -ms-animation: spritearbolmov 15s steps(19, end) infinite;
+ -ms-animation-delay: 0.5s;
+ 
+  -o-animation: spritearbolmov 15s steps(19, end) infinite;
+ -o-animation-delay: 0.5s;
+  
+}
+	
 	
 }
 
