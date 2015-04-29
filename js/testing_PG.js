@@ -1,7 +1,7 @@
 // JavaScript Document
 
 function onBodyLoad(){
-//document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("deviceready", onDeviceReady, false);
 document.addEventListener("backbutton", onBackKeyDown, false);
 }
 
