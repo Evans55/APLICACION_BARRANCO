@@ -9,7 +9,7 @@ document.addEventListener("backbutton", onBackKeyDown, false);
 
 function onDeviceReady(){
 	
-	playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
+	//playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
 }
 
 
