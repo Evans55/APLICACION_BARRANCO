@@ -383,14 +383,9 @@ $( document ).on( "pageinit", "#page", function( event ) {
 
 <script>
 
-
-$(document).on("pagecontainershow", function () {
-                    var page3 = $.mobile.pageContainer.pagecontainer("getActivePage");
-                    if(page3[0].id == "#page")
-                    {
-                        alert("holaaaaaa");
-                    }
-                });
+$('#page').live('pageshow', function(event) {   //Workaround to show page loading on initial page load
+  alert("holaaaaaa");
+});
 
 //$( "#page" ).pagecontainer( "getActivePage" )
 
