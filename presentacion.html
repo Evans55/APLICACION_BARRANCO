@@ -389,6 +389,8 @@ $(document).on("pagebeforechange", function(e, data) {
                 var to_page = data.toPage[0].id;
                 if (to_page == "page") {
                    
+				   alert(window.localStorage.getItem("estado2"));
+				   
 				   if(window.localStorage.getItem("estado2") != null){
 		            document.getElementById('activo').style.display = 'block';
 	               }
