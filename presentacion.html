@@ -373,7 +373,7 @@ function enviodato (){
 
 </script>
 
-<script>
+<!--<script>
 
 $(document).on("pagebeforechange", function(e, data) {
                 var to_page = data.toPage[0].id;
@@ -387,7 +387,7 @@ $(document).on("pagebeforechange", function(e, data) {
                 }
             });
 
-</script>
+</script> -->
 
 <script>
 $( document ).on( "pageinit", "#page", function( event ) {
@@ -592,11 +592,11 @@ $( document ).on( "pageinit", "#page", function( event ) {
 
 <div data-role="page" id="page3">
 
- <div data-role="header" data-theme="b" data-position="fixed" >
+ <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
 		<!--<h1>Municipalidad de Barranco</h1> -->
         <!--<a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
         <a href="#left-panel2" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-       <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
+       <a href="#search3" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
 	</div>
 
 	
@@ -610,7 +610,7 @@ $( document ).on( "pageinit", "#page", function( event ) {
 	</div>
 	
     
-    <div data-role="panel" id="left-panel2" data-theme="c" data-display="overlay">
+    <div data-role="panel" id="left-panel2" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
           <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
@@ -621,12 +621,12 @@ $( document ).on( "pageinit", "#page", function( event ) {
         </ul>
     </div>
     
-     <div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay">
+     <div data-role="panel" id="search3" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
-    <input id="inset-autocomplete-input2" data-type="search" placeholder="Buscar...">
+    <input id="inset-autocomplete-input4" data-type="search" placeholder="Buscar...">
 </form>
-<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input2">
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input4">
     <li><a href="#">Acura</a></li>
     <li><a href="#">Audi</a></li>
     <li><a href="#">BMW</a></li>
@@ -661,22 +661,22 @@ $( document ).on( "pageinit", "#page", function( event ) {
 		<!--<h1>Municipalidad de Barranco</h1> -->
        
         <a href="#left-panel3" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-      <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
+      <a href="#search4" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
 	</div>
     
 	<div data-role="content">
       
      <div class="margenes">
-			<div class="bloques" id="bloque11" data-role="button"><a><img src="imagenes/Matrimonios_Red_btn.png" alt="bloque11"></a></div>
-             <div class="bloques" id="bloque12"><a><img src="imagenes/Transparencia_btn.png" alt="bloque12"></a></div>
+			<div class="bloques" id="bloque11" data-role="button"><a href="#page8"><img src="imagenes/Matrimonios_Red_btn.png" alt="bloque11"></a></div>
+             <div class="bloques" id="bloque12"><a href="#page9"><img src="imagenes/Transparencia_btn.png" alt="bloque12"></a></div>
              <div class="bloques" id="bloque13"><a href="#page5" data-transition="flip"><img src="imagenes/Administracion_Tributaria_Btn.png" alt="bloque13"></a></div>
              <div class="bloques" id="bloque14"><a><img src="imagenes/Edificacion_btn.png" alt="bloque14"></a></div>
     
       
              
-             <div class="posicion" id="bloque21"><a><img src="imagenes/Participacion_btn.png" alt="bloque21"></a></div> 
+             <div class="posicion" id="bloque21"><a href="#page11"><img src="imagenes/Participacion_btn.png" alt="bloque21"></a></div> 
              <div class="posicion2" id="bloque22"><a href="#page7" data-transition="slide"><img src="imagenes/Defensa_civil_Btn.png" alt="bloque22"></a></div> 
-             <div class="posicion2" id="bloque23"><a><img src="imagenes/Autorizacion_Btn.png" alt="bloque23"></a></div>
+             <div class="posicion2" id="bloque23"><a href="#page10"><img src="imagenes/Autorizacion_Btn.png" alt="bloque23"></a></div>
              <div class="posicion2" id="bloque24"><a><img src="imagenes/Buscar_palabra_Btn.png" alt="bloque24"></a></div>
       </div>  
       
@@ -695,12 +695,12 @@ $( document ).on( "pageinit", "#page", function( event ) {
     </div>
     
     
-         <div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay">
+         <div data-role="panel" id="search4" data-theme="a" data-position="right" data-display="overlay">
    
    <form class="ui-filterable">
-    <input id="inset-autocomplete-input3" data-type="search" placeholder="Buscar...">
+    <input id="inset-autocomplete-input5" data-type="search" placeholder="Buscar...">
 </form>
-<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input3">
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input5">
     <li><a href="#">Acura</a></li>
     <li><a href="#">Audi</a></li>
     <li><a href="#">BMW</a></li>
@@ -730,12 +730,12 @@ $( document ).on( "pageinit", "#page", function( event ) {
 	
 </div>
 
-<div data-role="page" id="page5" style="background-image: url('imagenes/06-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+<div data-role="page" id="page5" style="background-image: url('imagenes/escritorios-04.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 
 <div data-role="header" data-theme="b" data-position="fixed">
 		<!--<h1>Municipalidad de Barranco</h1> -->
         <a href="#left-panel4" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-       <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> 
+       <a href="#search5" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> 
 	</div>
 
   <div data-role="content">
@@ -824,12 +824,12 @@ $( document ).on( "pageinit", "#page", function( event ) {
     </div>
   
   
-  <div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay">
+  <div data-role="panel" id="search5" data-theme="a" data-position="right" data-display="overlay">
    
    <form class="ui-filterable">
-    <input id="inset-autocomplete-input4" data-type="search" placeholder="Buscar...">
+    <input id="inset-autocomplete-input6" data-type="search" placeholder="Buscar...">
 </form>
-<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input4">
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input6">
     <li><a href="#">Acura</a></li>
     <li><a href="#">Audi</a></li>
     <li><a href="#">BMW</a></li>
@@ -865,7 +865,7 @@ $( document ).on( "pageinit", "#page", function( event ) {
   <div data-role="header" data-theme="b" data-position="fixed">
 		<!--<h1>Municipalidad de Barranco</h1> -->
         <a href="#left-panel5" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-      <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
+      <a href="#search6" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
 	</div>
   
   <div data-role="content">
@@ -936,12 +936,12 @@ $( document ).on( "pageinit", "#page", function( event ) {
         </ul>
     </div>
     
-    <div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay">
+    <div data-role="panel" id="search6" data-theme="a" data-position="right" data-display="overlay">
    
    <form class="ui-filterable">
-    <input id="inset-autocomplete-input5" data-type="search" placeholder="Buscar...">
+    <input id="inset-autocomplete-input7" data-type="search" placeholder="Buscar...">
 </form>
-<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input5">
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input7">
     <li><a href="#">Acura</a></li>
     <li><a href="#">Audi</a></li>
     <li><a href="#">BMW</a></li>
@@ -971,16 +971,17 @@ $( document ).on( "pageinit", "#page", function( event ) {
 </div>
 
 
-<div data-role="page" id="page7" style="background-image: url('imagenes/06-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+<div data-role="page" id="page7" style="background-image: url('imagenes/escritorios-01.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 
  <div data-role="header" data-theme="b" data-position="fixed">
 		<!--<h1>Municipalidad de Barranco</h1> -->
         <a href="#left-panel6" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-     <a href="#search" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
+     <a href="#search7" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
 	</div>
 
  <div data-role="content">
-   <div class="ui-grid-a" id="form1">
+ 
+   <!--<div class="ui-grid-a" id="form1">
      <div class="ui-block-a"><img id="imagemap" src="imagenes/mapa.png" class="mapa" ></div>
      <div class="ui-block-b" id="form2">
      
@@ -1017,14 +1018,9 @@ $( document ).on( "pageinit", "#page", function( event ) {
      <a data-role="button" href="#page6">Continuar</a>
      
      </div>
-   </div>
+   </div> -->
  
- 
-  
-  
-  
-  
-   
+
 
  </div>
 
@@ -1043,12 +1039,12 @@ $( document ).on( "pageinit", "#page", function( event ) {
 
 
 
-<div data-role="panel" id="search" data-theme="a" data-position="right" data-display="overlay">
+<div data-role="panel" id="search7" data-theme="a" data-position="right" data-display="overlay">
    
    <form class="ui-filterable">
-    <input id="inset-autocomplete-input6" data-type="search" placeholder="Buscar...">
+    <input id="inset-autocomplete-input8" data-type="search" placeholder="Buscar...">
 </form>
-<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input6">
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input8">
     <li><a href="#">Acura</a></li>
     <li><a href="#">Audi</a></li>
     <li><a href="#">BMW</a></li>
@@ -1079,6 +1075,260 @@ $( document ).on( "pageinit", "#page", function( event ) {
 
 
 
+<div data-role="page" id="page8" style="background-image: url('imagenes/escritorios-02.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+
+ <div data-role="header" data-theme="b" data-position="fixed">
+		<!--<h1>Municipalidad de Barranco</h1> -->
+        <a href="#left-panel7" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+     <a href="#search8" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
+	</div>
+
+ <div data-role="content">
+ 
+ </div>
+
+
+
+<div data-role="panel" id="left-panel7" data-theme="c" data-display="overlay">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
+          <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
+          <li ><a href="#page4" class="ui-btn ui-btn-icon-left ui-icon-grid" style="background-color:#C6E2FF">TRÁMITES</a></li>
+          <li data-role="list-divider" style="height:2em;background-color:#f6f6f6"></li>
+          <li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li>
+         <li><a onclick="showConfirm(); return false;" href="#" class="ui-btn ui-btn-icon-left ui-icon-power" data-rel="close">SALIR</a></li>
+        </ul>
+    </div>
+
+
+
+<div data-role="panel" id="search8" data-theme="a" data-position="right" data-display="overlay">
+   
+   <form class="ui-filterable">
+    <input id="inset-autocomplete-input9" data-type="search" placeholder="Buscar...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input9">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Chrysler</a></li>
+    <li><a href="#">Dodge</a></li>
+    <li><a href="#">Ferrari</a></li>
+    <li><a href="#">Ford</a></li>
+    <li><a href="#">GMC</a></li>
+    <li><a href="#">Honda</a></li>
+    <li><a href="#">Hyundai</a></li>
+    <li><a href="#">Infiniti</a></li>
+    <li><a href="#">Jeep</a></li>
+    <li><a href="#">Kia</a></li>
+    <li><a href="#">Lexus</a></li>
+    <li><a href="#">Mini</a></li>
+    <li><a href="#">Nissan</a></li>
+    <li><a href="#">Porsche</a></li>
+    <li><a href="#">Subaru</a></li>
+    <li><a href="#">Toyota</a></li>
+    <li><a href="#">Volkswagen</a></li>
+    <li><a href="#">Volvo</a></li>
+</ul>
+   
+    </div>
+
+</div>
+
+
+
+
+<div data-role="page" id="page9" style="background-image: url('imagenes/escritorios-03.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+
+ <div data-role="header" data-theme="b" data-position="fixed">
+		<!--<h1>Municipalidad de Barranco</h1> -->
+        <a href="#left-panel8" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+     <a href="#search9" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
+	</div>
+
+ <div data-role="content">
+ 
+ </div>
+
+
+
+<div data-role="panel" id="left-panel8" data-theme="c" data-display="overlay">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
+          <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
+          <li ><a href="#page4" class="ui-btn ui-btn-icon-left ui-icon-grid" style="background-color:#C6E2FF">TRÁMITES</a></li>
+          <li data-role="list-divider" style="height:2em;background-color:#f6f6f6"></li>
+          <li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li>
+         <li><a onclick="showConfirm(); return false;" href="#" class="ui-btn ui-btn-icon-left ui-icon-power" data-rel="close">SALIR</a></li>
+        </ul>
+    </div>
+
+
+
+<div data-role="panel" id="search9" data-theme="a" data-position="right" data-display="overlay">
+   
+   <form class="ui-filterable">
+    <input id="inset-autocomplete-input10" data-type="search" placeholder="Buscar...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input10">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Chrysler</a></li>
+    <li><a href="#">Dodge</a></li>
+    <li><a href="#">Ferrari</a></li>
+    <li><a href="#">Ford</a></li>
+    <li><a href="#">GMC</a></li>
+    <li><a href="#">Honda</a></li>
+    <li><a href="#">Hyundai</a></li>
+    <li><a href="#">Infiniti</a></li>
+    <li><a href="#">Jeep</a></li>
+    <li><a href="#">Kia</a></li>
+    <li><a href="#">Lexus</a></li>
+    <li><a href="#">Mini</a></li>
+    <li><a href="#">Nissan</a></li>
+    <li><a href="#">Porsche</a></li>
+    <li><a href="#">Subaru</a></li>
+    <li><a href="#">Toyota</a></li>
+    <li><a href="#">Volkswagen</a></li>
+    <li><a href="#">Volvo</a></li>
+</ul>
+   
+    </div>
+
+</div>
+
+
+
+
+
+<div data-role="page" id="page10" style="background-image: url('imagenes/escritorios-05.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+
+ <div data-role="header" data-theme="b" data-position="fixed">
+		<!--<h1>Municipalidad de Barranco</h1> -->
+        <a href="#left-panel9" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+     <a href="#search10" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
+	</div>
+
+ <div data-role="content">
+ 
+ </div>
+
+
+
+<div data-role="panel" id="left-panel9" data-theme="c" data-display="overlay">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
+          <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
+          <li ><a href="#page4" class="ui-btn ui-btn-icon-left ui-icon-grid" style="background-color:#C6E2FF">TRÁMITES</a></li>
+          <li data-role="list-divider" style="height:2em;background-color:#f6f6f6"></li>
+          <li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li>
+         <li><a onclick="showConfirm(); return false;" href="#" class="ui-btn ui-btn-icon-left ui-icon-power" data-rel="close">SALIR</a></li>
+        </ul>
+    </div>
+
+
+
+<div data-role="panel" id="search10" data-theme="a" data-position="right" data-display="overlay">
+   
+   <form class="ui-filterable">
+    <input id="inset-autocomplete-input11" data-type="search" placeholder="Buscar...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input11">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Chrysler</a></li>
+    <li><a href="#">Dodge</a></li>
+    <li><a href="#">Ferrari</a></li>
+    <li><a href="#">Ford</a></li>
+    <li><a href="#">GMC</a></li>
+    <li><a href="#">Honda</a></li>
+    <li><a href="#">Hyundai</a></li>
+    <li><a href="#">Infiniti</a></li>
+    <li><a href="#">Jeep</a></li>
+    <li><a href="#">Kia</a></li>
+    <li><a href="#">Lexus</a></li>
+    <li><a href="#">Mini</a></li>
+    <li><a href="#">Nissan</a></li>
+    <li><a href="#">Porsche</a></li>
+    <li><a href="#">Subaru</a></li>
+    <li><a href="#">Toyota</a></li>
+    <li><a href="#">Volkswagen</a></li>
+    <li><a href="#">Volvo</a></li>
+</ul>
+   
+    </div>
+
+</div>
+
+
+
+
+
+<div data-role="page" id="page11" style="background-image: url('imagenes/escritorios-06.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+
+ <div data-role="header" data-theme="b" data-position="fixed">
+		<!--<h1>Municipalidad de Barranco</h1> -->
+        <a href="#left-panel10" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+     <a href="#search11" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
+	</div>
+
+ <div data-role="content">
+ 
+ </div>
+
+
+
+<div data-role="panel" id="left-panel10" data-theme="c" data-display="overlay">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
+          <li ><a href="#page" class="ui-btn ui-btn-icon-left ui-icon-home">INICIO</a></li>
+          <li ><a href="#page4" class="ui-btn ui-btn-icon-left ui-icon-grid" style="background-color:#C6E2FF">TRÁMITES</a></li>
+          <li data-role="list-divider" style="height:2em;background-color:#f6f6f6"></li>
+          <li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li>
+         <li><a onclick="showConfirm(); return false;" href="#" class="ui-btn ui-btn-icon-left ui-icon-power" data-rel="close">SALIR</a></li>
+        </ul>
+    </div>
+
+
+
+<div data-role="panel" id="search11" data-theme="a" data-position="right" data-display="overlay">
+   
+   <form class="ui-filterable">
+    <input id="inset-autocomplete-input12" data-type="search" placeholder="Buscar...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input12">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Chrysler</a></li>
+    <li><a href="#">Dodge</a></li>
+    <li><a href="#">Ferrari</a></li>
+    <li><a href="#">Ford</a></li>
+    <li><a href="#">GMC</a></li>
+    <li><a href="#">Honda</a></li>
+    <li><a href="#">Hyundai</a></li>
+    <li><a href="#">Infiniti</a></li>
+    <li><a href="#">Jeep</a></li>
+    <li><a href="#">Kia</a></li>
+    <li><a href="#">Lexus</a></li>
+    <li><a href="#">Mini</a></li>
+    <li><a href="#">Nissan</a></li>
+    <li><a href="#">Porsche</a></li>
+    <li><a href="#">Subaru</a></li>
+    <li><a href="#">Toyota</a></li>
+    <li><a href="#">Volkswagen</a></li>
+    <li><a href="#">Volvo</a></li>
+</ul>
+   
+    </div>
+
+</div>
 
 
 </body>
