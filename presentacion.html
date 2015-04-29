@@ -383,11 +383,16 @@ $( document ).on( "pageinit", "#page", function( event ) {
 
 <script>
 
-//$( ".page" ).pagecontainer( "getActivePage" );
 
-$( document ).on( "pageload", "#page", function() {
-	alert("holaaaaaa");
-	});
+$(document).on("pagecontainershow", function () {
+                    var page3 = $.mobile.pageContainer.pagecontainer("getActivePage");
+                    if(page3[0].id == "#page")
+                    {
+                        alert("holaaaaaa");
+                    }
+                });
+
+//$( "#page" ).pagecontainer( "getActivePage" )
 
 </script>
 
