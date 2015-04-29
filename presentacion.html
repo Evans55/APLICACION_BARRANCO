@@ -374,28 +374,24 @@ function enviodato (){
 </script>
 
 
+<!--<script>
+$( document ).on( "pageinit", "#page", function( event ) {
+  document.getElementById('spritechabelita').style.display = 'block';
+  //playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
+});
+</script>  --> 
 
 <script>
-$(document).bind("mobileinit", function(){ 
-    $('#page').on('pageinit', function() { 
-        alert('Holaaaaa'); 
-    }); 
-});  
-</script>
-
-
-
-<!--<script>
 $(document).on("pagecontainerload", function (e, ui) {
   var loadedPage = $(ui.page),
       pageID = loadedPage[0].id;
 
-  if (pageID == "page" && window.localStorage.getItem("estado") != null) {
-   document.getElementById('spritechabelita').style.display = 'none';
+  if (pageID == "page") {
+   //document.getElementById('spritechabelita').style.display = 'none';
+   alert("holaaaaaaas");
   }
 });
 </script>
- -->
 
 </head> 
 <body onLoad="onBodyLoad()" style="background-color: #333;"> 
