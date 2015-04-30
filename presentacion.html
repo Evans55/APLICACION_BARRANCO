@@ -377,11 +377,11 @@ function enviodato (){
 
 $(document).on("pagehide", function(e, data) {
                 var to_page = data.toPage[0].id;
-                if (to_page == "page2") {
+                if (to_page == "page") {
 				   
 				  // if(window.localStorage.getItem("estado2") == null){
 		            //document.getElementById('activo').style.display = 'block';
-					playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
+					playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
 	              // }
                     
                 }
@@ -392,14 +392,26 @@ $(document).on("pagehide", function(e, data) {
 <script>
 $( document ).on( "pageinit", "#page", function( event ) {
   document.getElementById('spritechabelita').style.display = 'block';
-  $.mobile.changePage("#page2", { reverse:false, transition: "customFlip" });
+  //$.mobile.changePage("#page2", { reverse:false, transition: "customFlip" });
   //playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
 });
 </script>  
 
+<script>
+$( document ).on( "pageinit", "#pagecamotito", function( event ) {
+ // document.getElementById('spritechabelita').style.display = 'block';
+  $.mobile.changePage("#page", { reverse:false, transition: "customFlip" });
+  //playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
+});
+</script>  
 
 </head> 
-<body onLoad="onBodyLoad()" style="background-color: #333;"> 
+<body onLoad="onBodyLoad()" style="background-color: #333;">
+
+<div data-role="page" id="pagecamotito">
+  <div data-role="content">Contenido</div>
+</div> 
+
 
 <div data-role="page" id="page">
 
