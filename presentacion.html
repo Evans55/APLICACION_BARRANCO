@@ -347,7 +347,7 @@ function cambiardisplay(){
 		document.getElementById('spritechabelita').style.display = 'none';
 	}
 	
-	//document.getElementById('activo').style.display = 'block';
+	document.getElementById('activo').style.display = 'block';
 	
 }
 
@@ -394,21 +394,7 @@ $( document ).on( "pageinit", "#page", function( event ) {
   document.getElementById('spritechabelita').style.display = 'block';
   //playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
 });
-</script>   
-
-<script>
-$( document ).on( "pageinit", "#page2", function( event ) {
-  //document.getElementById('spritechabelita').style.display = 'block';
-  playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
-});
-</script>
-
-<script>
-$( document ).on( "pageinit", "#page3", function( event ) {
-  //document.getElementById('spritechabelita').style.display = 'block';
-  playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
-});
-</script>
+</script>  
 
 
 </head> 
@@ -478,7 +464,7 @@ $( document ).on( "pageinit", "#page3", function( event ) {
 <div class="ui-grid-a">
       <!--<div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/intro.mp3'),cambiardisplay2();">Play</a></div> -->
 <div class="ui-block-b">
-<a data-role="button" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="enviodato(),cambiardisplay(),stopAudio();" >Siguiente</a>
+<a data-role="button" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="enviodato(),cambiardisplay();" >Siguiente</a>
 </div>
 </div>
 
