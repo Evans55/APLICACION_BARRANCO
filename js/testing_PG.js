@@ -10,16 +10,6 @@ document.addEventListener("backbutton", onBackKeyDown, false);
 function onDeviceReady(){
 	
 	//playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
-	$(document).on("pagebeforechange", function(e, data) {
-                var to_page = data.toPage[0].id;
-                if (to_page == "page") {
-				   	
-		            //document.getElementById('activo').style.display = 'block';
-					playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
-	           
-                    
-                }
-            });
 }
 
 
