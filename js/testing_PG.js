@@ -88,7 +88,7 @@ function onDeviceReady(){
         //
         function onSuccess() {
             console.log("playAudio():Audio Success");
-			//my_media.release();
+			my_media.release();
         }
 
         // onError Callback

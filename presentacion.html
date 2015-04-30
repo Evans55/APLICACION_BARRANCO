@@ -385,6 +385,14 @@ $(document).on("pagehide", function(e, data) {
 	               }
                     
                 }
+				
+				else if(to_page == "page2"){
+					///if(window.localStorage.getItem("estado2") == null){
+		            //document.getElementById('activo').style.display = 'block';
+					playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
+	              // }
+				}
+				
             });
 
 </script> 
@@ -477,7 +485,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 <div class="ui-grid-a">
       <!--<div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/intro.mp3'),cambiardisplay2();">Play</a></div> -->
 <div class="ui-block-b">
-<a data-role="button" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="enviodato(),cambiardisplay();" >Siguiente</a>
+<a data-role="button" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="enviodato(),cambiardisplay(),stopAudio();" >Siguiente</a>
 </div>
 </div>
 
