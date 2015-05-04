@@ -357,6 +357,13 @@ function cambiardisplay2(){
 	playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
 }
 
+function activarAudio1()
+    {
+ var audio = new Audio('audio/audio_pantalla2.mp3');
+audio.play();
+}
+
+
 </script> 
 
 
@@ -405,8 +412,43 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 });
 </script>  --> 
 
+
+<script>
+
+function activarAudio2()
+    {
+ var audio = new Audio('audio/Pantalla3_Ventanilla.mp3');
+audio.play();
+}
+
+
+function cambiardisplay3(){
+	//document.getElementById('spritechabelita').style.display = 'block';
+	//document.getElementById('activo').style.display = 'none';
+	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
+}
+
+</script>
+
+<script>
+
+function activarAudio3()
+    {
+ var audio = new Audio('audio/Pantalla4_Ecran.mp3');
+audio.play();
+}
+
+
+function cambiardisplay4(){
+	//document.getElementById('spritechabelita').style.display = 'block';
+	//document.getElementById('activo').style.display = 'none';
+	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
+}
+
+</script>
+
 </head> 
-<body onLoad="onBodyLoad()" style="background-color: #333;">
+<body onLoad="onBodyLoad()" style="background-color:#009;">
 
 <!--<div data-role="page" id="pagecamotito">
   <div data-role="content">Contenido</div>
@@ -415,21 +457,22 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 <div data-role="page" id="page">
 
-       <div data-role="header" data-theme="b" data-position="fixed">
+       <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
 		
     <!--    <a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
-     <a href="#left-panel11" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a> 
+       <a href="#left-panel11" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a> 
        <a href="#search1" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
 	</div>
     
 	<div data-role="content">	
-			
- <div class="foreground">
+	
+    		
+<div class="foreground">
   </div>
-  
+
  <div class="midground">
   </div>
- <div class="fachadaiz"></div>
+<div class="fachadaiz"></div>
      <div class="fachadader"></div> 
      
      
@@ -445,8 +488,9 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
  <div class="spritearbolmov"></div>
   <div class="spritepalmeramov"></div>
   <div class="spritechabelita" id="spritechabelita"></div>
- <audio id="player" src="audio/audio_pantalla2.mp3" type="audio/mpeg" autoplay>
-</audio> 
+  
+<!-- <audio id="player" preload="auto" src="audio/audio_pantalla2.mp3" autoplay type="audio/mpeg">
+</audio> -->
   
   <!--<div id="output2"></div> -->
   
@@ -458,24 +502,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
   <div class="nube5" id="nube5"></div>
   </div>
 
-<!--<p id="audio_position"></p> -->
 <!--<a data-role="button" href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"  style="z-index:6">Descargar PDF</a><br><br><br> -->
-
-
-
-<!--<div class="ui-grid-solo">
-    <div class="ui-block-a">
-  <a data-role="button" href="#page2" id="skip" data-icon="arrow-r" class="ui-btn-right ui-btn-inline" onclick="pauseAudio();" data-transition="customFlip">SKIP INTRO</a>
-  </div>
-</div> -->
-
-<!--<div class="ui-grid-c">
-  <div class="ui-block-a"><a data-role="button" id="skip" data-icon="arrow-r" onclick="pauseAudio();" data-transition="customFlip">Pause</a></div>
-  <div class="ui-block-b"><a data-role="button" data-icon="arrow-r" id="skip" onclick="playAudio('file:///android_asset/www/audio/Ellie_Goulding_Outside.mp3');">Play</a></div>
-  <div class="ui-block-c"><a data-role="button" data-icon="arrow-r" id="skip" onclick="stopAudio();">Stop</a></div>
-  <div class="ui-block-d"> 
-    <a data-role="button" href="#page2" id="skip" data-icon="arrow-r" data-transition="customFlip" onclick="pauseAudio();" >Siguiente</a></div>
-</div> -->
 
 <div class="ui-grid-a">
       <!--<div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/intro.mp3'),cambiardisplay2();">Play</a></div> -->
@@ -484,17 +511,17 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 </div>
 </div>
 
-
+<!--<button onclick="CambiarAudio();" style="z-index:3;" type="button">Change Video</button><br> -->
 
 	</div>
     
     
-    <div data-role="panel" id="left-panel11" data-theme="c" data-display="overlay">
+    <div data-role="panel" id="left-panel11" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
      <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;" onclick="cambiardisplay2();"></a></li>
+          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;" onclick="activarAudio1(),cambiardisplay2();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
          <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
@@ -503,7 +530,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
     </div>
     
     
-    <div data-role="panel" id="search1" data-theme="a" data-position="right" data-display="overlay">
+    <div data-role="panel" id="search1" data-theme="a" data-position="left" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
     <input id="inset-autocomplete-input2" data-type="search" placeholder="Buscar...">
@@ -550,6 +577,10 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
     
 	<div data-role="content">	
 
+<!--<audio id="player2">
+  <source id="audio1" src="audio/Pantalla3_Ventanilla.mp3" type="audio/mpeg">
+</audio>  -->
+
     <div class="fondo3">
     <a href="#page3" class="btnatural" onclick="playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');"><img src="imagenes/BotonPN.png" width="314" height="90" alt="natural"></a>
     <a href="#page3" class="btjuridico" onclick="playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');"><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
@@ -565,7 +596,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
      <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;" onclick="cambiardisplay2();"></a></li>
+          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;" onclick="activarAudio2(),cambiardisplay3();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
          <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
@@ -634,7 +665,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
      <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;" onclick="cambiardisplay2();"></a></li>
+          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;" onclick="activarAudio3(),cambiardisplay4();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
          <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
@@ -676,9 +707,9 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
     
 </div>
 
-<div data-role="page" id="page4" style="background-image: url('imagenes/05-Fondo2.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+<div data-role="page" id="page4" style="background-image: url('imagenes/05-Fondo2.png'); background-repeat: no-repeat; background-size: 100% 100%;">
 	
-     <div data-role="header" data-theme="b" data-position="fixed">
+     <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
 		<!--<h1>Municipalidad de Barranco</h1> -->
        
         <a href="#left-panel3" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
@@ -704,7 +735,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
     
 	</div>
     
-    <div data-role="panel" id="left-panel3" data-theme="c" data-display="overlay">
+    <div data-role="panel" id="left-panel3" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
@@ -718,7 +749,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
     </div>
     
     
-         <div data-role="panel" id="search4" data-theme="a" data-position="right" data-display="overlay">
+         <div data-role="panel" id="search4" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
     <input id="inset-autocomplete-input5" data-type="search" placeholder="Buscar...">
@@ -753,9 +784,9 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 	
 </div>
 
-<div data-role="page" id="page5" style="background-image: url('imagenes/escritorios-04.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+<div data-role="page" id="page5" style="background-image: url('imagenes/escritorios-04.png'); background-repeat: no-repeat; background-size: 100% 100%;">
 
-<div data-role="header" data-theme="b" data-position="fixed">
+<div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
 		<!--<h1>Municipalidad de Barranco</h1> -->
         <a href="#left-panel4" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
        <a href="#search5" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> 
@@ -835,7 +866,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
   
   
   
-  <div data-role="panel" id="left-panel4" data-theme="c" data-display="overlay">
+  <div data-role="panel" id="left-panel4" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
@@ -849,7 +880,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
     </div>
   
   
-  <div data-role="panel" id="search5" data-theme="a" data-position="right" data-display="overlay">
+  <div data-role="panel" id="search5" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
     <input id="inset-autocomplete-input6" data-type="search" placeholder="Buscar...">
@@ -885,9 +916,9 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 </div>
 
 
-<div data-role="page" id="page6" style="background-image: url('imagenes/07-Fondo.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+<div data-role="page" id="page6" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%;">
   
-  <div data-role="header" data-theme="b" data-position="fixed">
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
 		<!--<h1>Municipalidad de Barranco</h1> -->
         <a href="#left-panel5" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
       <a href="#search6" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
@@ -950,7 +981,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
   </div>
   
   
-    <div data-role="panel" id="left-panel5" data-theme="c" data-display="overlay">
+    <div data-role="panel" id="left-panel5" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
@@ -963,7 +994,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
         </ul>
     </div>
     
-    <div data-role="panel" id="search6" data-theme="a" data-position="right" data-display="overlay">
+    <div data-role="panel" id="search6" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
     <input id="inset-autocomplete-input7" data-type="search" placeholder="Buscar...">
@@ -998,9 +1029,9 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 </div>
 
 
-<div data-role="page" id="page7" style="background-image: url('imagenes/escritorios-01.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+<div data-role="page" id="page7" style="background-image: url('imagenes/escritorios-01.png'); background-repeat: no-repeat; background-size: 100% 100%;">
 
- <div data-role="header" data-theme="b" data-position="fixed">
+ <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
 		<!--<h1>Municipalidad de Barranco</h1> -->
         <a href="#left-panel6" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
      <a href="#search7" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
@@ -1053,7 +1084,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="panel" id="left-panel6" data-theme="c" data-display="overlay">
+<div data-role="panel" id="left-panel6" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
@@ -1068,7 +1099,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="panel" id="search7" data-theme="a" data-position="right" data-display="overlay">
+<div data-role="panel" id="search7" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
     <input id="inset-autocomplete-input8" data-type="search" placeholder="Buscar...">
@@ -1104,9 +1135,9 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="page" id="page8" style="background-image: url('imagenes/escritorios-02.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+<div data-role="page" id="page8" style="background-image: url('imagenes/escritorios-02.png'); background-repeat: no-repeat; background-size: 100% 100%;">
 
- <div data-role="header" data-theme="b" data-position="fixed">
+ <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
 		<!--<h1>Municipalidad de Barranco</h1> -->
         <a href="#left-panel7" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
      <a href="#search8" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
@@ -1118,7 +1149,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="panel" id="left-panel7" data-theme="c" data-display="overlay">
+<div data-role="panel" id="left-panel7" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
@@ -1133,7 +1164,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="panel" id="search8" data-theme="a" data-position="right" data-display="overlay">
+<div data-role="panel" id="search8" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
     <input id="inset-autocomplete-input9" data-type="search" placeholder="Buscar...">
@@ -1170,9 +1201,9 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="page" id="page9" style="background-image: url('imagenes/escritorios-03.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+<div data-role="page" id="page9" style="background-image: url('imagenes/escritorios-03.png'); background-repeat: no-repeat; background-size: 100% 100%;">
 
- <div data-role="header" data-theme="b" data-position="fixed">
+ <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
 		<!--<h1>Municipalidad de Barranco</h1> -->
         <a href="#left-panel8" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
      <a href="#search9" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
@@ -1184,7 +1215,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="panel" id="left-panel8" data-theme="c" data-display="overlay">
+<div data-role="panel" id="left-panel8" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
@@ -1199,7 +1230,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="panel" id="search9" data-theme="a" data-position="right" data-display="overlay">
+<div data-role="panel" id="search9" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
     <input id="inset-autocomplete-input10" data-type="search" placeholder="Buscar...">
@@ -1237,9 +1268,9 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="page" id="page10" style="background-image: url('imagenes/escritorios-05.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+<div data-role="page" id="page10" style="background-image: url('imagenes/escritorios-05.png'); background-repeat: no-repeat; background-size: 100% 100%;">
 
- <div data-role="header" data-theme="b" data-position="fixed">
+ <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
 		<!--<h1>Municipalidad de Barranco</h1> -->
         <a href="#left-panel9" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
      <a href="#search10" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
@@ -1251,7 +1282,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="panel" id="left-panel9" data-theme="c" data-display="overlay">
+<div data-role="panel" id="left-panel9" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
@@ -1266,7 +1297,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="panel" id="search10" data-theme="a" data-position="right" data-display="overlay">
+<div data-role="panel" id="search10" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
     <input id="inset-autocomplete-input11" data-type="search" placeholder="Buscar...">
@@ -1304,9 +1335,9 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="page" id="page11" style="background-image: url('imagenes/escritorios-06.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+<div data-role="page" id="page11" style="background-image: url('imagenes/escritorios-06.png'); background-repeat: no-repeat; background-size: 100% 100%;">
 
- <div data-role="header" data-theme="b" data-position="fixed">
+ <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
 		<!--<h1>Municipalidad de Barranco</h1> -->
         <a href="#left-panel10" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
      <a href="#search11" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
@@ -1318,7 +1349,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="panel" id="left-panel10" data-theme="c" data-display="overlay">
+<div data-role="panel" id="left-panel10" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
@@ -1333,7 +1364,7 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 
 
-<div data-role="panel" id="search11" data-theme="a" data-position="right" data-display="overlay">
+<div data-role="panel" id="search11" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
     <input id="inset-autocomplete-input12" data-type="search" placeholder="Buscar...">
