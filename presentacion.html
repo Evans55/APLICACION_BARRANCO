@@ -450,11 +450,6 @@ document.getElementById('activo2').style.display = 'none';
 }
 
 
-
-function playaudio2(){
-playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');	
-}
-
 </script>
 
 <script>
@@ -479,13 +474,7 @@ function cambiardisplay4(){
 
 <script>
 function playAudioUnavez(){
-	
-	document.getElementById('spritechabelita2').style.display = 'none';
-	alert('este es la variable local: ' + window.localStorage.setItem("estado2",estad));
-	
 	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
-	estad = 'apagado';
-
 }
 </script>
 
@@ -557,7 +546,7 @@ function playAudioUnavez(){
 <div class="ui-grid-a">
       <!--<div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/intro.mp3'),cambiardisplay2();">Play</a></div> -->
 <div class="ui-block-b">
-<a data-role="button" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="enviodato(),cambiardisplay(),stopAudio(),playaudio2();" >Siguiente</a>
+<a data-role="button" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="enviodato(),cambiardisplay(),stopAudio(),playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');" >Siguiente</a>
 </div>
 </div>
 
