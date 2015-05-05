@@ -348,6 +348,7 @@ function cambiardisplay(){
 	//}
 	
 	document.getElementById('activo').style.display = 'block';
+	$.mobile.changePage("#page2", { reverse:false, transition: "customFlip" });
 	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
 }
 
