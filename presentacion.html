@@ -343,7 +343,7 @@ function cambiardisplay(){
 	//document.getElementById('skip2').style.display = 'block';
 	//document.getElementById('skip').style.display = 'none';
 	
-	if(window.localStorage.getItem("estado2") != null){
+	if(window.localStorage.getItem("estado1") != null){
 		document.getElementById('spritechabelita').style.display = 'none';
 	}
 	
@@ -370,9 +370,9 @@ audio.play();
 <script type="text/javascript">
 
 function enviodato (){
-	//var est ='encendido' ;
+	var est ='encendido' ;
 	
-//	window.localStorage.setItem("estado1",est);
+	window.localStorage.setItem("estado1",est);
 	  $.mobile.changePage("#page2", { reverse:false, transition: "customFlip" });
 	  //$('#output').html("Estado: " + window.localStorage.getItem("estado"));
 	  return false;
