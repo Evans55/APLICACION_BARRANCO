@@ -444,11 +444,8 @@ function cambiardisplay3(){
 	
 	document.getElementById('spritechabelita2').style.display = 'block';
 document.getElementById('activo2').style.display = 'none';
-
-if(window.localStorage.setItem("estado2",estad)=='encendido'){
 	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
-	estad = 'apagado';
-}
+
 	
 }
 
@@ -467,12 +464,25 @@ audio.play();
 
 function cambiardisplay4(){
 	document.getElementById('spritechabelita3').style.display = 'block';
-	document.getElementById('spritechabelita2').style.display = 'none';
 	document.getElementById('activo3').style.display = 'none';
 	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
 }
 
 </script>
+
+
+<script>
+function playAudioUnavez(){
+	
+	alert(window.localStorage.setItem("estado2",estad));
+	document.getElementById('spritechabelita2').style.display = 'none';
+	if(window.localStorage.setItem("estado2",estad)=='encendido'){
+	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
+	estad = 'apagado';
+}
+}
+</script>
+
 
 </head> 
 <body onLoad="onBodyLoad()" style="background-color:#009;">
@@ -609,7 +619,7 @@ function cambiardisplay4(){
 </audio>  -->
 
     <div class="fondo3">
-    <a href="#page3" class="btnatural" onclick="playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');"><img src="imagenes/BotonPN.png" width="314" height="90" alt="natural"></a>
+    <a href="#page3" class="btnatural" onclick="playAudioUnavez();"><img src="imagenes/BotonPN.png" width="314" height="90" alt="natural"></a>
     <a href="#page3" class="btjuridico" onclick="playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');"><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
    <!--<div id="output"></div> -->
    
