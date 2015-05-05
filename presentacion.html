@@ -343,12 +343,12 @@ function cambiardisplay(){
 	//document.getElementById('skip2').style.display = 'block';
 	//document.getElementById('skip').style.display = 'none';
 	
-	if(window.localStorage.getItem("estado1") != null){
+	//if(window.localStorage.getItem("estado1") != null){
 		document.getElementById('spritechabelita').style.display = 'none';
-	}
+	//}
 	
 	document.getElementById('activo').style.display = 'block';
-	
+	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
 }
 
 function cambiardisplay2(){
@@ -367,7 +367,7 @@ audio.play();
 </script> 
 
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 
 function enviodato (){
 	var est ='encendido' ;
@@ -378,7 +378,7 @@ function enviodato (){
 	  return false;
 }
 
-</script>
+</script> -->
 
 <!--<script>
 
@@ -475,6 +475,7 @@ function cambiardisplay4(){
 <script>
 function playAudioUnavez(){
 	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
+	document.getElementById('spritechabelita2').style.display = 'none';
 }
 </script>
 
@@ -546,7 +547,7 @@ function playAudioUnavez(){
 <div class="ui-grid-a">
       <!--<div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/intro.mp3'),cambiardisplay2();">Play</a></div> -->
 <div class="ui-block-b">
-<a data-role="button" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="enviodato(),cambiardisplay(),stopAudio(),playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');" >Siguiente</a>
+<a data-role="button" id="skip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="stopAudio(),cambiardisplay();" >Siguiente</a>
 </div>
 </div>
 
@@ -622,7 +623,7 @@ function playAudioUnavez(){
 
     <div class="fondo3">
     <a href="#page3" class="btnatural" onclick="playAudioUnavez();"><img src="imagenes/BotonPN.png" width="314" height="90" alt="natural"></a>
-    <a href="#page3" class="btjuridico" onclick="playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');"><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
+    <a href="#page3" class="btjuridico" onclick="playAudioUnavez();"><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
    <!--<div id="output"></div> -->
    
    <div class="spritechabelita2" id="spritechabelita2"></div>
