@@ -340,10 +340,10 @@ $( document ).on( "pagecreate", "#page7", function() {
 <script>
 
 function cambiardisplay(){
-
-	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
+	
 	document.getElementById('spritechabelita').style.display = 'none';
 	document.getElementById('activo').style.display = 'block';
+	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
 	
 }
 
@@ -540,7 +540,7 @@ function playAudioUnavez(){
 <div class="ui-grid-a">
       <!--<div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/intro.mp3'),cambiardisplay2();">Play</a></div> -->
 <div class="ui-block-b">
-<a data-role="button" href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="cambiardisplay();" >Siguiente</a>
+<a href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="cambiardisplay();" >Siguiente</a>
 </div>
 </div>
 
