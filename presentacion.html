@@ -370,9 +370,9 @@ audio.play();
 <script type="text/javascript">
 
 function enviodato (){
-	var est ='encendido' ;
+	//var est ='encendido' ;
 	
-	window.localStorage.setItem("estado2",est);
+//	window.localStorage.setItem("estado1",est);
 	  $.mobile.changePage("#page2", { reverse:false, transition: "customFlip" });
 	  //$('#output').html("Estado: " + window.localStorage.getItem("estado"));
 	  return false;
@@ -408,6 +408,10 @@ $( document ).on( "pageinit", "#page", function( event ) {
 
 <script>
 $( document ).on( "pageinit", "#page2", function( event ) {
+	
+	var estad ='encendido' ;
+	window.localStorage.setItem("estado2",estad);
+	
   document.getElementById('spritechabelita2').style.display = 'block';
 });
 </script>  
@@ -436,9 +440,16 @@ audio.play();
 
 
 function cambiardisplay3(){
+	
+	
 	document.getElementById('spritechabelita2').style.display = 'block';
 document.getElementById('activo2').style.display = 'none';
+
+if(window.localStorage.setItem("estado2",estad)=='encendido'){
 	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
+	estad = 'apagado';
+}
+	
 }
 
 </script>
@@ -456,6 +467,7 @@ audio.play();
 
 function cambiardisplay4(){
 	document.getElementById('spritechabelita3').style.display = 'block';
+	document.getElementById('spritechabelita2').style.display = 'none';
 	document.getElementById('activo3').style.display = 'none';
 	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
 }
