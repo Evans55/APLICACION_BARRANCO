@@ -340,12 +340,7 @@ $( document ).on( "pagecreate", "#page7", function() {
 <script>
 
 function cambiardisplay(){
-	//document.getElementById('skip2').style.display = 'block';
-	//document.getElementById('skip').style.display = 'none';
-	
-	//if(window.localStorage.getItem("estado1") != null){
-		
-	//}
+
 	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
 	document.getElementById('spritechabelita').style.display = 'none';
 	document.getElementById('activo').style.display = 'block';
@@ -409,13 +404,10 @@ $( document ).on( "pageinit", "#page", function( event ) {
 
 <script>
 $( document ).on( "pageinit", "#page2", function( event ) {
-	
-	var estad ='encendido' ;
-	window.localStorage.setItem("estado2",estad);
-	
   document.getElementById('spritechabelita2').style.display = 'block';
 });
 </script>  
+
 <script>
 $( document ).on( "pageinit", "#page3", function( event ) {
   document.getElementById('spritechabelita3').style.display = 'block';
