@@ -82,6 +82,7 @@ function onDeviceReady(){
             }
             clearInterval(mediaTimer);
             mediaTimer = null;
+			my_media.release();
         }
 
         // onSuccess Callback
