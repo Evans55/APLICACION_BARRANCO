@@ -1,6 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* INICIO ICONOS */
+
+.ui-icon-barranco-buscar { 
+  background-image: url(iconos/buscar.png); 
+}
+
+/*  FIN ICONOS */
+
+
 #activo,#activo2,#activo3{
 	/*display:none;	*/
 }
@@ -13,7 +22,7 @@ position:relative;
 
 }
 
-#page3,#page8,#page9,#page5,#page11,#page7,#page10,#page,#page4,#page6{
+#page3,#page8,#page9,#page5,#page11,#page7,#page10,#page,#page4,#page6,#page12,#page13,#page14{
 max-width:1300px;
 margin:0 auto;
 position:relative;
@@ -55,7 +64,7 @@ max-height: 691px;
 
 
 .margenes{
-	margin-top:14%;
+	margin-top:11%;
 	
 }
 
@@ -151,13 +160,36 @@ max-height: 691px;
 }
 
 .bloques {
-	float:left;
-	padding:1%;
-	width:23%;
-	height:auto;
-	/*margin-top:33.2%;*/
-	margin-left:0%;
-	opacity:0;
+	float: left;
+  -webkit-transform: scale(0.7);
+  padding: 0%;
+  width: 26%;
+  height: auto;
+  /* margin-top: 33.2%; */
+  margin-left: -6%;
+  opacity: 0;
+}
+
+
+.posicion{
+
+	margin-left: 0%;
+  opacity: 0;
+  width: 26%;
+  height: auto;
+  clear: left;
+  float: left;
+  -webkit-transform: scale(0.7);
+	
+}
+
+.posicion2 {
+	float: left;
+  width: 26%;
+  height: auto;
+  margin-left: -3%;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
 }
 
 
@@ -399,18 +431,6 @@ transform:scale(0.8) translateY(3px);
 
 
 
-.posicion{
-
-	margin-left:1%;
-	opacity:0;
-	width:23%;
-	height:auto;
-	clear: left;
-	float:left;
-	
-}
-
-
 .posicion>a{
 
   font-size: 16px;
@@ -437,14 +457,6 @@ transform:scale(0.8) translateY(3px);
 	
 }
 
-
-.posicion2 {
-	float:left;
-	width:23%;
-	height:auto;
-	margin-left:2%;
-	opacity:0;
-}
 
 
 .posicion2>a{
@@ -475,7 +487,7 @@ transform:scale(0.8) translateY(3px);
 #skip {
 	z-index:6; 
 	position:absolute;
-	top:80%;
+	top:91%;
 	display:block;
 	}
 
@@ -524,6 +536,16 @@ transform:scale(0.8) translateY(3px);
   -webkit-animation-timing-function: linear;
 
   -webkit-animation-delay: 0.7s;
+
+}
+
+#bloque15 {
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-name: moveup1;	
+  -webkit-animation-fill-mode:forwards;
+  -webkit-animation-timing-function: linear;
+
+  -webkit-animation-delay: 0.9s;
 
 }
 
@@ -599,7 +621,7 @@ transform:scale(0.8) translateY(3px);
   }
 
   to {
-    margin-top: 1%;
+    margin-top: 0%;
 	opacity:1;
   }
 }
@@ -617,7 +639,7 @@ transform:scale(0.8) translateY(3px);
 }	
 
 
-.foreground, .midground, .background, .fachadaiz, .fachadader, .grassiz, .grassder, .grassfondoiz, .grassfondoder, .plantasiz, .plantasder, .logomenu, .fondo3, .fondo4{
+.foreground, .midground, .background, .fachadaiz, .fachadader, .grassiz, .grassder, .grassfondoiz, .grassfondoder, .plantasiz, .plantasder, .logomenu, .fondo3, .fondo4, .fondofachada, .faro1, .faro2{
   width: 100%;
   height: 100%;
   position: absolute;
@@ -636,6 +658,24 @@ transform:scale(0.8) translateY(3px);
     border: none;
 }
 
+
+.faro1 {
+  background: url(../imagenes/faro1.png)0 100% no-repeat;
+  z-index: 5;
+  -webkit-background-size: 33% auto;
+-moz-background-size: 33% auto;
+-o-background-size: 33% auto;
+margin-left:-5%;
+}
+
+.faro2 {
+  background: url(../imagenes/faro2.png)0 100% no-repeat;
+  z-index: 5;
+  -webkit-background-size: 33% auto;
+-moz-background-size: 33% auto;
+-o-background-size: 33% auto;
+margin-left:78%;
+}
 
 
 .logomenu {
@@ -879,8 +919,8 @@ transform:scale(0.8) translateY(3px);
   width:377px;
   position: absolute;
   left: 0;
-  margin-left:9%;
-  margin-top:-19%;
+  margin-left:0%;
+  margin-top:-26%;
   -webkit-transform: scale(1.8);
   transform: scale(1.8);
   
@@ -907,8 +947,8 @@ transform:scale(0.8) translateY(3px);
   width:377px;
   position: absolute;
   left: 0;
-  margin-left:60%;
-  margin-top:-19%;
+  margin-left:73%;
+  margin-top:-25%;
   -webkit-transform: scale(1.8);
   transform: scale(1.8);
   
@@ -930,7 +970,7 @@ transform:scale(0.8) translateY(3px);
   background:  url(../imagenes/sprite_chabukita.png) 0 100%;
   
 
-  z-index: 3;
+  z-index: 6;
   height:401px;
   width:232px;
   position: absolute;
@@ -1149,6 +1189,18 @@ transform:scale(0.8) translateY(3px);
   to {background-position: -9060px; } 
 }
 
+
+.fondofachada {
+  background: url(../imagenes/fondofachada.png)0 100% no-repeat;
+  z-index: 1;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+-o-background-size: 100% 100%;
+
+
+}
+
+
 .background {
   background: url(../imagenes/Cielo.png)0 100% no-repeat;
   z-index: 1;
@@ -1160,6 +1212,8 @@ transform:scale(0.8) translateY(3px);
 }
 
 .nube1 {
+
+z-index: 2;
 
   background: url(../imagenes/nubesita.png) 0 100%  no-repeat; 
   width: 100%;
@@ -1176,6 +1230,8 @@ transform:scale(0.8) translateY(3px);
 
 .nube2 {
 
+z-index: 2;
+
   background: url(../imagenes/nubesita.png) 0 100%  no-repeat; 
   width: 100%;
   height: 100%;
@@ -1190,6 +1246,8 @@ transform:scale(0.8) translateY(3px);
 }
 
 .nube3 {
+
+z-index: 2;
 
   background: url(../imagenes/nubesita.png) 0 100%  no-repeat; 
   width: 100%;
@@ -1206,6 +1264,8 @@ transform:scale(0.8) translateY(3px);
 
 .nube4 {
 
+z-index: 2;
+
   background: url(../imagenes/nubesita.png) 0 100%  no-repeat; 
   width: 100%;
   height: 100%;
@@ -1220,6 +1280,8 @@ transform:scale(0.8) translateY(3px);
 }
 
 .nube5{
+
+z-index: 2;
 
   background: url(../imagenes/nubesita.png) 0 100%  no-repeat; 
   width: 100%;
@@ -1440,6 +1502,23 @@ and (max-height : 800px)
 and (orientation : landscape)
 {
 	
+	.faro1 {
+  background: url(../imagenes/faro1.png)0 100% no-repeat;
+  z-index: 5;
+  -webkit-background-size: 33% auto;
+-moz-background-size: 33% auto;
+-o-background-size: 33% auto;
+margin-left:-5%;
+}
+
+.faro2 {
+  background: url(../imagenes/faro2.png)0 100% no-repeat;
+  z-index: 5;
+  -webkit-background-size: 33% auto;
+-moz-background-size: 33% auto;
+-o-background-size: 33% auto;
+margin-left:78%;
+}
 	
 	#bloque21 {
   -webkit-animation-duration: 0.4s;
@@ -1485,7 +1564,7 @@ and (orientation : landscape)
 	#skip {
 	z-index:6; 
 	position:absolute;
-	top:83%;
+	top:90%;
 
 	}
 	
@@ -1513,39 +1592,42 @@ and (orientation : landscape)
 
 
 .margenes{
-	margin-top:3%;
+	margin-top:0%;
 	
 }
 
 
 .bloques {
-	float:left;
-	padding:1%;
-	width:22.5%;
-	height:auto;
-	/*margin-top:33.2%;*/
-	margin-left:0%;
-	opacity:0;
+	float: left;
+  -webkit-transform: scale(0.7);
+  padding: 0%;
+  width: 26%;
+  height: auto;
+  /* margin-top: 33.2%; */
+  margin-left: -6%;
+  opacity: 0;
 }
 
 
 .posicion{
 
-	margin-left:1%;
-	opacity:0;
-	width:22.5%;
-	height:auto;
-	clear: left;
-	float:left;
+	margin-left: 0%;
+  opacity: 0;
+  width: 26%;
+  height: auto;
+  clear: left;
+  float: left;
+  -webkit-transform: scale(0.7);
 	
 }
 
 .posicion2 {
-	float:left;
-	width:22.5%;
-	height:auto;
-	margin-left:2%;
-	opacity:0;
+	float: left;
+  width: 26%;
+  height: auto;
+  margin-left: -3%;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
 }
 
 .imagemobile{
@@ -1667,8 +1749,8 @@ and (orientation : landscape)
   width:377px;
   position: absolute;
   left: 0;
-  margin-left:9%;
-  margin-top:-32%;
+  margin-left:-3%;
+  margin-top:-34%;
   -webkit-transform: scale(1.8);
   transform: scale(1.8);
   
@@ -1695,8 +1777,8 @@ and (orientation : landscape)
   width:377px;
   position: absolute;
   left: 0;
-  margin-left:60%;
-  margin-top:-32%;
+  margin-left:70%;
+  margin-top:-34%;
   -webkit-transform: scale(1.8);
   transform: scale(1.8);
   
@@ -1720,7 +1802,7 @@ and (orientation : landscape)
   background:  url(../imagenes/sprite_chabukita.png) 0 100%;
   
 
-  z-index: 3;
+  z-index: 6;
   height:401px;
   width:232px;
   position: absolute;
