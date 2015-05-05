@@ -406,6 +406,17 @@ $( document ).on( "pageinit", "#page", function( event ) {
 });
 </script>  
 
+<script>
+$( document ).on( "pageinit", "#page2", function( event ) {
+  document.getElementById('spritechabelita2').style.display = 'block';
+});
+</script>  
+<script>
+$( document ).on( "pageinit", "#page3", function( event ) {
+  document.getElementById('spritechabelita3').style.display = 'block';
+});
+</script>  
+
 <!--<script>
 $( document ).on( "pageinit", "#pagecamotito", function( event ) {
   $.mobile.changePage("#page", { reverse:false, transition: "customFlip" });
@@ -417,14 +428,16 @@ $( document ).on( "pageinit", "#pagecamotito", function( event ) {
 
 function activarAudio2()
     {
+		document.getElementById('spritechabelita2').style.display = 'block';
+		document.getElementById('activo2').style.display = 'none';
  var audio = new Audio('audio/Pantalla3_Ventanilla.mp3');
 audio.play();
 }
 
 
 function cambiardisplay3(){
-	//document.getElementById('spritechabelita').style.display = 'block';
-	//document.getElementById('activo').style.display = 'none';
+	document.getElementById('spritechabelita2').style.display = 'block';
+document.getElementById('activo2').style.display = 'none';
 	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
 }
 
@@ -434,14 +447,16 @@ function cambiardisplay3(){
 
 function activarAudio3()
     {
+	document.getElementById('spritechabelita3').style.display = 'block';
+	document.getElementById('activo3').style.display = 'none';
  var audio = new Audio('audio/Pantalla4_Ecran.mp3');
 audio.play();
 }
 
 
 function cambiardisplay4(){
-	//document.getElementById('spritechabelita').style.display = 'block';
-	//document.getElementById('activo').style.display = 'none';
+	document.getElementById('spritechabelita3').style.display = 'block';
+	document.getElementById('activo3').style.display = 'none';
 	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
 }
 
@@ -585,6 +600,9 @@ function cambiardisplay4(){
     <a href="#page3" class="btnatural" onclick="playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');"><img src="imagenes/BotonPN.png" width="314" height="90" alt="natural"></a>
     <a href="#page3" class="btjuridico" onclick="playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');"><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
    <!--<div id="output"></div> -->
+   
+   <div class="spritechabelita2" id="spritechabelita2"></div>
+   
    </div>
    
 
@@ -596,7 +614,7 @@ function cambiardisplay4(){
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
      <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;" onclick="activarAudio2(),cambiardisplay3();"></a></li>
+          <li id="activo2"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;" onclick="activarAudio2(),cambiardisplay3();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
          <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
@@ -654,6 +672,7 @@ function cambiardisplay4(){
     
       <div class="fondo4">
     <a data-role="button" href="#page4" data-transition="pop" style="position:absolute;  margin-top: 2%; margin-left: 10%;">Siguiente</a>
+    <div class="spritechabelita3" id="spritechabelita3"></div>
      </div>
     
 				        
@@ -665,7 +684,7 @@ function cambiardisplay4(){
            <li data-role="list-divider" style="padding: 4.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
      <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;" onclick="activarAudio3(),cambiardisplay4();"></a></li>
+          <li id="activo3"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;" onclick="activarAudio3(),cambiardisplay4();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
          <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
