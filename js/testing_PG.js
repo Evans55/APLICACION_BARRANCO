@@ -35,7 +35,7 @@ function onDeviceReady(){
 			
             // Create Media object from src
       if (my_media == null) {  my_media = new Media(src, onSuccess, onError); }
-      else{ my_media = new Media(src, onSuccess, onError);}
+   //   else{ my_media.release(); my_media = new Media(src, onSuccess, onError);}
             // Play audio
             my_media.play();
 
