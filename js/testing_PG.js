@@ -34,8 +34,8 @@ function onDeviceReady(){
  }*/
 			
             // Create Media object from src
-      if (my_media == null) {  my_media = new Media(src, onSuccess, onError); }
-   //   else{ my_media.release(); my_media = new Media(src, onSuccess, onError);}
+      if (my_media == null) {  my_media = new Media(src, onError); }
+     else{ my_media.release(); my_media = new Media(src, onError);}
             // Play audio
             my_media.play();
 
@@ -90,7 +90,7 @@ function onDeviceReady(){
         //
         function onSuccess() {
             console.log("playAudio():Audio Success");
-			my_media.release();
+			//my_media.release();
         }
 
         // onError Callback
