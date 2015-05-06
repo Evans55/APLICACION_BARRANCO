@@ -118,5 +118,6 @@ function onDeviceReady(){
     }
     else{
     navigator.app.backHistory();
+	stopAudio();
     }
 }
