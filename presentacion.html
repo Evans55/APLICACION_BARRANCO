@@ -23,6 +23,7 @@
 <script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>
 <script src="js/testing_PG.js" type="text/javascript"></script>
 
+
 <!--<script>
 $(document).bind("mobileinit", function(){
         $.mobile.pushStateEnabled = false;
@@ -339,13 +340,7 @@ $( document ).on( "pagecreate", "#page7", function() {
 
 <script>
 
-function cambiardisplay(){
-	
-	document.getElementById('spritechabelita').style.display = 'none';
-	document.getElementById('activo').style.display = 'block';
-	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
-	
-}
+
 
 function cambiardisplay2(){
 	document.getElementById('spritechabelita').style.display = 'block';
@@ -356,7 +351,9 @@ function cambiardisplay2(){
 function activarAudio1()
     {
  var audio = new Audio('audio/audio_pantalla2.mp3');
+ 
 audio.play();
+
 }
 
 
@@ -432,8 +429,27 @@ document.getElementById('spritechabelita2').style.display = 'none';
 
 <script>
 
+
 function activarAudio2()
     {
+	
+		document.getElementById('spritechabelita').style.display = 'none';
+		document.getElementById('activo').style.display = 'block';
+		
+		//document.getElementById('spritechabelita2').style.display = 'block';
+		//document.getElementById('activo2').style.display = 'none';
+
+		
+ var audio = new Audio('audio/Pantalla3_Ventanilla.mp3');
+audio.play();
+}
+
+
+function activarAudio22()
+    {
+		//document.getElementById('spritechabelita').style.display = 'none';
+		//document.getElementById('activo').style.display = 'block';
+		
 		document.getElementById('spritechabelita2').style.display = 'block';
 		document.getElementById('activo2').style.display = 'none';
  var audio = new Audio('audio/Pantalla3_Ventanilla.mp3');
@@ -441,7 +457,18 @@ audio.play();
 }
 
 
+
 function cambiardisplay3(){
+	
+	
+	//document.getElementById('spritechabelita2').style.display = 'block';
+//document.getElementById('activo2').style.display = 'none';
+	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
+
+	
+}
+
+function cambiardisplay33(){
 	
 	
 	document.getElementById('spritechabelita2').style.display = 'block';
@@ -450,24 +477,42 @@ document.getElementById('activo2').style.display = 'none';
 
 	
 }
-
-
 </script>
 
 <script>
 
 function activarAudio3()
     {
+		document.getElementById('spritechabelita2').style.display = 'none';
+		document.getElementById('activo2').style.display = 'block';
+		
+	//document.getElementById('spritechabelita3').style.display = 'block';
+	//document.getElementById('activo3').style.display = 'none';
+ var audio = new Audio('audio/Pantalla4_Ecran.mp3');
+audio.play();
+}
+
+
+function activarAudio33()
+    {
+		//document.getElementById('spritechabelita2').style.display = 'none';
+		//document.getElementById('activo2').style.display = 'block';
+		
 	document.getElementById('spritechabelita3').style.display = 'block';
 	document.getElementById('activo3').style.display = 'none';
  var audio = new Audio('audio/Pantalla4_Ecran.mp3');
 audio.play();
 }
 
-
-function cambiardisplay4(){
+function cambiardisplay44(){
 	document.getElementById('spritechabelita3').style.display = 'block';
 	document.getElementById('activo3').style.display = 'none';
+	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
+}
+
+function cambiardisplay4(){
+	//document.getElementById('spritechabelita3').style.display = 'block';
+	//document.getElementById('activo3').style.display = 'none';
 	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
 }
 
@@ -481,9 +526,17 @@ function playAudioUnavez(){
 }
 </script>
 
+<script>
+function cambiardisplay5(){
+	document.getElementById('spritechabelita3').style.display = 'none';
+	document.getElementById('activo3').style.display = 'block';
+	//playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
+}
+</script>
+
 
 </head> 
-<body onLoad="onBodyLoad()" style="background-color:#009;">
+<body onLoad="activarAudio1(),onBodyLoad()" style="background-color:#009;">
 
 <!--<div data-role="page" id="pagecamotito">
   <div data-role="content">Contenido</div>
@@ -551,7 +604,7 @@ function playAudioUnavez(){
 <div class="ui-block-b">
 <!--<a data-role="button" href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="stopAudio(),playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');" >Siguiente</a> -->
 
-<a href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" onclick="cambiardisplay();"><img src="imagenes/next.png" alt="next"></a>
+<a href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" onclick="activarAudio2(),stopAudio(),cambiardisplay3();"><img src="imagenes/next.png" alt="next"></a>
 
 </div>
 </div>
@@ -627,8 +680,8 @@ function playAudioUnavez(){
 </audio>  -->
 
     <div class="fondo3">
-    <a href="#page3" class="btnatural" onclick="playAudioUnavez();"><img src="imagenes/BotonPN.png" width="314" height="90" alt="natural"></a>
-    <a href="#page3" class="btjuridico" onclick="playAudioUnavez();"><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
+    <a href="#page3" class="btnatural" onclick="activarAudio3(),playAudioUnavez();"><img src="imagenes/BotonPN.png" width="314" height="90" alt="natural"></a>
+    <a href="#page3" class="btjuridico" onclick="activarAudio3(),playAudioUnavez();"><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
    <!--<div id="output"></div> -->
    
    <div class="spritechabelita2" id="spritechabelita2"></div>
@@ -644,7 +697,7 @@ function playAudioUnavez(){
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
      <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo2"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio2(),cambiardisplay3();"></a></li>
+          <li id="activo2"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio22(),cambiardisplay33();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
          <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
@@ -704,7 +757,7 @@ function playAudioUnavez(){
    <!-- <a data-role="button" href="#page4" data-transition="pop" style="position:absolute;  margin-top: 2%; margin-left: 10%;">Siguiente</a> -->
     <div class="spritechabelita3" id="spritechabelita3"></div>
     
-    <a href="#page4" id="skip" data-transition="pop" class="ui-btn-right ui-btn-inline"><img src="imagenes/next.png" alt="next"></a>
+    <a href="#page4" id="skip" data-transition="pop" onclick="cambiardisplay5();" class="ui-btn-right ui-btn-inline"><img src="imagenes/next.png" alt="next"></a>
     
      </div>
     
@@ -717,7 +770,7 @@ function playAudioUnavez(){
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
      <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo3"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio3(),cambiardisplay4();"></a></li>
+          <li id="activo3"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio33(),cambiardisplay44();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
          <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;

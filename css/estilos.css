@@ -11,7 +11,7 @@
 
 
 #activo,#activo2,#activo3{
-	/*display:none;	*/
+	display:none;
 }
 
 
@@ -1007,7 +1007,7 @@ margin-top:-3%;
   /*display:none;*/
 
   
-         -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling2 4s both linear, spritehabla 1.4s steps(6, end) 6s 15;
+         -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling2 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
   
@@ -1028,7 +1028,7 @@ margin-top:-3%;
  /* display:none;*/
 
   
-          -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling2 4s both linear, spritehabla 1.4s steps(6, end) 6s 15;
+          -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling2 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
   
@@ -1046,13 +1046,12 @@ margin-top:-3%;
 	100%{-webkit-transform:translateX(600px);transform:translateX(600px)}}
 	
 @-webkit-keyframes curling3{
-	from{-webkit-transform:translateX(-400px);transform:translateX(-400px)}
+	from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
 	to{-webkit-transform:translateX(500px);transform:translateX(500px)}}
 	
 @keyframes curling3{
-0%{-webkit-transform:translateX(0);transform:translateX(0)}
-	50%{-webkit-transform:translateX(300px);transform:translateX(300px)}
-	100%{-webkit-transform:translateX(600px);transform:translateX(600px)}}	
+from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
+	to{-webkit-transform:translateX(500px);transform:translateX(500px)}}	
 	
 
 @keyframes spritechabelita {  
@@ -1843,7 +1842,7 @@ margin-top:-3%;
   /*display:none;*/
 
   
-    -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling2 3s both linear, spritehabla 1.4s steps(6, end) 6s 15;
+         -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling2 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
   
@@ -1864,7 +1863,7 @@ margin-top:-3%;
  /* display:none;*/
 
   
-    -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling2 3s both linear, spritehabla 1.4s steps(6, end) 6s 15;
+         -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling2 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
   
