@@ -79,6 +79,7 @@ function onDeviceReady(){
         function stopAudio() {
             if (my_media) {
                 my_media.stop();
+				my_media.release();
             }
             clearInterval(mediaTimer);
             mediaTimer = null;
