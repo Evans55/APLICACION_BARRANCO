@@ -394,11 +394,9 @@ $(document).on("pagechange", function(e, data) {
 
 </script>  -->
 
-<script>
+<!--<script>
 $( document ).on( "pageinit", "#page", function( event ) {
   document.getElementById('spritechabelita').style.display = 'block';
-  //$.mobile.changePage("#page2", { reverse:false, transition: "customFlip" });
-  //playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
 });
 </script>  
 
@@ -412,7 +410,7 @@ $( document ).on( "pageinit", "#page2", function( event ) {
 $( document ).on( "pageinit", "#page3", function( event ) {
   document.getElementById('spritechabelita3').style.display = 'block';
 });
-</script>  
+</script> -->  
 
 <!--<script>
 $( document ).on( "pageinit", "#pagecamotito", function( event ) {
@@ -500,7 +498,7 @@ function playAudioUnavez(){
       <!-- <a href="#left-panel11" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>  -->
      <!--  <a href="#search1" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
        <a href="#left-panel11" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
-       <a href="#search1" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/buscar2.png" alt="buscarr"></a>
+     <!--  <a href="#search1" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/buscar2.png" alt="buscarr"></a> -->
        
 	</div>
     
@@ -515,7 +513,7 @@ function playAudioUnavez(){
 <div class="fachadaiz"></div>
      <div class="fachadader"></div>  -->
      
-     <!--<div class="fachadamov"></div>  -->
+    <!-- <div class="fachadamov"></div>  -->
      
      <!--<div class="plantasiz"></div>
      <div class="grassfondoiz"></div>
@@ -551,7 +549,10 @@ function playAudioUnavez(){
 <div class="ui-grid-a">
       <!--<div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/intro.mp3'),cambiardisplay2();">Play</a></div> -->
 <div class="ui-block-b">
-<a data-role="button" href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="stopAudio(),playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');" >Siguiente</a>
+<!--<a data-role="button" href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="stopAudio(),playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');" >Siguiente</a> -->
+
+<a href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" onclick="cambiardisplay();"><img src="imagenes/next.png" alt="next"></a>
+
 </div>
 </div>
 
@@ -564,7 +565,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio1(),cambiardisplay2();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
@@ -574,7 +575,7 @@ function playAudioUnavez(){
     </div>
     
     
-    <div data-role="panel" id="search1" data-theme="a" data-position="left" data-display="overlay" data-position-fixed="true">
+    <!--<div data-role="panel" id="search1" data-theme="a" data-position="left" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
     <input id="inset-autocomplete-input2" data-type="search" placeholder="Buscar...">
@@ -604,7 +605,7 @@ function playAudioUnavez(){
     <li><a href="#">Volvo</a></li>
 </ul>
    
-    </div>
+    </div> -->
     
     
 
@@ -616,7 +617,7 @@ function playAudioUnavez(){
 		
     <!--    <a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
      <a href="#left-panel" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
-       <a href="#search2" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/buscar2.png" alt="buscarr"></a>
+       <!--<a href="#search2" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/buscar2.png" alt="buscarr"></a> -->
 	</div>
     
 	<div data-role="content">	
@@ -642,7 +643,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo2"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio2(),cambiardisplay3();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
@@ -652,7 +653,7 @@ function playAudioUnavez(){
     </div>
   
     
-      <div data-role="panel" id="search2" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
+      <!--<div data-role="panel" id="search2" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
     <input id="inset-autocomplete-input3" data-type="search" placeholder="Buscar...">
@@ -682,7 +683,7 @@ function playAudioUnavez(){
     <li><a href="#">Volvo</a></li>
 </ul>
    
-    </div><!-- /panel -->
+    </div> --><!-- /panel -->
      
 
 </div>
@@ -693,15 +694,18 @@ function playAudioUnavez(){
 		<!--<h1>Municipalidad de Barranco</h1> -->
         <!--<a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
         <a href="#left-panel2" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
-       <a href="#search3" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/buscar2.png" alt="buscarr"></a>
+       <!--<a href="#search3" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/buscar2.png" alt="buscarr"></a> -->
 	</div>
 
 	
 	<div data-role="content">	
     
       <div class="fondo4">
-    <a data-role="button" href="#page4" data-transition="pop" style="position:absolute;  margin-top: 2%; margin-left: 10%;">Siguiente</a>
+   <!-- <a data-role="button" href="#page4" data-transition="pop" style="position:absolute;  margin-top: 2%; margin-left: 10%;">Siguiente</a> -->
     <div class="spritechabelita3" id="spritechabelita3"></div>
+    
+    <a href="#page4" id="skip" data-transition="pop" class="ui-btn-right ui-btn-inline"><img src="imagenes/next.png" alt="next"></a>
+    
      </div>
     
 				        
@@ -712,7 +716,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo3"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio3(),cambiardisplay4();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
@@ -721,7 +725,7 @@ function playAudioUnavez(){
         </ul>
     </div>
     
-     <div data-role="panel" id="search3" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
+     <!--<div data-role="panel" id="search3" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
    
    <form class="ui-filterable">
     <input id="inset-autocomplete-input4" data-type="search" placeholder="Buscar...">
@@ -751,7 +755,7 @@ function playAudioUnavez(){
     <li><a href="#">Volvo</a></li>
 </ul>
    
-    </div><!-- /panel -->
+    </div> --><!-- /panel -->
     
 </div>
 
@@ -788,7 +792,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
@@ -919,7 +923,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
@@ -1034,7 +1038,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
@@ -1137,7 +1141,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
@@ -1202,7 +1206,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
@@ -1268,7 +1272,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
@@ -1335,7 +1339,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
@@ -1402,7 +1406,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
@@ -1470,7 +1474,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
@@ -1537,7 +1541,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
@@ -1604,7 +1608,7 @@ function playAudioUnavez(){
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
           <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
