@@ -9,6 +9,35 @@
 
 /*  FIN ICONOS */
 
+#titulotramite{
+  color: darkblue;
+  text-align: -webkit-center;
+  text-align:center;
+  margin-top: 3%;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+#area{
+font-family: sans-serif;
+  /* font-weight: bold; */
+  color: white;
+  margin-top: 13%;
+  margin-left: 6.3%;
+  width: 19%;
+  font-size: 1em;	
+}
+
+#pasos{
+font-family: sans-serif;
+  /* font-weight: bold; */
+  color: white;
+  width: 19%;
+  font-size: 1em;	
+    margin-left: 58%;
+  margin-top: -2%;
+}
 
 #activo,#activo2,#activo3,#sinAudio1{
 	display:none;
