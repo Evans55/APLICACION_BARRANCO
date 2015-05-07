@@ -803,9 +803,9 @@ transform:scale(0.8) translateY(3px);
 .faro1 {
   background: url(../imagenes/faro1.png)0 100% no-repeat;
   z-index: 5;
-  -webkit-background-size: 25% auto;
--moz-background-size: 25% auto;
--o-background-size: 25% auto;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
 margin-left:-5%;
 margin-top:-3%;
 }
@@ -813,9 +813,9 @@ margin-top:-3%;
 .faro2 {
   background: url(../imagenes/faro2.png)0 100% no-repeat;
   z-index: 5;
-  -webkit-background-size: 25% auto;
--moz-background-size: 25% auto;
--o-background-size: 25% auto;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
 margin-left:80%;
 margin-top:-3%;
 }
@@ -1751,9 +1751,9 @@ margin-top:-10%;
 	.faro1 {
   background: url(../imagenes/faro1.png)0 100% no-repeat;
   z-index: 5;
-  -webkit-background-size: 25% auto;
--moz-background-size: 25% auto;
--o-background-size: 25% auto;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
 margin-left:-5%;
 margin-top:-3%;
 }
@@ -1761,9 +1761,9 @@ margin-top:-3%;
 .faro2 {
   background: url(../imagenes/faro2.png)0 100% no-repeat;
   z-index: 5;
-  -webkit-background-size: 25% auto;
--moz-background-size: 25% auto;
--o-background-size: 25% auto;
+  -webkit-background-size: 23% auto;
+-moz-background-size: 23% auto;
+-o-background-size: 23% auto;
 margin-left:80%;
 margin-top:-3%;
 }
