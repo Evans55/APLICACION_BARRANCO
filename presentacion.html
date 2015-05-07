@@ -360,23 +360,6 @@ $( document ).on( "pageinit", "#page3", function( event ) {
 });
 </script> -->  
 
-<!--<script>
-$( document ).on( "pageinit", "#pagecamotito", function( event ) {
-  $.mobile.changePage("#page", { reverse:false, transition: "customFlip" });
-});
-
-
-
-if(window.localStorage.setItem("estado2",estad)=='encendido'){
-	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
-	estad = 'apagado';
-}
-
-
-document.getElementById('spritechabelita2').style.display = 'none';
-
-</script>  --> 
-
 
 <script>
 
@@ -494,6 +477,29 @@ document.getElementById('activo').style.display = 'block';
 }
 </script>
 
+
+
+<script>
+function siguientepag1(){
+
+if(document.getElementById('caminotramite2').style.display = 'none'){
+	document.getElementById('caminotramite2').style.display = 'block';
+	document.getElementById('caminotramite1').style.display = 'none';
+}
+	
+}
+
+function anteriorpag1(){
+
+if(document.getElementById('caminotramite1').style.display = 'none'){
+	document.getElementById('caminotramite1').style.display = 'block';
+	document.getElementById('caminotramite2').style.display = 'none';
+}
+	
+}
+
+
+</script>
 
 </head> 
 <body onLoad="activarAudio1(),onBodyLoad()" style="background-color:#009;">
@@ -1000,13 +1006,88 @@ document.getElementById('activo').style.display = 'block';
   <div class="botoncamino" id="botoncamino2" data-role="button"><a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" ><img src="imagenes/buttonpaso2.png" alt="botoncamino2"></a></div>
   <div class="botoncamino" id="botoncamino3" data-role="button"><a><img src="imagenes/buttonpaso3.png" alt="botoncamino3"></a></div>
   
-  
-  <div class="botonconsulta" id="botonconsulta" data-role="button"><a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a></div> -->
+   -->
   
   
   <div id="titulotramite">Nombre del Trámite</div>
   <div id="area">Sub Gerencia de Redacción control y</div>
   <div id="pasos">Total de 15 pasos</div>
+  
+  
+  <div id="globaltramite">
+      <div id="mensajes" style="background-color:#FFF">
+        <div class="textotramite">
+        
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+        
+        </div>
+      </div>
+  </div>
+  
+  
+  <div id="caminotramite1">
+
+  <div class="botoncamino" id="botoncamino1" data-role="button"><a><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+  
+  <div class="botoncamino" id="botoncamino2" data-role="button">
+  <a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+  
+  <div class="botoncamino" id="botoncamino3" data-role="button"><a><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+  
+  <div class="botoncamino" id="botoncamino4" data-role="button"><a><img src="imagenes/paso04.png" alt="botoncamino4"></a></div>
+  
+  <div class="botoncamino" id="botoncamino5" data-role="button">
+  <a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" ><img src="imagenes/paso05.png" alt="botoncamino5"></a></div>
+  
+  <div class="botoncamino" id="botoncamino6" data-role="button"><a><img src="imagenes/paso06.png" alt="botoncamino6"></a></div>
+  
+  </div>
+  
+  <div id="caminotramite2">
+
+  <div class="botoncamino" id="botoncamino1" data-role="button"><a><img src="imagenes/paso06.png" alt="botoncamino1"></a></div>
+  
+  <div class="botoncamino" id="botoncamino2" data-role="button">
+  <a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" ><img src="imagenes/paso05.png" alt="botoncamino2"></a></div>
+  
+  <div class="botoncamino" id="botoncamino3" data-role="button"><a><img src="imagenes/paso04.png" alt="botoncamino3"></a></div>
+  
+  <div class="botoncamino" id="botoncamino4" data-role="button"><a><img src="imagenes/paso03.png" alt="botoncamino4"></a></div>
+  
+  <div class="botoncamino" id="botoncamino5" data-role="button">
+  <a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino5"></a></div>
+  
+  <div class="botoncamino" id="botoncamino6" data-role="button"><a><img src="imagenes/paso01.png" alt="botoncamino6"></a></div>
+  
+  </div>
+  
+  
+   <div id="caminotramite3">
+
+  <div class="botoncamino" id="botoncamino1" data-role="button"><a><img src="imagenes/paso03.png" alt="botoncamino1"></a></div>
+  
+  <div class="botoncamino" id="botoncamino2" data-role="button">
+  <a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" ><img src="imagenes/paso03.png" alt="botoncamino2"></a></div>
+  
+  <div class="botoncamino" id="botoncamino3" data-role="button"><a><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+  
+  <div class="botoncamino" id="botoncamino4" data-role="button"><a><img src="imagenes/paso03.png" alt="botoncamino4"></a></div>
+  
+  <div class="botoncamino" id="botoncamino5" data-role="button">
+  <a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" ><img src="imagenes/paso03.png" alt="botoncamino5"></a></div>
+  
+  <div class="botoncamino" id="botoncamino6" data-role="button"><a><img src="imagenes/paso03.png" alt="botoncamino6"></a></div>
+  
+  </div>
+  
+  
+<div class="ui-grid-a" id="botonespag">
+   <div class="ui-block-a"><a href="#" onclick="anteriorpag1();" ><img src="imagenes/anterior.png" alt="siguiente"></a></div>
+   <div class="ui-block-b"><a href="#" onclick="siguientepag1();" ><img src="imagenes/siguiente.png" alt="anterior"></a></div>
+</div>
+  
+   <div class="botonconsulta" id="botonconsulta" data-role="button"><a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a></div>
+  
   
   
   <div data-role="popup" id="popupPhotoLandscape" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup">

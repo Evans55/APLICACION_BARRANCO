@@ -9,6 +9,56 @@
 
 /*  FIN ICONOS */
 
+#botonespag{
+margin-left: 42%;	
+ margin-top: -8%;
+}
+
+#caminotramite1{
+  background: url(../imagenes/camino-tramite.png)0 100% no-repeat;
+  -webkit-background-size: 55% auto;
+-moz-background-size: 55% auto;
+-o-background-size: 55% auto;
+  margin-left: 40%;
+  margin-top: -27%;
+
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0; left: 0;
+}
+
+#caminotramite2{
+  background: url(../imagenes/camino-tramite.png)0 100% no-repeat;
+  -webkit-background-size: 55% auto;
+-moz-background-size: 55% auto;
+-o-background-size: 55% auto;
+  margin-left: 40%;
+  margin-top: -27%;
+
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0; left: 0;
+display:none;
+}
+
+#caminotramite3{
+  background: url(../imagenes/camino-tramite.png)0 100% no-repeat;
+  -webkit-background-size: 55% auto;
+-moz-background-size: 55% auto;
+-o-background-size: 55% auto;
+  margin-left: 40%;
+  margin-top: -27%;
+
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0; left: 0;
+display:none;
+}
+
+
 #titulotramite{
   color: darkblue;
   text-align: -webkit-center;
@@ -18,6 +68,44 @@
   font-weight: bold;
   font-size: 3em;
 }
+
+.textotramite{
+  padding: 3%;
+  font-size: 1.3em;
+  text-align: justify;
+  height: auto;
+}
+
+#globaltramite{
+  height: 20.2em;
+  width: 25%;
+  /*border: 1px solid #ddd;*/
+  overflow-y: scroll;
+  margin-top: 10.8%;
+  margin-left: 7%;
+  /*background-color: powderblue;*/
+}
+
+
+#globaltramite::-webkit-scrollbar {
+    width: 1.2em;
+}
+
+#globaltramite::-webkit-scrollbar-track {
+    background-color: #FFF;
+    border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+#globaltramite::-webkit-scrollbar-thumb {
+    background-color:#039;
+}
+#globaltramite::-webkit-scrollbar-thumb:hover {
+	background-color:#009;
+}
+
+
 
 #area{
 font-family: sans-serif;
@@ -258,19 +346,35 @@ transform:scale(0.8) translateY(3px);
 
 
 #botoncamino1{
-	top:42%;
-	left:56.9%;
+	top:80%;
+	left:0%;
 }
 
 
 #botoncamino2{
-	top:32%;
-	left:73.5%;
+	top:94%;
+	left:8.5%;
 }
 
 #botoncamino3{
-	top:26.5%;
-	left:88.7%;
+	top:80%;
+	left:17.5%;
+}
+
+#botoncamino4{
+	top:94%;
+	left:27%;
+}
+
+
+#botoncamino5{
+	top:80%;
+	left:36%;
+}
+
+#botoncamino6{
+	top:94%;
+	left:45.5%;
 }
 
 
@@ -316,8 +420,8 @@ transform:scale(0.8) translateY(3px);
 }
 
 #botonconsulta{
-	top:74.5%;
-	left:24.7%;
+	top:80.5%;
+	left:10.7%;
 }
 
 .botonconsulta>a{
@@ -1032,7 +1136,7 @@ margin-top:-3%;
 }
 
 .spritechabelita {
-  background:  url(../imagenes/sprite_chabukita.png) 0 100%;
+  background:  url(../imagenes/sprite_chabukita11.png) 0 100%;
   
 
   z-index: 6;
@@ -1567,6 +1671,83 @@ and (max-height : 800px)
 and (orientation : landscape)
 {
 	
+	.spritechabelitamanoiz{
+	 background:  url(../imagenes/chabelita_sprite3-manoizzz.png) 0 100%;
+  
+
+  z-index: 6;
+  height:511px;
+  width:600px;
+  position: absolute;
+  left: 0;
+  
+ margin-top:16%;
+  margin-left:51%;
+  
+  
+  -webkit-animation: spritechabelitamanoiz 1.4s steps(14, end) 5s 15;
+   -webkit-animation-fill-mode:forwards;
+  
+}
+
+	
+#botonconsulta{
+	top:77.5%;
+	left:10.7%;
+}	
+	
+#botonespag{
+margin-left: 42%;
+margin-top:-10%;
+}
+	
+#titulotramite{
+  color: darkblue;
+  text-align: -webkit-center;
+  text-align:center;
+  margin-top: 2%;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+}	
+	
+#botoncamino1{
+	top:77%;
+	left:0%;
+}
+
+
+#botoncamino2{
+	top:92%;
+	left:8.5%;
+}
+
+#botoncamino3{
+	top:77%;
+	left:17.5%;
+}
+
+	
+#globaltramite {
+  height: 17.2em;
+  width: 25%;
+  /* border: 1px solid #ddd; */
+  overflow-y: scroll;
+  margin-top: 8.8%;
+  margin-left: 7%;
+  /* background-color: powderblue; */
+}
+
+#area {
+  font-family: sans-serif;
+  /* font-weight: bold; */
+  color: white;
+  margin-top: 10%;
+  margin-left: 6.3%;
+  width: 19%;
+  font-size: 1em;
+}	
+	
 	.faro1 {
   background: url(../imagenes/faro1.png)0 100% no-repeat;
   z-index: 5;
@@ -1938,6 +2119,8 @@ z-index:6;
  -webkit-animation-fill-mode:forwards;
   
 }
+	
+
 	
 }
 
