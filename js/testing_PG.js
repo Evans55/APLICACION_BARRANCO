@@ -3,6 +3,7 @@
 function onBodyLoad(){
 document.addEventListener("deviceready", onDeviceReady, false);
 document.addEventListener("backbutton", onBackKeyDown, false);
+document.addEventListener("pause", onPause, false);
 }
 
 	
@@ -106,6 +107,13 @@ function onDeviceReady(){
         function setAudioPosition(position) {
             document.getElementById('audio_position').innerHTML = position;
         }
+
+
+
+     function onPause() {
+		 stopAudio(); 
+    }
+
 
 
        function onBackKeyDown() {
