@@ -976,6 +976,32 @@ margin-top:-3%;
   
 }
 
+
+.spritechabelitamanoiz{
+	 background:  url(../imagenes/chabelita_sprite3-manoizzz.png) 0 100%;
+  
+
+  z-index: 6;
+  height:511px;
+  width:600px;
+  position: absolute;
+  left: 0;
+  
+ margin-top:24%;
+  margin-left:51%;
+  
+  
+  -webkit-animation: spritechabelitamanoiz 1.4s steps(14, end) 5s 15;
+   -webkit-animation-fill-mode:forwards;
+  
+}
+
+
+@-webkit-keyframes spritechabelitamanoiz {  
+  from {background-position: 0px; } 
+  to {background-position: -8400px; } 
+}
+
 .spritechabelita {
   background:  url(../imagenes/sprite_chabukita.png) 0 100%;
   
