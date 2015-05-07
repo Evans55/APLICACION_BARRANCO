@@ -10,8 +10,15 @@
 /*  FIN ICONOS */
 
 
-#activo,#activo2,#activo3{
+#activo,#activo2,#activo3,#sinAudio1{
 	display:none;
+}
+
+#sinAudio1{
+z-index:6; 
+position:absolute;
+top:86%;
+-webkit-transform: scale(0.7);
 }
 
 
@@ -1573,6 +1580,14 @@ margin-top:-3%;
 	-webkit-transform: scale(0.7);
 	display:block;
 	}
+	
+#sinAudio1{
+z-index:6; 
+	position:absolute;
+	top:83%;
+	-webkit-transform: scale(0.7);	
+	display:none;
+}
 	
 	#global {
 	height: 31em;

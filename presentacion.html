@@ -234,7 +234,27 @@ $( document ).on( "pagecreate", function() {
 
 </script>
 
-<script>
+
+
+<!--<script>
+$( document ).on( "pagecreate", "#page", function() {
+    $( document ).on( "swipeleft swiperight", "#page", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+            if ( e.type === "swipeleft"  ) {
+                $( "#right-panel" ).panel( "open" );
+            } else if ( e.type === "swiperight" ) {
+                $( "#left-panel11" ).panel( "open" );
+            }
+        }
+    });
+});
+</script>
+ -->
+
+<!--<script>
 $( document ).on( "pageinit", "#page2", function() {
     $( document ).on( "swipeleft swiperight", "#page2", function( e ) {
         // We check if there is no open panel on the page because otherwise
@@ -266,76 +286,7 @@ $( document ).on( "pagecreate", "#page3", function() {
         }
     });
 });
-</script>
-
-<script>
-$( document ).on( "pagecreate", "#page4", function() {
-    $( document ).on( "swipeleft swiperight", "#page4", function( e ) {
-        // We check if there is no open panel on the page because otherwise
-        // a swipe to close the left panel would also open the right panel (and v.v.).
-        // We do this by checking the data that the framework stores on the page element (panel: open).
-        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
-            if ( e.type === "swipeleft" ) {
-                $( "#right-panel3" ).panel( "open" );
-            } else if ( e.type === "swiperight" ) {
-                $( "#left-panel3" ).panel( "open" );
-            }
-        }
-    });
-});
-</script>
-
-<script>
-$( document ).on( "pagecreate", "#page5", function() {
-    $( document ).on( "swipeleft swiperight", "#page5", function( e ) {
-        // We check if there is no open panel on the page because otherwise
-        // a swipe to close the left panel would also open the right panel (and v.v.).
-        // We do this by checking the data that the framework stores on the page element (panel: open).
-        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
-            if ( e.type === "swipeleft" ) {
-                $( "#right-panel4" ).panel( "open" );
-            } else if ( e.type === "swiperight" ) {
-                $( "#left-panel4" ).panel( "open" );
-            }
-        }
-    });
-});
-</script>
-
-<script>
-$( document ).on( "pagecreate", "#page6", function() {
-    $( document ).on( "swipeleft swiperight", "#page6", function( e ) {
-        // We check if there is no open panel on the page because otherwise
-        // a swipe to close the left panel would also open the right panel (and v.v.).
-        // We do this by checking the data that the framework stores on the page element (panel: open).
-        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
-            if ( e.type === "swipeleft" ) {
-                $( "#right-panel5" ).panel( "open" );
-            } else if ( e.type === "swiperight" ) {
-                $( "#left-panel5" ).panel( "open" );
-            }
-        }
-    });
-});
-</script>
-
-
-<script>
-$( document ).on( "pagecreate", "#page7", function() {
-    $( document ).on( "swipeleft swiperight", "#page7", function( e ) {
-        // We check if there is no open panel on the page because otherwise
-        // a swipe to close the left panel would also open the right panel (and v.v.).
-        // We do this by checking the data that the framework stores on the page element (panel: open).
-        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
-            if ( e.type === "swipeleft" ) {
-                $( "#right-panel6" ).panel( "open" );
-            } else if ( e.type === "swiperight" ) {
-                $( "#left-panel6" ).panel( "open" );
-            }
-        }
-    });
-});
-</script>
+</script> -->
 
 
 <script>
@@ -461,8 +412,8 @@ audio.play();
 function cambiardisplay3(){
 	
 	
-	//document.getElementById('spritechabelita2').style.display = 'block';
-//document.getElementById('activo2').style.display = 'none';
+	document.getElementById('sinAudio1').style.display = 'block';
+document.getElementById('skip').style.display = 'none';
 	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
 
 	
@@ -531,6 +482,15 @@ function cambiardisplay5(){
 	document.getElementById('spritechabelita3').style.display = 'none';
 	document.getElementById('activo3').style.display = 'block';
 	//playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
+}
+</script>
+
+
+
+<script>
+function sinAudio1(){
+document.getElementById('spritechabelita').style.display = 'none';
+document.getElementById('activo').style.display = 'block';
 }
 </script>
 
@@ -605,6 +565,8 @@ function cambiardisplay5(){
 <!--<a data-role="button" href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="stopAudio(),playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');" >Siguiente</a> -->
 
 <a href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" onclick="activarAudio2(),stopAudio(),cambiardisplay3();"><img src="imagenes/next.png" alt="next"></a>
+
+<a href="#page2" id="sinAudio1" data-transition="customFlip" class="ui-btn-right ui-btn-inline" onclick="stopAudio(),sinAudio1();"><img src="imagenes/next.png" alt="next"></a>
 
 </div>
 </div>
