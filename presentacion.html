@@ -423,6 +423,30 @@ if(document.getElementById('caminotramite1').style.display = 'none'){
 
 </script>
 
+
+<script language="javascript" type="text/javascript">
+function siguientepag2(){
+
+if(document.getElementById('caminotramite4').style.display = 'none'){
+	document.getElementById('caminotramite3').style.display = 'none';
+	document.getElementById('caminotramite4').style.display = 'block';
+	
+}
+	
+}
+
+function anteriorpag2(){
+
+if(document.getElementById('caminotramite3').style.display = 'none'){
+	document.getElementById('caminotramite3').style.display = 'block';
+	document.getElementById('caminotramite4').style.display = 'none';
+}
+	
+}
+
+
+</script>
+
 </head> 
 <body onLoad="activarAudio1(),onBodyLoad()" style="background-color:#009;">
 
@@ -462,6 +486,10 @@ if(document.getElementById('caminotramite1').style.display = 'none'){
 <div class="fachadaiz"></div>
  <div class="fachadader"></div>
  
+ <div class="pastoiz"></div>
+ <div class="pastoder"></div>
+
+ 
  <!--<div class="plantasiz"></div>
      <div class="grassfondoiz"></div>
      <div class="grassiz"></div>
@@ -474,6 +502,7 @@ if(document.getElementById('caminotramite1').style.display = 'none'){
   
  <div class="spritearbolmov"></div>
   <div class="spritepalmeramov"></div>
+  
   <div class="spritechabelita" id="spritechabelita"></div>
   
 <!-- <audio id="player" preload="auto" src="audio/audio_pantalla2.mp3" autoplay type="audio/mpeg">
@@ -580,7 +609,7 @@ if(document.getElementById('caminotramite1').style.display = 'none'){
    
    <div class="spritechabelita2" id="spritechabelita2"></div>
    
-   <div class="spritechabelitamanoiz" id="spritechabelitamanoiz"></div>
+  <!-- <div class="spritechabelitamanoiz" id="spritechabelitamanoiz"></div> -->
    
    </div>
    
@@ -988,24 +1017,7 @@ if(document.getElementById('caminotramite1').style.display = 'none'){
   </div>
   
   
-   <div id="caminotramite3">
 
-  <div class="botoncamino" id="botoncamino1" data-role="button"><a><img src="imagenes/paso03.png" alt="botoncamino1"></a></div>
-  
-  <div class="botoncamino" id="botoncamino2" data-role="button">
-  <a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" ><img src="imagenes/paso03.png" alt="botoncamino2"></a></div>
-  
-  <div class="botoncamino" id="botoncamino3" data-role="button"><a><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
-  
-  <div class="botoncamino" id="botoncamino4" data-role="button"><a><img src="imagenes/paso03.png" alt="botoncamino4"></a></div>
-  
-  <div class="botoncamino" id="botoncamino5" data-role="button">
-  <a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" ><img src="imagenes/paso03.png" alt="botoncamino5"></a></div>
-  
-  <div class="botoncamino" id="botoncamino6" data-role="button"><a><img src="imagenes/paso03.png" alt="botoncamino6"></a></div>
-  
-  </div>
-  
   
 <div class="ui-grid-a" id="botonespag">
    <div class="ui-block-a"><a href="#" onclick="anteriorpag1();" ><img src="imagenes/anterior.png" alt="siguiente"></a></div>
@@ -1228,6 +1240,85 @@ if(document.getElementById('caminotramite1').style.display = 'none'){
 	</div>
 
  <div data-role="content">
+ 
+ <div id="global">
+  <div id="mensajes">
+  
+  <div data-role="collapsible-set">
+  
+          <div data-role="collapsible" data-collapsed="true">
+           <h3>1. MATRIMONIO CIVIL</h3>
+          
+          <ul data-role="listview" style="width:103%;">
+          <li data-role="list-divider" style="background-color:#C6E2FF;"><a href="#page15">Matrimonio Civil</a></li>
+          <li>Para menores de edad</li>
+          <li data-role="list-divider" style="background-color:#C6E2FF;">Para divorciados</li>
+          <li>Para viudos</li>
+          <li data-role="list-divider" style="background-color:#C6E2FF;">Para extranjeros</li>
+          <li>Para matrimonios por poder</li>
+          </ul>
+          
+           </div>
+           
+           <div data-role="collapsible" data-collapsed="true">
+           <h3>2. DISPENSA PARCIAL DE PUBLICACIÓN DE AVISO MATRIMONIAL </h3>
+          
+          <ul data-role="listview" style="width:103%;">
+          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 2</li>
+          <li>Elemento 5</li>
+          </ul>
+          
+           </div>
+           
+           <div data-role="collapsible" data-collapsed="true">
+           <h3>3. EXHIBICIÓN DE EDICTOS MATRIMONIALES TRAMITADOS EN OTROS MUNICIPIOS</h3>
+          
+          <ul data-role="listview" style="width:103%;">
+          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 2</li>
+          <li>Elemento 5</li>
+          </ul>
+          
+           </div>
+           
+           
+           
+           <div data-role="collapsible" data-collapsed="true">
+           <h3>4. REPROGRAMACIÓN DE FECHA DE MATRIMONIO (PEDIDO EFECTUADO CON ANTICIPACIÓN - 48 Horas)</h3>
+          
+          <ul data-role="listview" style="width:103%;">
+          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 2</li>
+          <li>Elemento 5</li>
+          </ul>
+          
+           </div>
+           
+           
+           <div data-role="collapsible" data-collapsed="true">
+           <h3>5. SEPARACIÓN CONVENCIONAL Y DIVORCIO ULTERIOR</h3>
+          
+          <ul data-role="listview" style="width:103%;">
+          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 2</li>
+          <li>Elemento 5</li>
+          </ul>
+          
+           </div>
+           
+           
+     </div>
+  </div>
+</div>
  
  </div>
 
@@ -1683,6 +1774,129 @@ if(document.getElementById('caminotramite1').style.display = 'none'){
     </div>
 
 </div>
+
+
+
+
+
+<div data-role="page" id="page15" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite">Matrimonio Civil</div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General </div>
+  <div id="pasos">Total de 8 pasos</div>
+  
+  
+  <div id="globaltramite">
+      <div id="mensajes" style="background-color:#FFF">
+        <div class="textotramite">
+        
+        Partida de nacimiento legible de cada uno de los contrayentes o dispensa judicial.
+        
+        </div>
+      </div>
+  </div>
+  
+  
+  <div id="caminotramite3">
+
+  <div class="botoncamino" id="botoncamino1" data-role="button"><a><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+  
+  <div class="botoncamino" id="botoncamino2" data-role="button">
+  <a href="#popupMatrimonioCivil" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+  
+ <div class="botoncamino" id="botoncamino3" data-role="button"><a><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+  
+  <div class="botoncamino" id="botoncamino4" data-role="button"><a><img src="imagenes/paso04.png" alt="botoncamino4"></a></div>
+  
+  <div class="botoncamino" id="botoncamino5" data-role="button"><a><img src="imagenes/paso05.png" alt="botoncamino5"></a></div>
+  
+  <div class="botoncamino" id="botoncamino6" data-role="button"><a><img src="imagenes/paso06.png" alt="botoncamino6"></a></div> 
+  
+  </div>
+
+  
+  <div id="caminotramite4">
+
+  <div class="botoncamino" id="botoncamino1" data-role="button"><a><img src="imagenes/paso06.png" alt="botoncamino1"></a></div>
+  
+  <div class="botoncamino" id="botoncamino2" data-role="button"><a><img src="imagenes/paso05.png" alt="botoncamino2"></a></div>
+  
+  <!--<div class="botoncamino" id="botoncamino3" data-role="button"><a><img src="imagenes/paso04.png" alt="botoncamino3"></a></div>
+  
+  <div class="botoncamino" id="botoncamino4" data-role="button"><a><img src="imagenes/paso03.png" alt="botoncamino4"></a></div>
+  
+  <div class="botoncamino" id="botoncamino5" data-role="button">
+  <a href="#popupPhotoLandscape" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino5"></a></div>
+  
+  <div class="botoncamino" id="botoncamino6" data-role="button"><a><img src="imagenes/paso01.png" alt="botoncamino6"></a></div> -->
+  
+  </div>
+
+  
+  
+<div class="ui-grid-a" id="botonespag">
+   <div class="ui-block-a"><a href="#" onclick="anteriorpag2();" ><img src="imagenes/anterior.png" alt="anterior"></a></div>
+   <div class="ui-block-b"><a href="#" onclick="siguientepag2();" ><img src="imagenes/siguiente.png" alt="siguiente"></a></div>
+</div>
+
+<div class="ui-grid-a">
+  <div class="ui-block-a"> <div class="botonconsulta" id="botonconsulta" data-role="button"><a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a></div></div>
+  <div class="ui-block-b"><div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a></div></div>
+</div>
+  
+
+  
+  <div data-role="popup" id="popupMatrimonioCivil" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+
+<div class="ui-grid-a">
+  <div class="ui-block-a">
+    <div id="global2">
+      <div id="mensajes">
+        <div class="texto2">
+        
+        Debes presentar un formato de solicitud (distribución gratuita o de libre reproducción). 
+        
+        </div>
+      </div>
+  </div> 
+  </div>
+  
+ 
+</div>
+
+
+</div>
+	
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
+        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
+          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
+        <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+  height: 3em;"></a></li>
+        </ul>
+    </div>
+    
+  </div>
+
+
 
 
 

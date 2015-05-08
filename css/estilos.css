@@ -9,6 +9,27 @@
 
 /*  FIN ICONOS */
 
+.pastoiz {
+  background:  url(../imagenes/pastoiz.png) 0 100% no-repeat;
+   margin-top: -11.7%;
+  margin-left: -0.5%;
+  z-index: 2;
+  -webkit-background-size: 32% auto;
+-moz-background-size: 32% auto;
+-o-background-size: 32% auto;
+}
+
+.pastoder {
+  background:  url(../imagenes/pastoder.png) 0 100% no-repeat;
+   margin-top: -11.7%;
+  margin-left: 74.5%;
+  z-index: 2;
+  -webkit-background-size: 32% auto;
+-moz-background-size: 32% auto;
+-o-background-size: 32% auto;
+}
+
+
 #botonespag{
 margin-left: 42%;	
  margin-top: -8%;
@@ -43,7 +64,25 @@ top: 0; left: 0;
 display:none;
 }
 
+
+
+
 #caminotramite3{
+  background: url(../imagenes/camino-tramite.png)0 100% no-repeat;
+  -webkit-background-size: 55% auto;
+-moz-background-size: 55% auto;
+-o-background-size: 55% auto;
+  margin-left: 40%;
+  margin-top: -27%;
+
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0; left: 0;
+}
+
+
+#caminotramite4{
   background: url(../imagenes/camino-tramite.png)0 100% no-repeat;
   -webkit-background-size: 55% auto;
 -moz-background-size: 55% auto;
@@ -57,6 +96,7 @@ position: absolute;
 top: 0; left: 0;
 display:none;
 }
+
 
 
 #titulotramite{
@@ -146,7 +186,7 @@ position:relative;
 
 }
 
-#page3,#page8,#page9,#page5,#page11,#page7,#page10,#page,#page4,#page6,#page12,#page13,#page14{
+#page3,#page8,#page9,#page5,#page11,#page7,#page10,#page,#page4,#page6,#page12,#page13,#page14,#page15{
 max-width:1300px;
 margin:0 auto;
 position:relative;
@@ -783,7 +823,7 @@ transform:scale(0.8) translateY(3px);
 }	
 
 
-.foreground, .midground, .background, .fachadaiz, .fachadader, .grassiz, .grassder, .grassfondoiz, .grassfondoder, .plantasiz, .plantasder, .logomenu, .fondo3, .fondo4, .fondofachada, .faro1, .faro2{
+.foreground, .midground, .background, .fachadaiz, .fachadader, .grassiz, .grassder, .grassfondoiz, .grassfondoder, .plantasiz, .plantasder, .logomenu, .fondo3, .fondo4, .fondofachada, .faro1, .faro2, .pastoiz, .pastoder{
   width: 100%;
   height: 100%;
   position: absolute;
@@ -889,7 +929,7 @@ margin-top:-3%;
   -o-background-size: 35% auto;
   
     -webkit-animation-duration: 1.5s;
-  -webkit-animation-name: moverfachadaa;	
+  -webkit-animation-name: moverpasto;	
 -webkit-animation-timing-function: ease-in-out;
  -webkit-animation-delay: 0s;
     -webkit-animation-fill-mode:forwards;
@@ -906,7 +946,7 @@ margin-top:-3%;
   
   
     -webkit-animation-duration: 1.5s;
-  -webkit-animation-name: moverfachadaa;	
+  -webkit-animation-name: moverpasto;	
 -webkit-animation-timing-function: ease-in-out;
  -webkit-animation-delay: 1s;
     -webkit-animation-fill-mode:forwards;
@@ -922,6 +962,18 @@ margin-top:-3%;
   0%{ top:-100%}
   
   100%{top:-20%;}
+}
+
+@keyframes moverpasto {
+  0%{ top:-100%}
+  
+  100%{top:-25%;}
+}
+
+@-webkit-keyframes moverpasto {
+  0%{ top:-100%}
+  
+  100%{top:-25%;}
 }
 
 .grassiz {
@@ -1145,30 +1197,6 @@ margin-top:-3%;
 }
 
 
-.spritechabelitamanoiz{
-	 background:  url(../imagenes/chabelita_sprite3-manoizzz.png) 0 100%;
-  
-
-  z-index: 6;
-  height:511px;
-  width:600px;
-  position: absolute;
-  left: 0;
-  
- margin-top:24%;
-  margin-left:51%;
-  
-  
-  -webkit-animation: spritechabelitamanoiz 1.4s steps(14, end) 5s 15;
-   -webkit-animation-fill-mode:forwards;
-  
-}
-
-
-@-webkit-keyframes spritechabelitamanoiz {  
-  from {background-position: 0px; } 
-  to {background-position: -8400px; } 
-}
 
 .spritechabelita {
   background:  url(../imagenes/sprite_chabukita11.png) 0 100%;
@@ -1176,7 +1204,7 @@ margin-top:-3%;
 
   z-index: 6;
   height:401px;
-  width:232px;
+  width:320px;
   position: absolute;
   left: 0;
   
@@ -1184,11 +1212,10 @@ margin-top:-3%;
   margin-left:-12%;
  /* display:none;*/
 
-  
-     -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling3 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
+ 
+    -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling3 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
-  
  
   
 }
@@ -1198,17 +1225,17 @@ margin-top:-3%;
   
 
   z-index: 3;
-  height:401px;
-  width:232px;
+  height:511px;
+  width:600px;
   position: absolute;
   left: 0;
  
- margin-top:35%;
+ margin-top:30%;
   margin-left:-12%;
   /*display:none;*/
 
   
-         -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling2 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
+         -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
   
@@ -1218,18 +1245,18 @@ margin-top:-3%;
   background:  url(../imagenes/sprite_chabukita3.png) 0 100%;
   
 
-  z-index: 3;
-  height:401px;
-  width:232px;
+   z-index: 3;
+  height:511px;
+  width:600px;
   position: absolute;
   left: 0;
-  
- margin-top:35%;
+ 
+ margin-top:30%;
   margin-left:-12%;
- /* display:none;*/
+  /*display:none;*/
 
   
-          -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling2 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
+         -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
   
@@ -1257,24 +1284,43 @@ from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
 
 @keyframes spritechabelita {  
   from {background-position: 0 0; } 
-  to {background-position: -1392px 0; } 
+  to {background-position: -1920px 0; } 
 }
 
 @-webkit-keyframes spritechabelita {  
     from {background-position: 0 0; } 
-  to {background-position: -1392px 0; } 
+  to {background-position: -1920px 0; } 
+}
+
+@keyframes spritechabelita2 {  
+  from {background-position: 0 0; } 
+  to {background-position: -7800px 0; } 
+}
+
+@-webkit-keyframes spritechabelita2 {  
+    from {background-position: 0 0; } 
+  to {background-position: -7800px 0; } 
 }
 
 @keyframes spritehabla {  
   from {background-position: 0 -401px; } 
-  to {background-position: -1392px -401px; } 
+  to {background-position: -1920px -401px; } 
 }
 
 @-webkit-keyframes spritehabla {  
     from {background-position: 0 -401px; } 
-  to {background-position: -1392px -401px; } 
+  to {background-position: -1920px -401px; } 
 }
 
+@keyframes spritehabla2 {  
+  from {background-position: 0 -511px; } 
+  to {background-position: -7800px -511px; } 
+}
+
+@-webkit-keyframes spritehabla2 {  
+    from {background-position: 0 -511px; } 
+  to {background-position: -7800px -511px; } 
+}
 
 @keyframes fachadamov {  
   from {background-position-x: 0px; } 
@@ -1706,25 +1752,27 @@ and (max-height : 800px)
 and (orientation : landscape)
 {
 	
-	.spritechabelitamanoiz{
-	 background:  url(../imagenes/chabelita_sprite3-manoizzz.png) 0 100%;
-  
-
-  z-index: 6;
-  height:511px;
-  width:600px;
-  position: absolute;
-  left: 0;
-  
- margin-top:16%;
-  margin-left:51%;
-  
-  
-  -webkit-animation: spritechabelitamanoiz 1.4s steps(14, end) 5s 15;
-   -webkit-animation-fill-mode:forwards;
-  
+	
+	.pastoiz {
+  background:  url(../imagenes/pastoiz.png) 0 100% no-repeat;
+   margin-top: -8.7%;
+  margin-left: -0.5%;
+  z-index: 2;
+  -webkit-background-size: 32% auto;
+-moz-background-size: 32% auto;
+-o-background-size: 32% auto;
 }
 
+.pastoder {
+  background:  url(../imagenes/pastoder.png) 0 100% no-repeat;
+   margin-top: -8.7%;
+  margin-left: 74.5%;
+  z-index: 2;
+  -webkit-background-size: 32% auto;
+-moz-background-size: 32% auto;
+-o-background-size: 32% auto;
+}
+	
 	
 #botonconsulta{
 	top:77.5%;
@@ -2096,7 +2144,7 @@ z-index:6;
 
   z-index: 6;
   height:401px;
-  width:232px;
+  width:320px;
   position: absolute;
   left: 0;
   
@@ -2118,17 +2166,17 @@ z-index:6;
   
 
   z-index: 3;
-  height:401px;
-  width:232px;
+   height:511px;
+  width:600px;
   position: absolute;
   left: 0;
  
- margin-top:25%;
+ margin-top:18%;
   margin-left:-12%;
   /*display:none;*/
 
   
-         -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling2 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
+         -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
   
@@ -2139,17 +2187,17 @@ z-index:6;
   
 
   z-index: 3;
-  height:401px;
-  width:232px;
+   height:511px;
+  width:600px;
   position: absolute;
   left: 0;
   
- margin-top:25%;
+ margin-top:18%;
   margin-left:-12%;
  /* display:none;*/
 
   
-         -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling2 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
+        -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
   
