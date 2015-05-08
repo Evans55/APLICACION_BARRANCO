@@ -235,60 +235,6 @@ $( document ).on( "pagecreate", function() {
 </script>
 
 
-
-<!--<script>
-$( document ).on( "pagecreate", "#page", function() {
-    $( document ).on( "swipeleft swiperight", "#page", function( e ) {
-        // We check if there is no open panel on the page because otherwise
-        // a swipe to close the left panel would also open the right panel (and v.v.).
-        // We do this by checking the data that the framework stores on the page element (panel: open).
-        if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
-            if ( e.type === "swipeleft"  ) {
-                $( "#right-panel" ).panel( "open" );
-            } else if ( e.type === "swiperight" ) {
-                $( "#left-panel11" ).panel( "open" );
-            }
-        }
-    });
-});
-</script>
- -->
-
-<!--<script>
-$( document ).on( "pageinit", "#page2", function() {
-    $( document ).on( "swipeleft swiperight", "#page2", function( e ) {
-        // We check if there is no open panel on the page because otherwise
-        // a swipe to close the left panel would also open the right panel (and v.v.).
-        // We do this by checking the data that the framework stores on the page element (panel: open).
-        if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
-            if ( e.type === "swipeleft"  ) {
-                $( "#right-panel" ).panel( "open" );
-            } else if ( e.type === "swiperight" ) {
-                $( "#left-panel" ).panel( "open" );
-            }
-        }
-    });
-});
-</script>
-
-<script>
-$( document ).on( "pagecreate", "#page3", function() {
-    $( document ).on( "swipeleft swiperight", "#page3", function( e ) {
-        // We check if there is no open panel on the page because otherwise
-        // a swipe to close the left panel would also open the right panel (and v.v.).
-        // We do this by checking the data that the framework stores on the page element (panel: open).
-        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
-            if ( e.type === "swipeleft" ) {
-                $( "#right-panel2" ).panel( "open" );
-            } else if ( e.type === "swiperight" ) {
-                $( "#left-panel2" ).panel( "open" );
-            }
-        }
-    });
-});
-</script> -->
-
-
 <script>
 
 
@@ -311,55 +257,33 @@ audio.play();
 </script> 
 
 
-<!--<script type="text/javascript">
-
-function enviodato (){
-	var est ='encendido' ;
-	
-	window.localStorage.setItem("estado1",est);
-	  $.mobile.changePage("#page2", { reverse:false, transition: "customFlip" });
-	  //$('#output').html("Estado: " + window.localStorage.getItem("estado"));
-	  return false;
-}
-
-</script> -->
-
-<!--<script>
-
-$(document).on("pagechange", function(e, data) {
-                var to_page = data.toPage[0].id;
-                if (to_page == "page2") {
-				   
-				  // if(window.localStorage.getItem("estado2") == null){
-		            //document.getElementById('activo').style.display = 'block';
-					playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
-	              // }
-                    
-                }
-				
-				
-            });
-
-</script>  -->
 
 <!--<script>
 $( document ).on( "pageinit", "#page", function( event ) {
   document.getElementById('spritechabelita').style.display = 'block';
 });
 </script>  
+ -->  
 
 <script>
-$( document ).on( "pageinit", "#page2", function( event ) {
-  document.getElementById('spritechabelita2').style.display = 'block';
-});
-</script>  
 
-<script>
-$( document ).on( "pageinit", "#page3", function( event ) {
-  document.getElementById('spritechabelita3').style.display = 'block';
+$('div.ui-page').live("swipeleft", function () {
+    var nextpage = $(this).next('div[data-role="page"]');
+    if (nextpage.length > 0) {
+        $.mobile.changePage(nextpage, "slide", false, true);
+    }
 });
-</script> -->  
+$('div.ui-page').live("swiperight", function () {
+    var prevpage = $(this).prev('div[data-role="page"]');
+    if (prevpage.length > 0) {
+        $.mobile.changePage(prevpage, {
+            transition: "slide",
+            reverse: true
+        }, true, true);
+    }
+});
 
+</script>
 
 <script>
 

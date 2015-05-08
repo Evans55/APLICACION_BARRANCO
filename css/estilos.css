@@ -1751,9 +1751,9 @@ margin-top:-10%;
 	.faro1 {
   background: url(../imagenes/faro1.png)0 100% no-repeat;
   z-index: 5;
-  -webkit-background-size: 23% auto;
--moz-background-size: 23% auto;
--o-background-size: 23% auto;
+  -webkit-background-size: 20% auto;
+-moz-background-size: 20% auto;
+-o-background-size: 20% auto;
 margin-left:-5%;
 margin-top:-3%;
 }
@@ -1761,9 +1761,9 @@ margin-top:-3%;
 .faro2 {
   background: url(../imagenes/faro2.png)0 100% no-repeat;
   z-index: 5;
-  -webkit-background-size: 23% auto;
--moz-background-size: 23% auto;
--o-background-size: 23% auto;
+  -webkit-background-size: 20% auto;
+-moz-background-size: 20% auto;
+-o-background-size: 20% auto;
 margin-left:80%;
 margin-top:-3%;
 }
@@ -2056,7 +2056,7 @@ z-index:6;
 	
 	
 	.spritechabelita {
-  background:  url(../imagenes/sprite_chabukita.png) 0 100%;
+  background:  url(../imagenes/sprite_chabukita11.png) 0 100%;
   
 
   z-index: 6;
