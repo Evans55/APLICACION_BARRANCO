@@ -200,15 +200,13 @@ max-height: 691px;
 
 
 #global2 {
-	height: 29.7em;
-	width: 70%;
-	border: 1px solid #ddd;
-	overflow-y: scroll;
-	margin-top:20.8%;
-	margin-left:23%;
-	background-color:powderblue;
-	
-	
+  height: 20.7em;
+  width: 184%;
+  /* border: 1px solid #ddd; */
+  overflow-y: scroll;
+  margin-top: 35.8%;
+  margin-left: 11%;
+  background-color: transparent;
 }
 
 #global2::-webkit-scrollbar {
@@ -216,8 +214,11 @@ max-height: 691px;
 }
 
 #global2::-webkit-scrollbar-track {
-    background-color: #FFF;
-    border-left: 1px solid #ccc;
+    background-color: transparent;
+    border-left: 1px solid #999;
+	border-right:1px solid #999;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
 }
 #global2::-webkit-scrollbar-thumb {
     background-color:#039;
@@ -381,9 +382,11 @@ transform:scale(0.8) translateY(3px);
 .botondescarga {
 	
 	padding:1%;
-	width:23.8%;
+	width:16.8%;
 	height:auto;
-	position:relative;
+	top:80.5%;
+	left:21%;
+	position:absolute;
 	
 }
 
@@ -421,7 +424,7 @@ transform:scale(0.8) translateY(3px);
 
 #botonconsulta{
 	top:80.5%;
-	left:10.7%;
+	/*left:10.7%;*/
 }
 
 .botonconsulta>a{
@@ -859,35 +862,67 @@ margin-top:-3%;
 }
 
 .midground {
-  background:  url(../imagenes/Fachada.png) 0 100% no-repeat;
-  top:-20%;
-  left:32%;
+  background: url(../imagenes/Fachada.png) 0 100% no-repeat;
+ top:-100%;
+  left: 24%;
   z-index: 3;
-  -webkit-background-size: 33% auto;
--moz-background-size: 33% auto;
--o-background-size: 33% auto;
+  -webkit-background-size: 57% auto;
+  -moz-background-size: 57% auto;
+  -o-background-size: 57% auto;
+  
+  
+      -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: moverfachadaa;	
+-webkit-animation-timing-function: ease-in-out;
+ -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode:forwards;
 }
 
+
 .fachadaiz {
-  background:  url(../imagenes/Fachada_Izq.png) 0 100% no-repeat;
-  margin-top: -15.3%;
-  margin-left: 14%;
+  background: url(../imagenes/Fachada_Izq.png) 0 100% no-repeat;
+  margin-left: 0%;
   z-index: 2;
-  -webkit-background-size: 23% auto;
--moz-background-size: 23% auto;
--o-background-size: 23% auto;
+  top:-100%;
+  -webkit-background-size: 35% auto;
+  -moz-background-size: 35% auto;
+  -o-background-size: 35% auto;
+  
+    -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: moverfachadaa;	
+-webkit-animation-timing-function: ease-in-out;
+ -webkit-animation-delay: 0s;
+    -webkit-animation-fill-mode:forwards;
 }
 
 .fachadader {
-  background:  url(../imagenes/Fachada_der.png) 0 100% no-repeat;
-  margin-top: -15.3%;
-  margin-left: 61%;
+  background: url(../imagenes/Fachada_der.png) 0 100% no-repeat;
+  margin-left: 76%;
   z-index: 2;
-  -webkit-background-size: 21% auto;
--moz-background-size: 23% auto;
--o-background-size: 23% auto;
+  top:-100%;
+  -webkit-background-size: 32% auto;
+  -moz-background-size: 32% auto;
+  -o-background-size: 32% auto;
+  
+  
+    -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: moverfachadaa;	
+-webkit-animation-timing-function: ease-in-out;
+ -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode:forwards;
 }
 
+@keyframes moverfachadaa {
+  0%{ top:-100%}
+  
+  100%{top:-20%;}
+}
+
+@-webkit-keyframes moverfachadaa {
+  0%{ top:-100%}
+  
+  100%{top:-20%;}
+}
 
 .grassiz {
   background:  url(../imagenes/gras_Izq.png) 0 100% no-repeat;
@@ -1372,7 +1407,7 @@ from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
 
 .background {
   background: url(../imagenes/Cielo.png)0 100% no-repeat;
-  z-index: 1;
+  /*z-index: 1;*/
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
 -o-background-size: 100% 100%;
@@ -1838,13 +1873,13 @@ z-index:6;
 
 
 #global2 {
-  height: 29.7em;
-  width: 89%;
-  border: 1px solid #ddd;
+  height: 20.7em;
+  width: 184%;
+  /* border: 1px solid #ddd; */
   overflow-y: scroll;
-  margin-top: 19.8%;
-  margin-left: 7%;
-  background-color: powderblue;
+  margin-top: 35.8%;
+  margin-left: 11%;
+  background-color: transparent;
 }
 
 
@@ -2226,13 +2261,13 @@ and (orientation : landscape)
 }
 
 #global2 {
-  height: 22.7em;
-  width: 89%;
-  border: 1px solid #ddd;
+  height: 20.7em;
+  width: 184%;
+  /* border: 1px solid #ddd; */
   overflow-y: scroll;
-  margin-top: 21.8%;
-  margin-left: 7%;
-  background-color: powderblue;
+  margin-top: 35.8%;
+  margin-left: 11%;
+  background-color: transparent;
 }
 
 .botondescarga>a {
@@ -2411,13 +2446,13 @@ transform: scale(0.6);
 }
 
 #global2 {
-  height: 11.7em;
-  width: 102%;
-  border: 1px solid #ddd;
+  height: 20.7em;
+  width: 184%;
+  /* border: 1px solid #ddd; */
   overflow-y: scroll;
-  margin-top: 19.8%;
-  margin-left: 7%;
-  background-color: powderblue;
+  margin-top: 35.8%;
+  margin-left: 11%;
+  background-color: transparent;
 }
 
 #form2{
