@@ -402,44 +402,22 @@ document.getElementById('activo').style.display = 'block';
 
 
 <script>
-function siguientepag1(){
 
-if(document.getElementById('caminotramite2').style.display = 'none'){
-	document.getElementById('caminotramite2').style.display = 'block';
-	document.getElementById('caminotramite1').style.display = 'none';
-}
-	
-}
+function siguientepaginas(div1,div2){
 
-function anteriorpag1(){
-
-if(document.getElementById('caminotramite1').style.display = 'none'){
-	document.getElementById('caminotramite1').style.display = 'block';
-	document.getElementById('caminotramite2').style.display = 'none';
+if(document.getElementById(div1).style.display = 'none'){
+	document.getElementById(div2).style.display = 'block';
+	document.getElementById(div1).style.display = 'none';
 }
 	
 }
 
 
-</script>
+function anteriorpaginas(div1,div2){
 
-
-<script language="javascript" type="text/javascript">
-function siguientepag2(){
-
-if(document.getElementById('caminotramite4').style.display = 'none'){
-	document.getElementById('caminotramite3').style.display = 'none';
-	document.getElementById('caminotramite4').style.display = 'block';
-	
-}
-	
-}
-
-function anteriorpag2(){
-
-if(document.getElementById('caminotramite3').style.display = 'none'){
-	document.getElementById('caminotramite3').style.display = 'block';
-	document.getElementById('caminotramite4').style.display = 'none';
+if(document.getElementById(div1).style.display = 'none'){
+	document.getElementById(div1).style.display = 'block';
+	document.getElementById(div2).style.display = 'none';
 }
 	
 }
@@ -1020,8 +998,8 @@ if(document.getElementById('caminotramite3').style.display = 'none'){
 
   
 <div class="ui-grid-a" id="botonespag">
-   <div class="ui-block-a"><a href="#" onclick="anteriorpag1();" ><img src="imagenes/anterior.png" alt="siguiente"></a></div>
-   <div class="ui-block-b"><a href="#" onclick="siguientepag1();" ><img src="imagenes/siguiente.png" alt="anterior"></a></div>
+   <div class="ui-block-a"><a href="#" onclick="anteriorpaginas('caminotramite1','caminotramite2');;" ><img src="imagenes/anterior.png" alt="siguiente"></a></div>
+   <div class="ui-block-b"><a href="#" onclick="siguientepaginas('caminotramite1','caminotramite2');;" ><img src="imagenes/siguiente.png" alt="anterior"></a></div>
 </div>
 
 <div class="ui-grid-a">
@@ -1385,6 +1363,24 @@ if(document.getElementById('caminotramite3').style.display = 'none'){
 	</div>
 
  <div data-role="content">
+ 
+ <div id="global">
+  <div id="mensajes">
+  
+  <div>
+  
+          <div >
+           <h3><a href="#page16" data-transition="slide">1. ACCESO A LA INFORMACIÓN QUE POSEA O PRODUZCA LA MUNICIPALIDAD</a></h3>
+          
+          
+           </div>
+           
+          
+           
+           
+     </div>
+  </div>
+</div>
  
  </div>
 
@@ -1844,8 +1840,8 @@ if(document.getElementById('caminotramite3').style.display = 'none'){
   
   
 <div class="ui-grid-a" id="botonespag">
-   <div class="ui-block-a"><a href="#" onclick="anteriorpag2();" ><img src="imagenes/anterior.png" alt="anterior"></a></div>
-   <div class="ui-block-b"><a href="#" onclick="siguientepag2();" ><img src="imagenes/siguiente.png" alt="siguiente"></a></div>
+   <div class="ui-block-a"><a href="#" onclick="anteriorpaginas('caminotramite3','caminotramite4');" ><img src="imagenes/anterior.png" alt="anterior"></a></div>
+   <div class="ui-block-b"><a href="#" onclick="siguientepaginas('caminotramite3','caminotramite4');" ><img src="imagenes/siguiente.png" alt="siguiente"></a></div>
 </div>
 
 <div class="ui-grid-a">
@@ -1899,6 +1895,131 @@ if(document.getElementById('caminotramite3').style.display = 'none'){
 
 
 
+
+<div data-role="page" id="page16" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel16" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite">Transparencia</div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo </div>
+  <div id="pasos">Total de 2 pasos</div>
+  
+  
+  <div id="globaltramite">
+      <div id="mensajes" style="background-color:#FFF">
+        <div class="textotramite">
+        
+       El derecho de trámite se establece en función al costo de reproducción del medio que contiene la información solicitada.
+Conforme el Reglamento de la Ley de Transparencia y Acceso a la Información Pública, la información solicitada puede ser remitida a la dirección electrónica proporcionada por el solicitante en caso se haya considerado dicho medio para el acceso a la información pública.
+
+        
+        </div>
+      </div>
+  </div>
+  
+  
+  <div id="caminotramite5">
+
+  <div class="botoncamino" id="botoncamino1" data-role="button"><a href="#popupTransparencia1" data-rel="popup" data-position-to="window"><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+  
+  <div class="botoncamino" id="botoncamino2" data-role="button">
+  <a href="#popupTransparencia2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+  
+  
+  </div>
+
+  
+
+
+<div class="ui-grid-a">
+  <div class="ui-block-a"> <div class="botonconsulta" id="botonconsulta" data-role="button"><a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a></div></div>
+  <div class="ui-block-b"><div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a></div></div>
+</div>
+  
+
+  
+  <div data-role="popup" id="popupTransparencia1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+
+<div class="ui-grid-a">
+  <div class="ui-block-a">
+    <div id="global2">
+      <div id="mensajes">
+        <div class="texto2">
+        
+        Debes presentar una solicitud dirigida al responsable de brindar la información, consignando lo siguiente: 
+
+- Nombres y apellidos o denominación o razón
+social, número de documento de identidad o número de RUC, domicilio del recurrente y del representante, según corresponda.
+- Número de teléfono y/o correo electrónico; de ser el caso.
+- Expresión concreta y precisa del pedido de información.
+- Fechas aproximadas en que la información se ha producido u obtenido.
+- Medio en que se requiere la información (copia simple, diskette, CD, etc.)
+ 
+        
+        </div>
+      </div>
+  </div> 
+  </div>
+  
+ 
+</div>
+
+
+</div>
+	
+    
+   <div data-role="popup" id="popupTransparencia2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+
+<div class="ui-grid-a">
+  <div class="ui-block-a">
+    <div id="global2">
+      <div id="mensajes">
+        <div class="texto2">
+        
+        Debes pagar el derecho a trámite y presentar el recibo correspondiente. 
+        
+        </div>
+      </div>
+  </div> 
+  </div>
+  
+ 
+</div>
+
+
+</div> 
+    
+    
+    
+    
+    
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel16" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
+        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
+          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
+        <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+  height: 3em;"></a></li>
+        </ul>
+    </div>
+    
+  </div>
 
 
 </body>
