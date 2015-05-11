@@ -121,7 +121,7 @@ function onDeviceReady(){
     var id =active_page.page().attr('id');
     if (id==='page') {
         if (confirm('¿Seguro que quieres cerrar la aplicación?')==true){
-            app.exitApp();
+            navigator.app.exitApp();
         }
     }
     else{
