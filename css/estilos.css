@@ -2178,7 +2178,7 @@ z-index:6;
 	
 	
 	.spritechabelita2 {
-  background:  url(../imagenes/sprite_chabukita2.png) 0 100%;
+  background:  url(../imagenes/sprite_chabukita22.png) 0 100%;
   
 
   z-index: 3;
@@ -2192,7 +2192,7 @@ z-index:6;
   /*display:none;*/
 
   
-         -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 15;
+         -webkit-animation: spritechabelita2 0.8s steps(13, end) 5, curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 10;
  
  -webkit-animation-fill-mode:forwards;
   
