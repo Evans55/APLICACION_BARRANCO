@@ -127,5 +127,8 @@ function onDeviceReady(){
     else{
     navigator.app.backHistory();
 	stopAudio();
+	document.getElementById('spritechabelita').style.display = 'none';
+	document.getElementById('spritechabelita2').style.display = 'none';
+	document.getElementById('spritechabelita3').style.display = 'none';
     }
 }
