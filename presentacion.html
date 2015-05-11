@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aplic. Web de jQuery Mobile</title>
+<title>Guía Interactiva de trámites- Municipalidad de Barranco</title>
 <!--
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script> -->
@@ -263,8 +263,8 @@ audio.play();
 $( document ).on( "pageinit", "#page", function( event ) {
   document.getElementById('spritechabelita').style.display = 'block';
 });
-</script>  
- -->  
+</script> -->  
+ 
 
 <script language="javascript">
 
@@ -427,35 +427,16 @@ if(document.getElementById(div1).style.display = 'none'){
 </script>
 
 </head> 
-<body onLoad="onBodyLoad()" style="background-color:#009;">
+<body onLoad="activarAudio1(),onBodyLoad()" style="background-color:#009;">
 
-<!--<div data-role="page" id="pagecamotito">
-  <div data-role="content">Contenido</div>
-</div>  -->
-
-
-<div data-role="page" id="page" style="overflow-x: hidden; overflow-y:hidden;" data-transition="fade">
+<div data-role="page" id="page" style="overflow-x: hidden; overflow-y:hidden;">
 
        <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
-		
-    <!--    <a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
-      <!-- <a href="#left-panel11" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>  -->
-     <!--  <a href="#search1" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
        <a href="#left-panel11" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
-     <!--  <a href="#search1" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/buscar2.png" alt="buscarr"></a> -->
-       
-	</div>
+   	</div>
     
 	<div data-role="content">	
-
-     
-    <!-- <div class="fachadamov"></div>  -->
-
-  <!-- <div class="fondofachada"></div> -->
-  
- <!-- <div class="background">
-  </div> -->
-  
+ 
   <div class="foreground">
   </div>
   
@@ -468,27 +449,14 @@ if(document.getElementById(div1).style.display = 'none'){
  <div class="pastoiz"></div>
  <div class="pastoder"></div>
 
- 
- <!--<div class="plantasiz"></div>
-     <div class="grassfondoiz"></div>
-     <div class="grassiz"></div>
-     <div class="plantasder"></div>
-     <div class="grassfondoder"></div>
-     <div class="grassder"></div> -->
-  
-  <div class="faro1"></div>
+   <div class="faro1"></div>
   <div class="faro2"></div>
   
- <div class="spritearbolmov"></div>
-  <div class="spritepalmeramov"></div>
+ <div class="spritearbolfinal"></div>
+  <div class="spritepalmera"></div>
   
   <div class="spritechabelita" id="spritechabelita"></div>
-  
-<!-- <audio id="player" preload="auto" src="audio/audio_pantalla2.mp3" autoplay type="audio/mpeg">
-</audio> -->
-  
-  <!--<div id="output2"></div> -->
-  
+
  <div class="background"> 
   <div class="nube1" id="nube1"></div>
   <div class="nube2" id="nube2"></div>
@@ -497,21 +465,14 @@ if(document.getElementById(div1).style.display = 'none'){
   <div class="nube5" id="nube5"></div>
   </div> 
 
-<!--<a data-role="button" href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"  style="z-index:6">Descargar PDF</a><br><br><br> -->
-
 <div class="ui-grid-a">
-      <!--<div class="ui-block-a"><a data-role="button" data-icon="arrow-r" id="skip2" onclick="playAudio('file:///android_asset/www/audio/intro.mp3'),cambiardisplay2();">Play</a></div> -->
 <div class="ui-block-b">
-<!--<a data-role="button" href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" data-icon="arrow-r" onclick="stopAudio(),playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');" >Siguiente</a> -->
-
 <a href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" onclick="activarAudio2(),stopAudio(),cambiardisplay3();"><img src="imagenes/next.png" alt="next"></a>
 
 <a href="#page2" id="sinAudio1" data-transition="customFlip" class="ui-btn-right ui-btn-inline" onclick="stopAudio(),sinAudio1();"><img src="imagenes/next.png" alt="next"></a>
 
 </div>
 </div>
-
-<!--<button onclick="CambiarAudio();" style="z-index:3;" type="button">Change Video</button><br> -->
 
 	</div>
     
@@ -522,49 +483,15 @@ if(document.getElementById(div1).style.display = 'none'){
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
      <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
           <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio1(),cambiardisplay2();"></a></li>
-          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
          <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
   height: 3em;"></a></li>
         </ul>
     </div>
     
-    
-    <!--<div data-role="panel" id="search1" data-theme="a" data-position="left" data-display="overlay" data-position-fixed="true">
-   
-   <form class="ui-filterable">
-    <input id="inset-autocomplete-input2" data-type="search" placeholder="Buscar...">
-</form>
-<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input2">
-    <li><a href="#">Acura</a></li>
-    <li><a href="#">Audi</a></li>
-    <li><a href="#">BMW</a></li>
-    <li><a href="#">Cadillac</a></li>
-    <li><a href="#">Chrysler</a></li>
-    <li><a href="#">Dodge</a></li>
-    <li><a href="#">Ferrari</a></li>
-    <li><a href="#">Ford</a></li>
-    <li><a href="#">GMC</a></li>
-    <li><a href="#">Honda</a></li>
-    <li><a href="#">Hyundai</a></li>
-    <li><a href="#">Infiniti</a></li>
-    <li><a href="#">Jeep</a></li>
-    <li><a href="#">Kia</a></li>
-    <li><a href="#">Lexus</a></li>
-    <li><a href="#">Mini</a></li>
-    <li><a href="#">Nissan</a></li>
-    <li><a href="#">Porsche</a></li>
-    <li><a href="#">Subaru</a></li>
-    <li><a href="#">Toyota</a></li>
-    <li><a href="#">Volkswagen</a></li>
-    <li><a href="#">Volvo</a></li>
-</ul>
-   
-    </div> -->
-    
-    
+</div> 
 
-</div>
+
 
 <div data-role="page" id="page2" >
 	

@@ -1098,8 +1098,8 @@ margin-top:-3%;
   width:377px;
   position: absolute;
   left: 0;
-  margin-left:60%;
-  margin-top:-19%;
+  margin-left:73%;
+  margin-top:-23%;
   -webkit-transform: scale(1.8);
   transform: scale(1.8);
   
@@ -1131,8 +1131,8 @@ margin-top:-3%;
   width:377px;
   position: absolute;
   left: 0;
-  margin-left:9%;
-  margin-top:-19%;
+  margin-left:-3%;
+  margin-top:-23%;
   -webkit-transform: scale(1.8);
   transform: scale(1.8);
   
@@ -1215,7 +1215,7 @@ margin-top:-3%;
 
 
 .spritechabelita {
-  background:  url(../imagenes/sprite_chabukita11.png) 0 100%;
+  background:  url(../imagenes/sprite_chabukita1.png) 0 100%;
   
 
   z-index: 6;
@@ -1237,7 +1237,7 @@ margin-top:-3%;
 }
 
 .spritechabelita2 {
-  background:  url(../imagenes/sprite_chabukita2.png) 0 100%;
+  background:  url(../imagenes/sprite_chabukita22.png) 0 100%;
   
 
   z-index: 3;
@@ -1251,14 +1251,14 @@ margin-top:-3%;
   /*display:none;*/
 
   
-         -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 15;
+         -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.8s steps(13, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
   
 }
 
 .spritechabelita3 {
-  background:  url(../imagenes/sprite_chabukita3.png) 0 100%;
+  background:  url(../imagenes/sprite_chabukita33.png) 0 100%;
   
 
    z-index: 3;
@@ -2001,7 +2001,7 @@ z-index:6;
   width:377px;
   position: absolute;
   left: 0;
-  margin-left:7%;
+  margin-left:-4%;
   margin-top:-32%;
 
   
@@ -2033,7 +2033,7 @@ z-index:6;
   width:377px;
   position: absolute;
   left: 0;
-  margin-left:58%;
+  margin-left:77%;
   margin-top:-32%;
 
   
