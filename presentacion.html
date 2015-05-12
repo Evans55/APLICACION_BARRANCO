@@ -511,7 +511,7 @@ if(document.getElementById(div1).style.display = 'none'){
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
      <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio1(),cambiardisplay2();"></a></li>
+          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio1(),cambiardisplay2();"></a></li><br>
         <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
          <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
   height: 3em;"></a></li>
@@ -1169,7 +1169,7 @@ if(document.getElementById(div1).style.display = 'none'){
 </div>
 
 
-
+<!--INICIO MENU MATRIMONIOS-->
 <div data-role="page" id="page8" style="background-image: url('imagenes/escritorios-02.png'); background-repeat: no-repeat; background-size: 100% 100%;">
 
  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
@@ -1184,77 +1184,94 @@ if(document.getElementById(div1).style.display = 'none'){
   <div id="mensajes">
   
   <div data-role="collapsible-set">
-  
           <div data-role="collapsible" data-collapsed="true">
-           <h3>1. MATRIMONIO CIVIL</h3>
-          
-          <ul data-role="listview" style="width:103%;">
-          <li data-role="list-divider" style="background-color:#C6E2FF;"><a href="#page15">Matrimonio Civil</a></li>
-          <li>Para menores de edad</li>
-          <li data-role="list-divider" style="background-color:#C6E2FF;">Para divorciados</li>
-          <li>Para viudos</li>
-          <li data-role="list-divider" style="background-color:#C6E2FF;">Para extranjeros</li>
-          <li>Para matrimonios por poder</li>
-          </ul>
-          
+	           <h3>1. MATRIMONIO CIVIL</h3>
+	          <ul data-role="listview" style="width:103%;">
+		          <li data-role="list-divider" style="background-color:#C6E2FF;">
+		          	<a href="#page15" style="display : block;text-decoration:none;">Matrimonio Civil</a>
+		          </li>
+		          <li data-role="list-divider" style="background-color:#FFF;">
+		          	<a href="#page17" style="display : block; text-decoration:none;">Para menores de edad</a>
+		          </li>
+		          <li data-role="list-divider" style="background-color:#C6E2FF;">
+		          	<a href="#page18" style="display : block;text-decoration:none;">Para divorciados</a>
+		          </li>
+		          <li data-role="list-divider" style="background-color:#FFF;">
+		          	<a href="#page19" style="display : block; text-decoration:none;">Para viudos</a>
+		          </li>
+		          <li data-role="list-divider" style="background-color:#C6E2FF;">
+		          	<a href="#page20" style="display : block;text-decoration:none;">Para extranjeros</a>
+		          </li>
+		          <li data-role="list-divider" style="background-color:#FFF;">
+		          	<a href="#page21" style="display : block; text-decoration:none;">Para matrimonios por poder</a>
+		          </li>
+	          </ul>
            </div>
            
            <div data-role="collapsible" data-collapsed="true">
            <h3>2. DISPENSA PARCIAL DE PUBLICACIÓN DE AVISO MATRIMONIAL </h3>
-          
-          <ul data-role="listview" style="width:103%;">
-          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 1</li>
-          <li>Elemento 2</li>
-          <li>Elemento 3</li>
-          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 2</li>
-          <li>Elemento 5</li>
-          </ul>
-          
+           		<ul data-role="listview" style="width:103%;">
+		          <li data-role="list-divider" style="background-color:#C6E2FF;">
+		          	<a href="#page22" style="display : block;text-decoration:none;">Dispensa parcial de publicacion de aviso matrimonial.</a>
+		          </li>
+	        	</ul>
            </div>
            
            <div data-role="collapsible" data-collapsed="true">
            <h3>3. EXHIBICIÓN DE EDICTOS MATRIMONIALES TRAMITADOS EN OTROS MUNICIPIOS</h3>
-          
-          <ul data-role="listview" style="width:103%;">
-          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 1</li>
-          <li>Elemento 2</li>
-          <li>Elemento 3</li>
-          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 2</li>
-          <li>Elemento 5</li>
-          </ul>
-          
-           </div>
+	          	<ul data-role="listview" style="width:103%;">
+			        <li data-role="list-divider" style="background-color:#C6E2FF;">
+			         <a href="#page23" style="display : block;text-decoration:none;">Exhibición de edictos matrimoniales tramitados en otros municipios.</a>
+			        </li>
+		        </ul>
+		   </div>
            
            
            
            <div data-role="collapsible" data-collapsed="true">
-           <h3>4. REPROGRAMACIÓN DE FECHA DE MATRIMONIO (PEDIDO EFECTUADO CON ANTICIPACIÓN - 48 Horas)</h3>
-          
-          <ul data-role="listview" style="width:103%;">
-          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 1</li>
-          <li>Elemento 2</li>
-          <li>Elemento 3</li>
-          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 2</li>
-          <li>Elemento 5</li>
-          </ul>
-          
+           	<h3>4. REPROGRAMACIÓN DE FECHA DE MATRIMONIO (PEDIDO EFECTUADO CON ANTICIPACIÓN - 48 Horas)</h3>
+          		<ul data-role="listview" style="width:103%;">
+			        <li data-role="list-divider" >
+			         <a href="#page24" style="display : block;text-decoration:none;">Reprogramación de fecha de matrimonio (PEDIDO EFECTUADO CON ANTICIPACIÓN - 48 Horas).</a>
+			        </li>
+		        </ul>
            </div>
            
            
            <div data-role="collapsible" data-collapsed="true">
            <h3>5. SEPARACIÓN CONVENCIONAL Y DIVORCIO ULTERIOR</h3>
-          
-          <ul data-role="listview" style="width:103%;">
-          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 1</li>
-          <li>Elemento 2</li>
-          <li>Elemento 3</li>
-          <li data-role="list-divider" style="background-color:#C6E2FF;">Set 2</li>
-          <li>Elemento 5</li>
-          </ul>
-          
+
+	           <div data-role="collapsible" data-collapsed="true">
+	           	<h3>5.1. SEPARACIÓN CONVENCIONAL</h3>
+	          		<ul data-role="listview" style="width:103%;">
+				       <li data-role="list-divider" style="background-color:#C6E2FF;">
+				       	<a href="#page25" style="display : block; text-decoration:none;">Separación convencional</a>
+				       </li>
+			           <li data-role="list-divider" style="background-color:#fff;">
+			          	<a href="#page26" style="display : block; text-decoration:none;">En caso de no tener hijos</a>
+			           </li>
+			           <li data-role="list-divider" style="background-color:#C6E2FF;">
+			          	<a href="#page27" style="display : block; text-decoration:none;">En caso de tener hijos menores</a>
+			           </li>
+			           <li data-role="list-divider" style="background-color:#fff;">
+			          	<a href="#page28" style="display : block; text-decoration:none;">En caso de tener hijos mayores con incapacidad </a>
+			           </li>
+			           <li data-role="list-divider" style="background-color:#C6E2FF;">
+			          	<a href="#page29" style="display : block; text-decoration:none;">En caso de requisitos relacionados con el patrimonio</a>
+			           </li>
+			        </ul>
+	           </div>
+
+	           <div data-role="collapsible" data-collapsed="true">
+	           	<h3>5.2. DIVORCIO ULTERIOR </h3>
+		           	<ul data-role="listview" style="width:103%;">
+					   <li data-role="list-divider" style="background-color:#C6E2FF;">
+					    <a href="#page30" style="display : block; text-decoration:none;">Divorcio Ulterior</a>
+					   </li>
+				    </ul>
+	           </div>
            </div>
-           
-           
+    
      </div>
   </div>
 </div>
@@ -1280,39 +1297,40 @@ if(document.getElementById(div1).style.display = 'none'){
 
 <div data-role="panel" id="search8" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
    
-   <form class="ui-filterable">
-    <input id="inset-autocomplete-input9" data-type="search" placeholder="Buscar...">
-</form>
-<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input9">
-    <li><a href="#">Acura</a></li>
-    <li><a href="#">Audi</a></li>
-    <li><a href="#">BMW</a></li>
-    <li><a href="#">Cadillac</a></li>
-    <li><a href="#">Chrysler</a></li>
-    <li><a href="#">Dodge</a></li>
-    <li><a href="#">Ferrari</a></li>
-    <li><a href="#">Ford</a></li>
-    <li><a href="#">GMC</a></li>
-    <li><a href="#">Honda</a></li>
-    <li><a href="#">Hyundai</a></li>
-    <li><a href="#">Infiniti</a></li>
-    <li><a href="#">Jeep</a></li>
-    <li><a href="#">Kia</a></li>
-    <li><a href="#">Lexus</a></li>
-    <li><a href="#">Mini</a></li>
-    <li><a href="#">Nissan</a></li>
-    <li><a href="#">Porsche</a></li>
-    <li><a href="#">Subaru</a></li>
-    <li><a href="#">Toyota</a></li>
-    <li><a href="#">Volkswagen</a></li>
-    <li><a href="#">Volvo</a></li>
-</ul>
+    <form class="ui-filterable">
+        <input id="inset-autocomplete-input9" data-type="search" placeholder="Buscar...">
+	</form>
+
+	<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input9">
+	    <li><a href="#">Acura</a></li>
+	    <li><a href="#">Audi</a></li>
+	    <li><a href="#">BMW</a></li>
+	    <li><a href="#">Cadillac</a></li>
+	    <li><a href="#">Chrysler</a></li>
+	    <li><a href="#">Dodge</a></li>
+	    <li><a href="#">Ferrari</a></li>
+	    <li><a href="#">Ford</a></li>
+	    <li><a href="#">GMC</a></li>
+	    <li><a href="#">Honda</a></li>
+	    <li><a href="#">Hyundai</a></li>
+	    <li><a href="#">Infiniti</a></li>
+	    <li><a href="#">Jeep</a></li>
+	    <li><a href="#">Kia</a></li>
+	    <li><a href="#">Lexus</a></li>
+	    <li><a href="#">Mini</a></li>
+	    <li><a href="#">Nissan</a></li>
+	    <li><a href="#">Porsche</a></li>
+	    <li><a href="#">Subaru</a></li>
+	    <li><a href="#">Toyota</a></li>
+	    <li><a href="#">Volkswagen</a></li>
+	    <li><a href="#">Volvo</a></li>
+	</ul>
    
-    </div>
+</div>
 
 </div>
 
-
+<!--FIN MENU MATRIMONIOS-->
 
 
 <div data-role="page" id="page9" style="background-image: url('imagenes/escritorios-03.png'); background-repeat: no-repeat; background-size: 100% 100%;">
@@ -2123,6 +2141,3656 @@ social, número de documento de identidad o número de RUC, domicilio del recurr
     </div>
     
   </div>
+
+
+
+
+
+
+<!--INICIO PARA MENORES DE EDAD-->
+  <div data-role="page" id="page17" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite" >PARA MENORES DE EDAD</div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General </div>
+  <div id="pasos">Total de 9 pasos</div>
+
+	  <div id="globaltramite" style="overflow-y:hidden;">
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite">
+	        
+	       <!--OBSERVACIONES-->
+	        
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE CAMINOS MENORES DE EDAD-->
+	  <div id="caminotramite6">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupMenoresEdad1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupMenoresEdad2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupMenoresEdad3" data-rel="popup" data-position-to="window"><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupMenoresEdad4" data-rel="popup" data-position-to="window"><img src="imagenes/paso04.png" alt="botoncamino4"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino5" data-role="button">
+		  <a href="#popupMenoresEdad5" data-rel="popup" data-position-to="window"><img src="imagenes/paso05.png" alt="botoncamino5"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino6" data-role="button">
+		  <a href="#popupMenoresEdad6" data-rel="popup" data-position-to="window"><img src="imagenes/paso06.png" alt="botoncamino6"></a></div> 
+	  </div>
+
+  
+	  <div id="caminotramite7">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupMenoresEdad7" data-rel="popup" data-position-to="window"><img src="imagenes/paso07.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupMenoresEdad8" data-rel="popup" data-position-to="window"><img src="imagenes/paso08.png" alt="botoncamino2"></a></div>
+
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupMenoresEdad9" data-rel="popup" data-position-to="window"><img src="imagenes/paso09.png" alt="botoncamino3"></a></div>
+	  </div>
+	<!--FIN DE CAMINOS MENORES DE EDADL-->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR MENORES DE EDAD-->
+	<div class="ui-grid-a" id="botonespag">
+	   <div class="ui-block-a">
+	   		<a href="#" onclick="anteriorpaginas('caminotramite6','caminotramite7');" ><img src="imagenes/anterior.png" alt="anterior"></a>
+	   </div>
+	   <div class="ui-block-b">
+	   		<a href="#" onclick="siguientepaginas('caminotramite6','caminotramite7');" ><img src="imagenes/siguiente.png" alt="siguiente"></a>
+	   </div>
+	</div>
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR MENORES DE EDAD-->
+
+	
+  <!-- INICIO BOTONES CONSULTA-DESCARGA MENORES DE EDAD-->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN BOTONES CONSULTA-DESCARGA MENORES DE EDAD-->
+  
+
+  <!--INICIO DE POPUP MENORES DE EDAD-->
+	<div data-role="popup" id="popupMenoresEdad1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar un formato de solicitud (distribución gratuita o de libre reproducción).
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupMenoresEdad2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Partida de nacimiento legible de cada uno de los contrayentes o dispensa judicial.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupMenoresEdad3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+			       <p>
+			       Copia autenticada por fedatario municipal del Documento Nacional de Identidad de los contrayentes y exhibición de los originales en la ceremonia.
+			       </p>
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupMenoresEdad4" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+			       <p>
+			       Copia autenticada por fedatario municipal del Documento Nacional de Identidad de dos testigos y exhibición de los originales en la ceremonia.
+			       </p>
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupMenoresEdad5" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración jurada de los testigos de conocer a los contrayentes.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupMenoresEdad6" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Certificado médico de los contrayentes (vigencia tres meses luego de su expedición).
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupMenoresEdad7" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración Jurada del estado civil actual de los contrayentes.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupMenoresEdad8" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración jurada de domicilio de cada contrayente.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupMenoresEdad9" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Autorización expresa de los padres, de no existir éstos últimos, de los ascendientes y a falta de éstos la autorización judicial, conforme lo indica el artículo 244 del Código Civil.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <!--FIN DE POPUP MENORES DE EDAD-->
+
+
+	
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 			3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN PARA MENORES DE EDAD-->
+
+
+     <!--INICIO PARA DIVORCIADOS-->
+  <div data-role="page" id="page18" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite" >PARA DIVORCIADOS</div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General </div>
+  <div id="pasos">Total de 12 pasos</div>
+
+	  <div id="globaltramite" style="overflow-y:hidden;">
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite">
+	        
+	       <!--OBSERVACIONES-->
+	        
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE CAMINOS PARA DIVORCIADOS-->
+	  <div class="caminotramite-show" id="caminoDivorciado1">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupParaDivorciados1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupParaDivorciados2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupParaDivorciados3" data-rel="popup" data-position-to="window"><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupParaDivorciados4" data-rel="popup" data-position-to="window"><img src="imagenes/paso04.png" alt="botoncamino4"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino5" data-role="button">
+		  <a href="#popupParaDivorciados5" data-rel="popup" data-position-to="window"><img src="imagenes/paso05.png" alt="botoncamino5"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino6" data-role="button">
+		  <a href="#popupParaDivorciados6" data-rel="popup" data-position-to="window"><img src="imagenes/paso06.png" alt="botoncamino6"></a></div> 
+	  </div>
+
+  
+	  <div class="caminotramite-hidden" id="caminoDivorciado2">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupParaDivorciados7" data-rel="popup" data-position-to="window"><img src="imagenes/paso07.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupParaDivorciados8" data-rel="popup" data-position-to="window"><img src="imagenes/paso08.png" alt="botoncamino2"></a></div>
+
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupParaDivorciados9" data-rel="popup" data-position-to="window"><img src="imagenes/paso09.png" alt="botoncamino3"></a></div>
+
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupParaDivorciados10" data-rel="popup" data-position-to="window"><img src="imagenes/paso10.png" alt="botoncamino4"></a></div>
+
+		  <div class="botoncamino" id="botoncamino5" data-role="button">
+		  <a href="#popupParaDivorciados11" data-rel="popup" data-position-to="window"><img src="imagenes/paso11.png" alt="botoncamino5"></a></div>
+
+		  <div class="botoncamino" id="botoncamino6" data-role="button">
+		  <a href="#popupParaDivorciados12" data-rel="popup" data-position-to="window"><img src="imagenes/paso12.png" alt="botoncamino6"></a></div>
+	  </div>
+	<!--FIN DE CAMINOS PARA DIVORCIADOS-->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR PARA DIVORCIADOS-->
+	<div class="ui-grid-a" id="botonespag">
+	   <div class="ui-block-a">
+	   		<a href="#" onclick="anteriorpaginas('caminoDivorciado1','caminoDivorciado2');" ><img src="imagenes/anterior.png" alt="anterior"></a>
+	   </div>
+	   <div class="ui-block-b">
+	   		<a href="#" onclick="siguientepaginas('caminoDivorciado1','caminoDivorciado2');" ><img src="imagenes/siguiente.png" alt="siguiente"></a>
+	   </div>
+	</div>
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR PARA DIVORCIADOS-->
+
+	
+  <!-- INICIO BOTONES CONSULTA-DESCARGA PARA DIVORCIADOS-->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN BOTONES CONSULTA-DESCARGA PARA DIVORCIADOS-->
+  
+
+  <!--INICIO DE POPUP PARA DIVORCIADOS-->
+	<div data-role="popup" id="popupParaDivorciados1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar un formato de solicitud (distribución gratuita o de libre reproducción).
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupParaDivorciados2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Partida de nacimiento legible de cada uno de los contrayentes o dispensa judicial.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaDivorciados3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+			       <p>
+			       Copia autenticada por fedatario municipal del Documento Nacional de Identidad de los contrayentes y 
+                   exhibición de los originales en la ceremonia.
+			       </p>
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaDivorciados4" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+			       <p>
+			       Copia autenticada por fedatario municipal del Documento Nacional de Identidad de dos testigos y exhibición de los originales en la ceremonia.
+			       </p>
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaDivorciados5" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración jurada de los testigos de conocer a los contrayentes.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaDivorciados6" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Certificado médico de los contrayentes (vigencia tres meses luego de su expedición).
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaDivorciados7" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración Jurada del estado civil actual de los contrayentes.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaDivorciados8" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración jurada de domicilio de cada contrayente.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaDivorciados9" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Partida de matrimonio con la inscripción del divorcio o anulación del matrimonio anterior. 
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaDivorciados10" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Copia autenticada por fedatario municipal del Documento Nacional de Identidad en el que figure el estado civil actualizado.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaDivorciados11" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración jurada de no administrar bienes de hijos menores.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaDivorciados12" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Certificado médico negativo de embarazo de la contrayente expedido por el Ministerio de Salud si es que no han transcurrido 300 días de producido el divorcio.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <!--FIN DE POPUP PARA DIVORCIADOS-->
+
+
+	
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 			3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN PARA DIVORCIADOS-->
+
+  <!--INICIO PARA VIUDOS-->
+  <div data-role="page" id="page19" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite" >PARA VIUDOS</div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General </div>
+  <div id="pasos">Total de 11 pasos</div>
+
+	  <div id="globaltramite" style="overflow-y:hidden;">
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite">
+	        
+	       <!--OBSERVACIONES-->
+	        
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE CAMINOS PARA VIUDOS-->
+	  <div class="caminotramite-show" id="caminoViudo1">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupParaViudos1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupParaViudos2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupParaViudos3" data-rel="popup" data-position-to="window"><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupParaViudos4" data-rel="popup" data-position-to="window"><img src="imagenes/paso04.png" alt="botoncamino4"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino5" data-role="button">
+		  <a href="#popupParaViudos5" data-rel="popup" data-position-to="window"><img src="imagenes/paso05.png" alt="botoncamino5"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino6" data-role="button">
+		  <a href="#popupParaViudos6" data-rel="popup" data-position-to="window"><img src="imagenes/paso06.png" alt="botoncamino6"></a></div> 
+	  </div>
+
+  
+	  <div class="caminotramite-hidden" id="caminoViudo2">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupParaViudos7" data-rel="popup" data-position-to="window"><img src="imagenes/paso07.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupParaViudos8" data-rel="popup" data-position-to="window"><img src="imagenes/paso08.png" alt="botoncamino2"></a></div>
+
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupParaViudos9" data-rel="popup" data-position-to="window"><img src="imagenes/paso09.png" alt="botoncamino3"></a></div>
+
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupParaViudos10" data-rel="popup" data-position-to="window"><img src="imagenes/paso10.png" alt="botoncamino4"></a></div>
+
+		  <div class="botoncamino" id="botoncamino5" data-role="button">
+		  <a href="#popupParaViudos11" data-rel="popup" data-position-to="window"><img src="imagenes/paso11.png" alt="botoncamino5"></a></div>
+	  </div>
+	<!--FIN DE CAMINOS PARA VIUDOS-->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR PARA VIUDOS-->
+	<div class="ui-grid-a" id="botonespag">
+	   <div class="ui-block-a">
+	   		<a href="#" onclick="anteriorpaginas('caminoViudo1','caminoViudo2');" ><img src="imagenes/anterior.png" alt="anterior"></a>
+	   </div>
+	   <div class="ui-block-b">
+	   		<a href="#" onclick="siguientepaginas('caminoViudo1','caminoViudo2');" ><img src="imagenes/siguiente.png" alt="siguiente"></a>
+	   </div>
+	</div>
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR PARA VIUDOS-->
+
+	
+  <!-- INICIO BOTONES CONSULTA-DESCARGA PARA VIUDOS-->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN BOTONES CONSULTA-DESCARGA PARA VIUDOS-->
+  
+
+  <!--INICIO DE POPUP PARA VIUDOS-->
+	<div data-role="popup" id="popupParaViudos1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar un formato de solicitud (distribución gratuita o de libre reproducción).
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupParaViudos2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Partida de nacimiento legible de cada uno de los contrayentes o dispensa judicial.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaViudos3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+			       <p>
+			       Copia autenticada por fedatario municipal del Documento Nacional de Identidad de los contrayentes y exhibición de los originales en la ceremonia.
+			       </p>
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaViudos4" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+			       <p>
+			       Copia autenticada por fedatario municipal del Documento Nacional de Identidad de dos testigos y exhibición de los originales en la ceremonia.
+			       </p>
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaViudos5" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración jurada de los testigos de conocer a los contrayentes.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaViudos6" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Certificado médico de los contrayentes (vigencia tres meses luego de su expedición).
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaViudos7" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración Jurada del estado civil actual de los contrayentes.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaViudos8" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración jurada de domicilio de cada contrayente.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaViudos9" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Partida de defunción de cónyuge fallecido.  
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaViudos10" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Copia autenticada por fedatario municipal del Documento Nacional de Identidad en el que figure el estado civil actualizado.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaViudos11" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Certificado médico negativo de embarazo de la contrayente expedido por el Ministerio de Salud si es que no ha transcurrido 300 días de producido la viudez.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <!--FIN DE POPUP PARA VIUDOS-->
+
+
+	
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 			3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN PARA VIUDOS-->
+
+
+  <!--INICIO PARA EXTRANJEROS -->
+  <div data-role="page" id="page20" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite" >PARA EXTRANJEROS</div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General </div>
+  <div id="pasos">Total de 11 pasos</div>
+
+	  <div id="globaltramite" style="overflow-y:hidden;">
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite">
+	        
+	       <!--OBSERVACIONES-->
+	        
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE CAMINOS PARA EXTRANJEROS -->
+	  <div class="caminotramite-show" id="caminoExtranjero1">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupParaExtranjero1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupParaExtranjero2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupParaExtranjero3" data-rel="popup" data-position-to="window"><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupParaExtranjero4" data-rel="popup" data-position-to="window"><img src="imagenes/paso04.png" alt="botoncamino4"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino5" data-role="button">
+		  <a href="#popupParaExtranjero5" data-rel="popup" data-position-to="window"><img src="imagenes/paso05.png" alt="botoncamino5"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino6" data-role="button">
+		  <a href="#popupParaExtranjero6" data-rel="popup" data-position-to="window"><img src="imagenes/paso06.png" alt="botoncamino6"></a></div> 
+	  </div>
+
+  
+	  <div class="caminotramite-hidden" id="caminoExtranjero2">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupParaExtranjero7" data-rel="popup" data-position-to="window"><img src="imagenes/paso07.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupParaExtranjero8" data-rel="popup" data-position-to="window"><img src="imagenes/paso08.png" alt="botoncamino2"></a></div>
+
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupParaExtranjero9" data-rel="popup" data-position-to="window"><img src="imagenes/paso09.png" alt="botoncamino3"></a></div>
+
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupParaExtranjero10" data-rel="popup" data-position-to="window"><img src="imagenes/paso10.png" alt="botoncamino4"></a></div>
+
+		  <div class="botoncamino" id="botoncamino5" data-role="button">
+		  <a href="#popupParaExtranjero11" data-rel="popup" data-position-to="window"><img src="imagenes/paso11.png" alt="botoncamino5"></a></div>
+	  </div>
+	<!--FIN DE CAMINOS PARA EXTRANJEROS -->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR PARA EXTRANJEROS -->
+	<div class="ui-grid-a" id="botonespag">
+	   <div class="ui-block-a">
+	   		<a href="#" onclick="anteriorpaginas('caminoExtranjero1','caminoExtranjero2');" ><img src="imagenes/anterior.png" alt="anterior"></a>
+	   </div>
+	   <div class="ui-block-b">
+	   		<a href="#" onclick="siguientepaginas('caminoExtranjero1','caminoExtranjero2');" ><img src="imagenes/siguiente.png" alt="siguiente"></a>
+	   </div>
+	</div>
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR PARA EXTRANJEROS -->
+
+	
+  <!-- INICIO BOTONES CONSULTA-DESCARGA PARA EXTRANJEROS -->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN BOTONES CONSULTA-DESCARGA PARA EXTRANJEROS -->
+  
+
+  <!--INICIO DE POPUP PARA EXTRANJEROS -->
+	<div data-role="popup" id="popupParaExtranjero1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar un formato de solicitud (distribución gratuita o de libre reproducción).
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupParaExtranjero2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Partida de nacimiento legible de cada uno de los contrayentes o dispensa judicial.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaExtranjero3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+			       <p>
+			       Copia autenticada por fedatario municipal del Documento Nacional de Identidad de los contrayentes y exhibición de los originales en la ceremonia.
+			       </p>
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaExtranjero4" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+			       <p>
+			       Copia autenticada por fedatario municipal del Documento Nacional de Identidad de dos testigos y exhibición de los originales en la ceremonia.
+			       </p>
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaExtranjero5" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración jurada de los testigos de conocer a los contrayentes.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaExtranjero6" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Certificado médico de los contrayentes (vigencia tres meses luego de su expedición).
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaExtranjero7" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración Jurada del estado civil actual de los contrayentes.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaExtranjero8" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración jurada de domicilio de cada contrayente.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaExtranjero9" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Partida de nacimiento y/o certificado de naturalización según corresponda, visado por el Cónsul peruano en el país de origen, legalizado por el Ministerio de Relaciones Exteriores o apostillado, con traducción oficial de ser el caso.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaExtranjero10" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Copia de pasaporte y/o carné de extranjería autenticado por fedatario municipal. 
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaExtranjero11" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>En caso de ser divorciado, presentará partida de matrimonio anterior con la disolución o sentencia del divorcio, con las visaciones respectivas, o apostillado.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <!--FIN DE POPUP PARA EXTRANJEROS -->
+
+
+	
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 			3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN PARA EXTRANJEROS -->
+
+
+   <!--INICIO PARA MATRIMONIOS POR PODER -->
+  <div data-role="page" id="page21" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite" >MATRIMONIOS POR PODER</div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General </div>
+  <div id="pasos">Total de 10 pasos</div>
+
+	  <div id="globaltramite" >
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite" style="text-align : left;">
+	        
+	       <strong>Costo</strong>
+	       	<br>
+			Recibo de pago del derecho de trámite:
+			<br>
+			a) De lunes a viernes de 9:00 a 17:00 horas
+			<br>
+			S/. 85.00 - En el Local Municipal
+			<br> 
+			S/. 117.20- Fuera del Local Municipal (dentro del distrito) 
+			<br>
+			 b) Fuera del Horario de Oficina:
+			<br>
+			S/. 142.20 - En el Local Municipal
+			<br> 
+			S/. 145.40 - Fuera del Local Municipal (dentro del distrito)
+			<br>
+
+			<br>
+			<strong>Observaciones</strong>
+			<br>
+			Con posterioridad a la presentación del expediente, se deberá cumplir con la publicación del edicto matrimonial o gestionar la dispensa de publicación del mismo.
+
+	        
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE CAMINOS PARA MATRIMONIOS POR PODER -->
+	  <div class="caminotramite-show" id="caminoPoder1">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupParaPoder1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupParaPoder2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupParaPoder3" data-rel="popup" data-position-to="window"><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupParaPoder4" data-rel="popup" data-position-to="window"><img src="imagenes/paso04.png" alt="botoncamino4"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino5" data-role="button">
+		  <a href="#popupParaPoder5" data-rel="popup" data-position-to="window"><img src="imagenes/paso05.png" alt="botoncamino5"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino6" data-role="button">
+		  <a href="#popupParaPoder6" data-rel="popup" data-position-to="window"><img src="imagenes/paso06.png" alt="botoncamino6"></a></div> 
+	  </div>
+
+  
+	  <div class="caminotramite-hidden" id="caminoPoder2">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupParaPoder7" data-rel="popup" data-position-to="window"><img src="imagenes/paso07.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupParaPoder8" data-rel="popup" data-position-to="window"><img src="imagenes/paso08.png" alt="botoncamino2"></a></div>
+
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupParaPoder9" data-rel="popup" data-position-to="window"><img src="imagenes/paso09.png" alt="botoncamino3"></a></div>
+
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupParaPoder10" data-rel="popup" data-position-to="window"><img src="imagenes/paso10.png" alt="botoncamino4"></a></div>
+
+	  </div>
+	<!--FIN DE CAMINOS PARA MATRIMONIOS POR PODER -->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR PARA MATRIMONIOS POR PODER -->
+	<div class="ui-grid-a" id="botonespag">
+	   <div class="ui-block-a">
+	   		<a href="#" onclick="anteriorpaginas('caminoPoder1','caminoPoder2');" ><img src="imagenes/anterior.png" alt="anterior"></a>
+	   </div>
+	   <div class="ui-block-b">
+	   		<a href="#" onclick="siguientepaginas('caminoPoder1','caminoPoder2');" ><img src="imagenes/siguiente.png" alt="siguiente"></a>
+	   </div>
+	</div>
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR PARA MATRIMONIOS POR PODER -->
+
+	
+  <!-- INICIO BOTONES CONSULTA-DESCARGA PARA MATRIMONIOS POR PODER -->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN BOTONES CONSULTA-DESCARGA PARA MATRIMONIOS POR PODER -->
+  
+
+  <!--INICIO DE POPUP PARA MATRIMONIOS POR PODER -->
+	<div data-role="popup" id="popupParaPoder1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar un formato de solicitud (distribución gratuita o de libre reproducción).
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupParaPoder2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Partida de nacimiento legible de cada uno de los contrayentes o dispensa judicial.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaPoder3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+			       <p>
+			       Copia autenticada por fedatario municipal del Documento Nacional de Identidad de los contrayentes y exhibición de los originales en la ceremonia.
+			       </p>
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaPoder4" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+			       <p>
+			       Copia autenticada por fedatario municipal del Documento Nacional de Identidad de dos testigos y exhibición de los originales en la ceremonia.
+			       </p>
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaPoder5" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración jurada de los testigos de conocer a los contrayentes.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaPoder6" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Certificado médico de los contrayentes (vigencia tres meses luego de su expedición).
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaPoder7" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración Jurada del estado civil actual de los contrayentes.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaPoder8" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Declaración jurada de domicilio de cada contrayente.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaPoder9" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Poder por Escritura Pública inscrito en los Registros Públicos. Si el poder fue otorgado en el extranjero debe estar visado por el Cónsul peruano del país donde lo dio el poderdante, debiendo legalizarlo en Relaciones Exteriores y con traducción oficial de ser el caso.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaPoder10" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Copia autenticada por fedatario municipal del Documento Nacional de Identidad del apoderado.
+			       <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span> 
+		   	   </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <!--FIN DE POPUP PARA MATRIMONIOS POR PODER -->
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 			3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN PARA MATRIMONIOS POR PODER -->
+
+   <!--INICIO DISPENSA PARCIAL DE PUBLICACIÓN DE AVISO MATRIMONIAL  -->
+  <div data-role="page" id="page22" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite" >DISPENSA PARCIAL </div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General </div>
+  <div id="pasos">Total de 3 pasos</div>
+
+	  <div id="globaltramite" style="overflow-y:hidden;">
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite" style="text-align : left;">
+	        
+	       <strong>Costo</strong>
+	       	<br>
+			S/. 27.50
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE CAMINOS PARA DISPENSA PARCIAL DE PUBLICACIÓN DE AVISO MATRIMONIAL  -->
+	  <div class="caminotramite-show" >
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupParaDispensa1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupParaDispensa2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupParaDispensa3" data-rel="popup" data-position-to="window"><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+
+	  </div>
+
+  
+	<!--FIN DE CAMINOS DISPENSA PARCIAL DE PUBLICACIÓN DE AVISO MATRIMONIAL  -->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR PARA DISPENSA PARCIAL DE PUBLICACIÓN DE AVISO MATRIMONIAL  Dispensa-->
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR PARA DISPENSA PARCIAL DE PUBLICACIÓN DE AVISO MATRIMONIAL -->
+
+	
+  <!-- INICIO BOTONES CONSULTA-DESCARGA PARA DISPENSA PARCIAL DE PUBLICACIÓN DE AVISO MATRIMONIAL -->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN BOTONES CONSULTA-DESCARGA PARA DISPENSA PARCIAL DE PUBLICACIÓN DE AVISO MATRIMONIAL -->
+  
+
+  <!--INICIO DE POPUP DISPENSA PARCIAL DE PUBLICACIÓN DE AVISO MATRIMONIAL  -->
+	<div data-role="popup" id="popupParaDispensa1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Pedir formato de solicitud (distribución gratuita o de libre reproducción).
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupParaDispensa2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Llenar y presentar el formato de solicitud.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupParaDispensa3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+			       <p>
+			       Debes pagar el derecho a trámite y presentar el recibo de pago correspondiente.	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+			       </p>
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <!--FIN DE DISPENSA PARCIAL DE PUBLICACIÓN DE AVISO MATRIMONIAL  -->
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 			3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN DISPENSA PARCIAL DE PUBLICACIÓN DE AVISO MATRIMONIAL  -->
+
+
+    <!--INICIO EXHIBICIÓN DE EDICTOS -->
+  <div data-role="page" id="page23" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite" >EXHIBICIÓN DE EDICTOS MATRIMONIALES </div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo</div>
+  <div id="pasos">Total de 2 pasos</div>
+
+	  <div id="globaltramite" style="overflow-y:hidden;">
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite" style="text-align : left;">
+	        
+	       <strong>Costo</strong>
+	       	<br>
+			S/. 12.50
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE EXHIBICIÓN DE EDICTOS  -->
+	  <div class="caminotramite-show" >
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupParaEdictos1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupParaEdictos2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+	  </div>
+
+  
+	<!--FIN DE EXHIBICIÓN DE EDICTOS   -->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR EXHIBICIÓN DE EDICTOS -->
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR EXHIBICIÓN DE EDICTOS  -->
+
+	
+  <!-- INICIO EXHIBICIÓN DE EDICTOS -->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN EXHIBICIÓN DE EDICTOS -->
+  
+
+  <!--INICIO DE EXHIBICIÓN DE EDICTOS   -->
+	<div data-role="popup" id="popupParaEdictos1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar el edicto matrimonial.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupParaEdictos2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes cancelar el derecho a trámite y presentar el recibo correspondiente.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <!--FIN EXHIBICIÓN DE EDICTOS  -->
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 			3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN EXHIBICIÓN DE EDICTOS  -->
+
+  <!--INICIO DE REPROGRAMACIÓN  -->
+  <div data-role="page" id="page24" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite" style="-webkit-transform: scale(0.4);">REPROGRAMACIÓN DE FECHA DE MATRIMONIO </div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo</div>
+  <div id="pasos">Total de 3 pasos</div>
+
+	  <div id="globaltramite" style="overflow-y:hidden;">
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite" style="text-align : left;">
+	        
+	       <strong>Costo</strong>
+	       	<br>
+			S/. 20.50
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE CAMINOS DE REPROGRAMACIÓN -->
+	  <div class="caminotramite-show" >
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupRepro1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupRepro2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupRepro3" data-rel="popup" data-position-to="window" ><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+	  </div>
+
+  
+	<!--FIN DE CAMINOS DE REPROGRAMACIÓN    -->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR REPROGRAMACIÓN  -->
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR REPROGRAMACIÓN   -->
+
+	
+  <!-- INICIO REPROGRAMACIÓN -->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN REPROGRAMACIÓN -->
+  
+
+  <!--INICIO DE REPROGRAMACIÓN -->
+	<div data-role="popup" id="popupRepro1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes solicitar el formulario correspondiente (Libre reproducción).
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			       tempor incididunt ut labore et dolore magna aliqua.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupRepro2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+
+		       <p>Debes llenar el formulario y presentarlo.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupRepro3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes cancelar el derecho a trámite y presentar el recibo correspondiente.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <!--FIN REPROGRAMACIÓN -->
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 			3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN REPROGRAMACIÓN  -->
+
+
+   <!--INICIO DE SEPARACIÓN CONVENCIONAL  -->
+  <div data-role="page" id="page25" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite">SEPARACIÓN CONVENCIONAL </div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General.</div>
+  <div id="pasos">Total de 5 pasos</div>
+
+	  <div id="globaltramite" >
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite" style="text-align : left;">
+	        	<strong>Costo</strong>
+	        	<p>S/. 122.60</p>
+	        	<strong>Observaciones:</strong>
+	        	<p>En el caso de que el solicitante sea analfabeto, no puede firmar, es ciego o adolece de otra discapacidad, procederá la firma a ruego sin perjuicio de que impriman su huella digital o grafía, de ser el caso.</p>
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE CAMINOS DE SEPARACIÓN CONVENCIONAL -->
+	  <div class="caminotramite-show" >
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupConvencional1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupConvencional2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupConvencional3" data-rel="popup" data-position-to="window" ><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupConvencional4" data-rel="popup" data-position-to="window" ><img src="imagenes/paso04.png" alt="botoncamino4"></a></div>
+
+		  <div class="botoncamino" id="botoncamino5" data-role="button">
+		  <a href="#popupConvencional5" data-rel="popup" data-position-to="window" ><img src="imagenes/paso05.png" alt="botoncamino5"></a></div>
+	  </div>
+
+  
+	<!--FIN DE CAMINOS DE SEPARACIÓN CONVENCIONAL    -->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR SEPARACIÓN CONVENCIONAL  -->
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR SEPARACIÓN CONVENCIONAL   -->
+
+	
+  <!-- INICIO boton colsulta descarga SEPARACIÓN CONVENCIONAL -->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN boton consulta descarga SEPARACIÓN CONVENCIONAL -->
+  
+
+  <!--INICIO DE poput SEPARACIÓN CONVENCIONAL -->
+	<div data-role="popup" id="popupConvencional1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:
+		       </p>
+		       <ul>
+		       	<li>Nombres.</li>
+		       	<li>Documentos de identidad.</li>
+		       	<li>Último domicilio conyugal.</li>
+		       	<li>Firmas y huellas digitales</li>
+		       </ul>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupConvencional2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar copias simples y legibles de los documentos de identidad de ambos cónyuges.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupConvencional3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una copia certificada del acta o de la partida de matrimonio, expedida dentro de los tres meses anteriores a la fecha de presentación de la solicitud.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	  <div data-role="popup" id="popupConvencional4" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una declaración jurada del último domicilio conyugal de ser el caso, suscrita obligatoriamente por ambos cónyuges.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	  <div data-role="popup" id="popupConvencional5" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes realizar el pago correspondiente para el derecho de trámite y presentar el recibo.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <!--FIN  poput SEPARACIÓN CONVENCIONAL -->
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 			3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN SEPARACIÓN CONVENCIONAL  -->
+
+     <!--INICIO DE SEPARACIÓN CONVENCIONAL  .1-->
+  <div data-role="page" id="page26" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite">EN CASO DE NO TENER HIJOS</div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General.</div>
+  <div id="pasos">Total de 7 pasos</div>
+
+	  <div id="globaltramite" >
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite" style="text-align : left;">
+	        	<strong>Costo</strong>
+	        	<p>S/. 122.60</p>
+	        	<strong>Observaciones:</strong>
+	        	<p>En el caso de que el solicitante sea analfabeto, no puede firmar, es ciego o adolece de otra discapacidad, procederá la firma a ruego sin perjuicio de que impriman su huella digital o grafía, de ser el caso.</p>
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE CAMINOS DE SEPARACIÓN CONVENCIONAL .1-->
+	  <div class="caminotramite-show" id="caminoNohijos1">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupNohijos1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupNohijos2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupNohijos3" data-rel="popup" data-position-to="window" ><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupNohijos4" data-rel="popup" data-position-to="window" ><img src="imagenes/paso04.png" alt="botoncamino4"></a></div>
+
+		  <div class="botoncamino" id="botoncamino5" data-role="button">
+		  <a href="#popupNohijos5" data-rel="popup" data-position-to="window" ><img src="imagenes/paso05.png" alt="botoncamino5"></a></div>
+
+		  <div class="botoncamino" id="botoncamino6" data-role="button">
+		  <a href="#popupNohijos6" data-rel="popup" data-position-to="window" ><img src="imagenes/paso06.png" alt="botoncamino6"></a></div>
+	  </div>
+
+	  <div class="caminotramite-hidden" id="caminoNohijos2" >
+
+	  	  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupNohijos7" data-rel="popup" data-position-to="window" ><img src="imagenes/paso07.png" alt="botoncamino1"></a></div>
+
+	  </div>
+
+  
+	<!--FIN DE CAMINOS DE SEPARACIÓN CONVENCIONAL .1 -->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR SEPARACIÓN CONVENCIONAL .1 -->
+
+  	<div class="ui-grid-a" id="botonespag">
+	   <div class="ui-block-a">
+	   		<a href="#" onclick="anteriorpaginas('caminoNohijos1','caminoNohijos2');" ><img src="imagenes/anterior.png" alt="anterior"></a>
+	   </div>
+	   <div class="ui-block-b">
+	   		<a href="#" onclick="siguientepaginas('caminoNohijos1','caminoNohijos2');" ><img src="imagenes/siguiente.png" alt="siguiente"></a>
+	   </div>
+	</div>
+
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR SEPARACIÓN CONVENCIONAL  .1 -->
+
+	
+  <!-- INICIO boton colsulta descarga SEPARACIÓN CONVENCIONAL .1 -->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN boton consulta descarga SEPARACIÓN CONVENCIONAL .1-->
+  
+
+  <!--INICIO DE poput SEPARACIÓN CONVENCIONAL -->
+	<div data-role="popup" id="popupNohijos1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:
+		       </p>
+		       <ul>
+		       	<li>Nombres.</li>
+		       	<li>Documentos de identidad.</li>
+		       	<li>Último domicilio conyugal.</li>
+		       	<li>Firmas y huellas digitales</li>
+		       </ul>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupNohijos2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar copias simples y legibles de los documentos de identidad de ambos cónyuges.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupNohijos3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una copia certificada del acta o de la partida de matrimonio, expedida dentro de los tres meses anteriores a la fecha de presentación de la solicitud.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	  <div data-role="popup" id="popupNohijos4" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una declaración jurada del último domicilio conyugal de ser el caso, suscrita obligatoriamente por ambos cónyuges.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	  <div data-role="popup" id="popupNohijos5" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes realizar el pago correspondiente para el derecho de trámite y presentar el recibo.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupNohijos6" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Presentar una declaración jurada, con firma y huella digital de cada uno de los cónyuges en la que conste no tener hijos menores de edad o mayores con incapacidad.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupNohijos7" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Presentar copia certificada de la sentencia judicial firme o acta de conciliación respecto de los regímenes del ejercicio de la patria potestad, alimentos, tenencia y visita.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <!--FIN  poput SEPARACIÓN CONVENCIONAL .1-->
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 			3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN SEPARACIÓN CONVENCIONAL  .1-->
+
+      <!--INICIO DE SEPARACIÓN CONVENCIONAL  .2-->
+  <div data-role="page" id="page27" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite" style="-webkit-transform: scale(0.5);">EN CASO DE TENER HIJOS MENORES </div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General.</div>
+  <div id="pasos">Total de 7 pasos</div>
+
+	  <div id="globaltramite" >
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite" style="text-align : left;">
+	        	<strong>Costo</strong>
+	        	<p>S/. 122.60</p>
+	        	<strong>Observaciones:</strong>
+	        	<p>En el caso de que el solicitante sea analfabeto, no puede firmar, es ciego o adolece de otra discapacidad, procederá la firma a ruego sin perjuicio de que impriman su huella digital o grafía, de ser el caso.</p>
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE CAMINOS DE SEPARACIÓN CONVENCIONAL .2-->
+	  <div class="caminotramite-show" id="caminoHijosMenores1">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupHijosMenores1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupHijosMenores2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupHijosMenores3" data-rel="popup" data-position-to="window" ><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupHijosMenores4" data-rel="popup" data-position-to="window" ><img src="imagenes/paso04.png" alt="botoncamino4"></a></div>
+
+		  <div class="botoncamino" id="botoncamino5" data-role="button">
+		  <a href="#popupHijosMenores5" data-rel="popup" data-position-to="window" ><img src="imagenes/paso05.png" alt="botoncamino5"></a></div>
+
+		  <div class="botoncamino" id="botoncamino6" data-role="button">
+		  <a href="#popupHijosMenores6" data-rel="popup" data-position-to="window" ><img src="imagenes/paso06.png" alt="botoncamino6"></a></div>
+	  </div>
+
+	  <div class="caminotramite-hidden" id="caminoHijosMenores2" >
+
+	  	  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupHijosMenores7" data-rel="popup" data-position-to="window" ><img src="imagenes/paso07.png" alt="botoncamino1"></a></div>
+
+	  </div>
+
+  
+	<!--FIN DE CAMINOS DE SEPARACIÓN CONVENCIONAL .2 -->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR SEPARACIÓN CONVENCIONAL .1 -->
+
+  	<div class="ui-grid-a" id="botonespag">
+	   <div class="ui-block-a">
+	   		<a href="#" onclick="anteriorpaginas('caminoHijosMenores1','caminoHijosMenores2');" ><img src="imagenes/anterior.png" alt="anterior"></a>
+	   </div>
+	   <div class="ui-block-b">
+	   		<a href="#" onclick="siguientepaginas('caminoHijosMenores1','caminoHijosMenores2');" ><img src="imagenes/siguiente.png" alt="siguiente"></a>
+	   </div>
+	</div>
+
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR SEPARACIÓN CONVENCIONAL  .2 -->
+
+	
+  <!-- INICIO boton colsulta descarga SEPARACIÓN CONVENCIONAL .2 -->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN boton consulta descarga SEPARACIÓN CONVENCIONAL ..2-->
+  
+
+  <!--INICIO DE poput SEPARACIÓN CONVENCIONAL .2-->
+	<div data-role="popup" id="popupHijosMenores1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:
+		       </p>
+		       <ul>
+		       	<li>Nombres.</li>
+		       	<li>Documentos de identidad.</li>
+		       	<li>Último domicilio conyugal.</li>
+		       	<li>Firmas y huellas digitales</li>
+		       </ul>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupHijosMenores2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar copias simples y legibles de los documentos de identidad de ambos cónyuges.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupHijosMenores3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una copia certificada del acta o de la partida de matrimonio, expedida dentro de los tres meses anteriores a la fecha de presentación de la solicitud.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	  <div data-role="popup" id="popupHijosMenores4" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una declaración jurada del último domicilio conyugal de ser el caso, suscrita obligatoriamente por ambos cónyuges.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+
+	  <div data-role="popup" id="popupHijosMenores5" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes realizar el pago correspondiente para el derecho de trámite y presentar el recibo.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupHijosMenores6" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Adjuntar una copia certificada del acta o de la partida de nacimiento expedida dentro de los tres meses anteriores a la fecha de la presentación de la solicitud.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupHijosMenores7" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Presentar copia certificada de la sentencia judicial firme o acta de conciliación respecto de los regímenes del ejercicio de la patria potestad, alimentos, tenencia y visita.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <!--FIN  poput SEPARACIÓN CONVENCIONAL .2-->
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN SEPARACIÓN CONVENCIONAL  .2-->
+
+  <!--INICIO DE SEPARACIÓN CONVENCIONAL  .3-->
+  <div data-role="page" id="page28" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite" style="-webkit-transform : scale(0.5); margin-top : 0%;">EN CASO DE TENER HIJOS MAYORES CON INCAPACIDAD</div>
+  <div id="area" style="margin-top:12%;">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General.</div>
+  <div id="pasos">Total de 8 pasos</div>
+
+	  <div id="globaltramite" >
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite" style="text-align : left;">
+	        	<strong>Costo</strong>
+	        	<p>S/. 122.60</p>
+	        	<strong>Observaciones:</strong>
+	        	<p>En el caso de que el solicitante sea analfabeto, no puede firmar, es ciego o adolece de otra discapacidad, procederá la firma a ruego sin perjuicio de que impriman su huella digital o grafía, de ser el caso.</p>
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE CAMINOS DE SEPARACIÓN CONVENCIONAL .3-->
+	  <div class="caminotramite-show" id="caminoHijosIn1">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupHijosIn1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupHijosIn2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupHijosIn3" data-rel="popup" data-position-to="window" ><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupHijosIn4" data-rel="popup" data-position-to="window" ><img src="imagenes/paso04.png" alt="botoncamino4"></a></div>
+
+		  <div class="botoncamino" id="botoncamino5" data-role="button">
+		  <a href="#popupHijosIn5" data-rel="popup" data-position-to="window" ><img src="imagenes/paso05.png" alt="botoncamino5"></a></div>
+
+		  <div class="botoncamino" id="botoncamino6" data-role="button">
+		  <a href="#popupHijosIn6" data-rel="popup" data-position-to="window" ><img src="imagenes/paso06.png" alt="botoncamino6"></a></div>
+	  </div>
+
+	  <div class="caminotramite-hidden" id="caminoHijosIn2" >
+
+	  	  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupHijosIn7" data-rel="popup" data-position-to="window" ><img src="imagenes/paso07.png" alt="botoncamino1"></a></div>
+
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupHijosIn8" data-rel="popup" data-position-to="window" ><img src="imagenes/paso08.png" alt="botoncamino2"></a></div>
+	  </div>
+
+  
+	<!--FIN DE CAMINOS DE SEPARACIÓN CONVENCIONAL .2 -->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR SEPARACIÓN CONVENCIONAL .1 -->
+
+  	<div class="ui-grid-a" id="botonespag">
+	   <div class="ui-block-a">
+	   		<a href="#" onclick="anteriorpaginas('caminoHijosIn1','caminoHijosIn2');" ><img src="imagenes/anterior.png" alt="anterior"></a>
+	   </div>
+	   <div class="ui-block-b">
+	   		<a href="#" onclick="siguientepaginas('caminoHijosIn1','caminoHijosIn2');" ><img src="imagenes/siguiente.png" alt="siguiente"></a>
+	   </div>
+	</div>
+
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR SEPARACIÓN CONVENCIONAL  .3 -->
+
+	
+  <!-- INICIO boton colsulta descarga SEPARACIÓN CONVENCIONAL .3 -->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN boton consulta descarga SEPARACIÓN CONVENCIONAL .3-->
+  
+
+  <!--INICIO DE poput SEPARACIÓN CONVENCIONAL .3-->
+	<div data-role="popup" id="popupHijosIn1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:
+		       </p>
+		       <ul>
+		       	<li>Nombres.</li>
+		       	<li>Documentos de identidad.</li>
+		       	<li>Último domicilio conyugal.</li>
+		       	<li>Firmas y huellas digitales</li>
+		       </ul>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupHijosIn2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar copias simples y legibles de los documentos de identidad de ambos cónyuges.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupHijosIn3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una copia certificada del acta o de la partida de matrimonio, expedida dentro de los tres meses anteriores a la fecha de presentación de la solicitud.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	  <div data-role="popup" id="popupHijosIn4" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una declaración jurada del último domicilio conyugal de ser el caso, suscrita obligatoriamente por ambos cónyuges.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	  <div data-role="popup" id="popupHijosIn5" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes realizar el pago correspondiente para el derecho de trámite y presentar el recibo.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupHijosIn6" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Adjuntar copia certificada del acta o de la partida de nacimiento, expedida dentro de los tres meses anteriores a la fecha de la presentación de la solicitud.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupHijosIn7" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Presentar copia certificada de la sentencia judicial firme o acta de conciliación respecto de los regímenes del ejercicio de la curatela, alimentos y visitas.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	  <div data-role="popup" id="popupHijosIn8" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Anexar copias certificadas de las sentencias judiciales firmes que declaren la interdicción del hijo mayor con incapacidad y que nombran a su curador.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <!--FIN  poput SEPARACIÓN CONVENCIONAL .3-->
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 			3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN SEPARACIÓN CONVENCIONAL  .3-->
+
+
+    <!--INICIO DE SEPARACIÓN CONVENCIONAL  .4-->
+  <div data-role="page" id="page29" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite" style="-webkit-transform : scale(0.4); margin-top : 0%;">EN CASO DE REQUISITOS RELACIONADOS CON EL PATRIMONIO</div>
+  <div id="area" style="margin-top:12%;">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General.</div>
+  <div id="pasos">Total de 8 pasos</div>
+
+	  <div id="globaltramite" >
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite" style="text-align : left;">
+	        	<strong>Costo</strong>
+	        	<p>S/. 122.60</p>
+	        	<strong>Observaciones:</strong>
+	        	<p>En el caso de que el solicitante sea analfabeto, no puede firmar, es ciego o adolece de otra discapacidad, procederá la firma a ruego sin perjuicio de que impriman su huella digital o grafía, de ser el caso.</p>
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE CAMINOS DE SEPARACIÓN CONVENCIONAL .4-->
+	  <div class="caminotramite-show" id="caminoRel1">
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupRel1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupRel2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupRel3" data-rel="popup" data-position-to="window" ><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+
+		  <div class="botoncamino" id="botoncamino4" data-role="button">
+		  <a href="#popupRel4" data-rel="popup" data-position-to="window" ><img src="imagenes/paso04.png" alt="botoncamino4"></a></div>
+
+		  <div class="botoncamino" id="botoncamino5" data-role="button">
+		  <a href="#popupRel5" data-rel="popup" data-position-to="window" ><img src="imagenes/paso05.png" alt="botoncamino5"></a></div>
+
+		  <div class="botoncamino" id="botoncamino6" data-role="button">
+		  <a href="#popupRel6" data-rel="popup" data-position-to="window" ><img src="imagenes/paso06.png" alt="botoncamino6"></a></div>
+	  </div>
+
+	  <div class="caminotramite-hidden" id="caminoRel2" >
+
+	  	  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupRel7" data-rel="popup" data-position-to="window" ><img src="imagenes/paso07.png" alt="botoncamino1"></a></div>
+
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupRel8" data-rel="popup" data-position-to="window" ><img src="imagenes/paso08.png" alt="botoncamino2"></a></div>
+	  </div>
+
+  
+	<!--FIN DE CAMINOS DE SEPARACIÓN CONVENCIONAL .4 -->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR SEPARACIÓN CONVENCIONAL .4-->
+
+  	<div class="ui-grid-a" id="botonespag">
+	   <div class="ui-block-a">
+	   		<a href="#" onclick="anteriorpaginas('caminoRel1','caminoRel2');" ><img src="imagenes/anterior.png" alt="anterior"></a>
+	   </div>
+	   <div class="ui-block-b">
+	   		<a href="#" onclick="siguientepaginas('caminoRel1','caminoRel2');" ><img src="imagenes/siguiente.png" alt="siguiente"></a>
+	   </div>
+	</div>
+
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR SEPARACIÓN CONVENCIONAL  .4 -->
+
+	
+  <!-- INICIO boton colsulta descarga SEPARACIÓN CONVENCIONAL .4 -->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN boton consulta descarga SEPARACIÓN CONVENCIONAL .4-->
+  
+
+  <!--INICIO DE poput SEPARACIÓN CONVENCIONAL .4-->
+	<div data-role="popup" id="popupRel1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:
+		       </p>
+		       <ul>
+		       	<li>Nombres.</li>
+		       	<li>Documentos de identidad.</li>
+		       	<li>Último domicilio conyugal.</li>
+		       	<li>Firmas y huellas digitales</li>
+		       </ul>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupRel2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar copias simples y legibles de los documentos de identidad de ambos cónyuges.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupRel3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una copia certificada del acta o de la partida de matrimonio, expedida dentro de los tres meses anteriores a la fecha de presentación de la solicitud.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	  <div data-role="popup" id="popupRel4" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una declaración jurada del último domicilio conyugal de ser el caso, suscrita obligatoriamente por ambos cónyuges.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	  <div data-role="popup" id="popupRel5" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes realizar el pago correspondiente para el derecho de trámite y presentar el recibo.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupRel6" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>De no haber bienes sujetos al régimen de sociedad de gananciales, presentar una declaración jurada con firma e impresión de la huella digital de cada uno de los cónyuges.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupRel7" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Si optaste por el régimen de separación de patrimonios, presentar el testimonio de la escritura pública inscrita en los Registros Públicos.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	  <div data-role="popup" id="popupRel8" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>En el supuesto escenario que se haya sustituido el régimen de la sociedad de gananciales por el de separación de bienes o se haya liquidado el régimen patrimonial, presentar el Testimonio de la Escritura Pública inscrita en los Registros Públicos.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <!--FIN  poput SEPARACIÓN CONVENCIONAL .4-->
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 			3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN SEPARACIÓN CONVENCIONAL  .4-->
+
+    <!--INICIO DE SEPARACIÓN CONVENCIONAL  .5-->
+  <div data-role="page" id="page30" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  
+  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+		
+        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   
+	</div>
+  
+  <div data-role="content">
+  
+   
+  <div id="titulotramite">DIVORCIO ULTERIOR</div>
+  <div id="area">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General.</div>
+  <div id="pasos">Total de 3 pasos</div>
+
+	  <div id="globaltramite" >
+	      <div id="mensajes" style="background-color:#FFF">
+	        <div class="textotramite" style="text-align : left;">
+	        	<strong>Costo</strong>
+	        	<p>S/.64.90</p>
+	        	<strong>Observaciones:</strong>
+	        	<ul>
+	        		<li>El trámite se inicia con posterioridad a los 02 meses de notificado la Resolución de Alcaldía que dispone la Separación Convencional.</li>
+	        		<li>En el caso de que el solicitante sea analfabeto, no puede firmar, es ciego o adolece de otra discapacidad, procederá la firma a ruego sin perjuicio de que impriman su huella digital o grafía, de ser el caso.</li>
+	        	</ul>
+	        </div>
+	      </div>
+	  </div>
+  
+  <!--INICIO DE CAMINOS DE SEPARACIÓN CONVENCIONAL .5-->
+	  <div class="caminotramite-show" >
+		  <div class="botoncamino" id="botoncamino1" data-role="button">
+		  <a href="#popupSep1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
+		  
+		  <div class="botoncamino" id="botoncamino2" data-role="button">
+		  <a href="#popupSep2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
+
+		  <div class="botoncamino" id="botoncamino3" data-role="button">
+		  <a href="#popupSep3" data-rel="popup" data-position-to="window" ><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
+	  </div>
+
+	<!--FIN DE CAMINOS DE SEPARACIÓN CONVENCIONAL .5 -->
+
+  
+  <!-- INICIO BOTONES SIGUIENTE-ANTERIOR SEPARACIÓN CONVENCIONAL .5-->
+
+  <!-- FIN BOTONES SIGUIENTE-ANTERIOR SEPARACIÓN CONVENCIONAL  .5 -->
+
+	
+  <!-- INICIO boton colsulta descarga SEPARACIÓN CONVENCIONAL .5 -->
+	<div class="ui-grid-a">
+	  <div class="ui-block-a">
+	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
+	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  	</div>
+	  </div>
+
+	  <div class="ui-block-b">
+	  	<div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a>
+	  	</div>
+	  </div>
+	</div>
+	<!-- FIN boton consulta descarga SEPARACIÓN CONVENCIONAL .5-->
+  
+
+  <!--INICIO DE poput SEPARACIÓN CONVENCIONAL .5-->
+	<div data-role="popup" id="popupSep1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+			       <p>Debes presentar una solicitud de disolución del vínculo matrimonial (cualquiera de los cónyuges) dirigida al Alcalde, señalando nombre, documento de identidad y firma del solicitante.
+			       </p>
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	<div data-role="popup" id="popupSep2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes presentar una copia de la Resolución de Separación Convencional.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua.asd Ut enim ad minim veniam,
+		       	quis nostrud exercitation ullamco laboriasass nisi ut aliquip ex ea commodo
+		       	consequat. Duis aute irure dolor in reprehenderit inasdasd voluptate velit esse
+		       	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		       	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+	 <div data-role="popup" id="popupSep3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a" style="width: 100%;">
+		    <div id="global2">
+		      <div id="mensajes">
+		        <div class="texto2">
+		        
+		       <p>Debes realizar el pago correspondiente para el derecho de trámite y presentar el recibo.
+		       	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		       	tempor incididunt ut labore et dolore magna aliqua. </span>
+		       </p>
+		        
+		        </div>
+		      </div>
+		  </div> 
+		  </div>
+		</div>
+	 </div>
+
+
+	 <!--FIN  poput SEPARACIÓN CONVENCIONAL .5-->
+
+  </div>
+  
+  
+    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+	        <li data-role="list-divider" style="padding: 3.5em 1.143em;">
+	        	<div class="logomenu"></div>
+	        </li>
+	        <li>
+	        	<a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a>
+	        </li>
+	        <br>
+	     	<li>
+	     		<a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a>
+	     	</li>
+	        <li id="activo">
+				<a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 			3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a>
+			</li>
+	        <li>
+	        	<a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+	        <li>
+				<a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+		  		height: 3em;"></a>
+	  		</li>
+        </ul>
+    </div>
+    
+  </div>
+
+    <!--FIN SEPARACIÓN CONVENCIONAL  .5-->
+
+
+
+
+
 
 
 

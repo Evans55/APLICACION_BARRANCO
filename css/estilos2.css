@@ -9,7 +9,6 @@
 
 /*  FIN ICONOS */
 
-
 .pastoiz {
   background:  url(../imagenes/pastoiz.png) 0 100% no-repeat;
    margin-top: -11.7%;
@@ -114,37 +113,6 @@ top: 0; left: 0;
 
 }
 
-#caminotramite6{
-  background: url(../imagenes/camino-tramite.png)0 100% no-repeat;
-  -webkit-background-size: 55% auto;
--moz-background-size: 55% auto;
--o-background-size: 55% auto;
-  margin-left: 40%;
-  margin-top: -27%;
-
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0; left: 0;
-
-}
-
-#caminotramite7{
-  background: url(../imagenes/camino-tramite.png)0 100% no-repeat;
-  -webkit-background-size: 55% auto;
--moz-background-size: 55% auto;
--o-background-size: 55% auto;
-  margin-left: 40%;
-  margin-top: -27%;
-
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0; left: 0;
-display:none;
-
-}
-
 
 .caminotramite-show{
   background: url(../imagenes/camino-tramite.png)0 100% no-repeat;
@@ -179,6 +147,7 @@ display:none;
 
 
 
+
 #titulotramite{
   color: darkblue;
   text-align: -webkit-center;
@@ -187,7 +156,6 @@ display:none;
   font-family: sans-serif;
   font-weight: bold;
   font-size: 3em;
-  -webkit-transform: scale(0.5);
 }
 
 .textotramite{
@@ -198,11 +166,11 @@ display:none;
 }
 
 #globaltramite{
-  height: 19.2em;
+  height: 20.2em;
   width: 25%;
   /*border: 1px solid #ddd;*/
   overflow-y: scroll;
-  margin-top: 10%;
+  margin-top: 10.8%;
   margin-left: 7%;
   /*background-color: powderblue;*/
 }
@@ -271,7 +239,7 @@ position:relative;
 
 }
 
-#page3,#page8,#page9,#page5,#page11,#page7,#page10,#page,#page4,#page6,#page12,#page13,#page14,#page15,#page16,#page17,#page18,#page19,#page20,#page21,#page22,#page23,#page24,#page25,#page26,#page27,#page28,#page29,#page30{
+#page3,#page8,#page9,#page5,#page11,#page7,#page10,#page,#page4,#page6,#page12,#page13,#page14,#page15,#page16{
 max-width:1300px;
 margin:0 auto;
 position:relative;
@@ -326,11 +294,11 @@ max-height: 691px;
 
 #global2 {
   height: 20.7em;
-  width: 92%;
+  width: 184%;
   /* border: 1px solid #ddd; */
   overflow-y: scroll;
-margin-top: 17.8%;
-  margin-left: 3%;
+  margin-top: 35.8%;
+  margin-left: 11%;
   background-color: transparent;
 }
 
@@ -387,18 +355,6 @@ margin-top: 17.8%;
 	font-size:1.8em;
 	text-align:justify;
 	height: auto;
-}
-
-.relleno-texto{
-     -webkit-opacity: 0.0;
-     -moz-opacity: 0.0;
-     -ms-opacity: 0.0;
-     -o-opacity: 0.0;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -ms-user-select:none;
 }
 
 .texto {
@@ -1179,7 +1135,7 @@ margin-top:-3%;
   width:377px;
   position: absolute;
   left: 0;
-   margin-left:73%;
+  margin-left:73%;
   margin-top:-23%;
   -webkit-transform: scale(1.8);
   transform: scale(1.8);
@@ -1296,12 +1252,12 @@ margin-top:-3%;
 
 
 .spritechabelita {
-  background:  url(../imagenes/sprite_chabukita1.png) 0 100%;
+  background:  url(../imagenes/sprite_sheet_completo.png) 0 100%;
   
 
   z-index: 6;
-  height:401px;
-  width:320px;
+  height:378px;
+  width:182px;
   position: absolute;
   left: 0;
   
@@ -1310,7 +1266,7 @@ margin-top:-3%;
  /* display:none;*/
 
  
-    -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling3 4s both linear, spritehabla 1.4s steps(6, end) 4s 6;
+    -webkit-animation: spritechabelitaprueba 0.6s steps(6, end) 7,curling3 4s both linear, spritehablaprueba 1.4s steps(6, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
  
@@ -1332,7 +1288,7 @@ margin-top:-3%;
   /*display:none;*/
 
   
-         -webkit-animation: spritechabelita2 0.8s steps(13, end) 4,curling3 3s both linear, spritehabla2 1.8s steps(13, end) 3.5s 3;
+         -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.8s steps(13, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
   
@@ -1353,7 +1309,7 @@ margin-top:-3%;
   /*display:none;*/
 
   
-         -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 4s 4;
+         -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
   
@@ -1389,6 +1345,16 @@ from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
   to {background-position: -1920px 0; } 
 }
 
+@keyframes spritechabelitaprueba {  
+  from {background-position: 0 0; } 
+  to {background-position: -1092px 0; } 
+}
+
+@-webkit-keyframes spritechabelitaprueba {  
+    from {background-position: 0 0; } 
+  to {background-position: -1092px 0; } 
+}
+
 @keyframes spritechabelita2 {  
   from {background-position: 0 0; } 
   to {background-position: -7800px 0; } 
@@ -1407,6 +1373,16 @@ from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
 @-webkit-keyframes spritehabla {  
     from {background-position: 0 -401px; } 
   to {background-position: -1920px -401px; } 
+}
+
+@keyframes spritehablaprueba {  
+  from {background-position: 0 -378px; } 
+  to {background-position: -1092px -378px; } 
+}
+
+@-webkit-keyframes spritehablaprueba {  
+    from {background-position: 0 -378px; } 
+  to {background-position: -1092px -378px; } 
 }
 
 @keyframes spritehabla2 {  
@@ -1871,10 +1847,10 @@ and (orientation : landscape)
 }
 	
 	
-#botonconsulta {
-  top: 80.5%;
-  left: 2.7%;
-}
+#botonconsulta{
+	top:77.5%;
+	left:10.7%;
+}	
 	
 #botonespag{
 margin-left: 42%;
@@ -1889,7 +1865,6 @@ margin-top:-10%;
   font-family: sans-serif;
   font-weight: bold;
   font-size: 3em;
-    -webkit-transform: scale(0.7);
 }	
 	
 #botoncamino1{
@@ -2020,16 +1995,13 @@ z-index:6;
 
 #global2 {
   height: 20.7em;
-  width: 85%;
+  width: 184%;
   /* border: 1px solid #ddd; */
-  overflow-y: hidden;
-  margin-top: 16.8%;
-  margin-left: 5%;
+  overflow-y: scroll;
+  margin-top: 35.8%;
+  margin-left: 11%;
   background-color: transparent;
 }
-
-
-
 
 
 .margenes{
@@ -2254,7 +2226,9 @@ z-index:6;
  /* display:none;*/
 
   
-    -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling3 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
+     -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling3 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
+ 
+/* -webkit-animation-fill-mode:forwards;*/
   
 }
 	
@@ -2275,8 +2249,9 @@ z-index:6;
   /*display:none;*/
 
   
-         -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 10 forwards;
+         -webkit-animation: spritechabelita2 0.8s steps(13, end) 5, curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 10 forwards;
  
+
   
 }
 
@@ -2295,7 +2270,9 @@ z-index:6;
  /* display:none;*/
 
   
-       -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 10 forwards;
+        -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 10 forwards;
+ 
+/* -webkit-animation-fill-mode:forwards;*/
   
 }
 	
@@ -2669,19 +2646,6 @@ and (orientation : landscape)
 
 
 
-/*  Falta Samsung Galaxy Y	Android v2.3	240 x 320	133 */
-
-
-@media only screen
-and (max-width : 240px)
-and (max-height : 320px)
-and (orientation : landscape)
-{
-	
-	
-	
-}
-
 @media only screen
 and (max-width : 1366px)
 and (max-height : 768px)
@@ -2708,5 +2672,21 @@ and (orientation : landscape)
   }
   
   
+}
+
+
+
+
+/*  Falta Samsung Galaxy Y	Android v2.3	240 x 320	133 */
+
+
+@media only screen
+and (max-width : 240px)
+and (max-height : 320px)
+and (orientation : landscape)
+{
+	
+	
+	
 }
 
