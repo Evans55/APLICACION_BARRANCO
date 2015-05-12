@@ -248,9 +248,10 @@ function cambiardisplay2(){
 
 function activarAudio1()
     {
- var audio = new Audio('audio/audio_pantalla2.mp3');
+ //var audio = new Audio('audio/audio_pantalla2.mp3');
  
-audio.play();
+  document.getElementById('audiopantalla1').play();
+//audio.play();
 
 }
 
@@ -295,10 +296,12 @@ function activarAudio2()
 		
 		//document.getElementById('spritechabelita2').style.display = 'block';
 		//document.getElementById('activo2').style.display = 'none';
+ document.getElementById('audiopantalla1').pause();
+	
+// var audio2 = new Audio('audio/Pantalla3_Ventanilla.mp3');
+//audio2.play();
+ document.getElementById('audiopantalla2').play();
 
-		
- var audio2 = new Audio('audio/Pantalla3_Ventanilla.mp3');
-audio2.play();
 }
 
 
@@ -342,11 +345,12 @@ function activarAudio3()
     {
 		document.getElementById('spritechabelita2').style.display = 'none';
 		document.getElementById('activo2').style.display = 'block';
+	
+	document.getElementById('sinAudio2').style.display = 'block';
+	document.getElementById('conAudio2').style.display = 'none';
 		
-	//document.getElementById('spritechabelita3').style.display = 'block';
-	//document.getElementById('activo3').style.display = 'none';
- var audio = new Audio('audio/Pantalla4_Ecran.mp3');
-audio.play();
+ document.getElementById('audiopantalla2').pause();		
+document.getElementById('audiopantalla3').play();
 }
 
 
@@ -436,9 +440,11 @@ if(document.getElementById(div1).style.display = 'none'){
 </script>
 
 </head> 
-<body onLoad="activarAudio1(),onBodyLoad()" style="background-color:#009;">
+<body onLoad="activarAudio1(),onBodyLoad()" style="background-color:#315AA5;">
 
 <div data-role="page" id="page" style="overflow-x: hidden; overflow-y:hidden;">
+
+<audio src="audio/audio_pantalla2.mp3" id="audiopantalla1"></audio>
 
        <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
        <a href="#left-panel11" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
@@ -513,16 +519,15 @@ if(document.getElementById(div1).style.display = 'none'){
     
 	<div data-role="content">	
 
-<!--<audio id="player2">
-  <source id="audio1" src="audio/Pantalla3_Ventanilla.mp3" type="audio/mpeg">
-</audio>  -->
+<audio src="audio/Pantalla4_Ecran.mp3" id="audiopantalla3"></audio>
+
 
     <div class="fondo3">
     <a href="#page3" id="conAudio2" class="btnatural" onclick="activarAudio3(),playAudioUnavez();"><img src="imagenes/BotonPN.png" width="314" height="90" alt="natural"></a>
-    <a href="#" class="btjuridico" ><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
+    <a href="#" id="conAudio22" class="btjuridico" ><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
     
      <a href="#page3" id="sinAudio2" class="btnatural" onclick="sinAudio2();"><img src="imagenes/BotonPN.png" width="314" height="90" alt="natural"></a>
-    <a href="#" class="btjuridico" ><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
+    <a href="#" id="sinAudio22" class="btjuridico" ><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
    <!--<div id="output"></div> -->
    
    <div class="spritechabelita2" id="spritechabelita2"></div>
@@ -595,6 +600,8 @@ if(document.getElementById(div1).style.display = 'none'){
 
 	
 	<div data-role="content">	
+    
+    <audio src="audio/Pantalla3_Ventanilla.mp3" id="audiopantalla2"></audio>
     
       <div class="fondo4">
    <!-- <a data-role="button" href="#page4" data-transition="pop" style="position:absolute;  margin-top: 2%; margin-left: 10%;">Siguiente</a> -->
