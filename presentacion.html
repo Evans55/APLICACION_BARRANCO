@@ -297,6 +297,7 @@ function activarAudio2()
 		//document.getElementById('spritechabelita2').style.display = 'block';
 		//document.getElementById('activo2').style.display = 'none';
  document.getElementById('audiopantalla1').pause();
+ document.getElementById('audiopantalla1').currentTime = 0;
 	
 // var audio2 = new Audio('audio/Pantalla3_Ventanilla.mp3');
 //audio2.play();
@@ -348,8 +349,9 @@ function activarAudio3()
 	
 	document.getElementById('sinAudio2').style.display = 'block';
 	document.getElementById('conAudio2').style.display = 'none';
-		
- document.getElementById('audiopantalla2').pause();		
+
+ document.getElementById('audiopantalla2').pause();	
+  document.getElementById('audiopantalla2').currentTime = 0;	
 document.getElementById('audiopantalla3').play();
 }
 
@@ -492,6 +494,18 @@ if(document.getElementById(div1).style.display = 'none'){
 	</div>
     
     
+  <!--<div data-role="panel" id="left-panel11" data-theme="c" data-display="overlay" data-position-fixed="true">
+        <ul id="list" data-role="listview">
+           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
+        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
+     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
+          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio1(),cambiardisplay2();"></a></li>
+        <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
+         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
+  height: 3em;"></a></li>
+        </ul>
+    </div> --> 
+    
     <div data-role="panel" id="left-panel11" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
@@ -502,7 +516,7 @@ if(document.getElementById(div1).style.display = 'none'){
          <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
   height: 3em;"></a></li>
         </ul>
-    </div>
+    </div> 
     
 </div> 
 
