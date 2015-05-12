@@ -2254,7 +2254,7 @@ z-index:6;
  /* display:none;*/
 
   
-    -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling3 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
+    -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling3 4s both linear, spritehabla 1.4s steps(6, end) 4s 6;
   
 }
 	
@@ -2275,7 +2275,7 @@ z-index:6;
   /*display:none;*/
 
   
-         -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 10 forwards;
+        -webkit-animation: spritechabelita2 0.8s steps(13, end) 4,curling3 3s both linear, spritehabla2 1.8s steps(13, end) 3.5s 3 forwards;
  
   
 }
@@ -2295,7 +2295,7 @@ z-index:6;
  /* display:none;*/
 
   
-       -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 5s 10 forwards;
+       -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 4s 4 forwards;
   
 }
 	
