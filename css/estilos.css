@@ -183,8 +183,12 @@ font-family: sans-serif;
   margin-top: -2%;
 }
 
-#activo,#activo2,#activo3,#sinAudio1,#sinAudio2{
+#activo,#activo2,#activo3,#sinAudio1,#sinAudio2,#sinAudio22{
 	display:none;
+}
+
+#conAudio2,#conAudio22{
+	display:block;
 }
 
 #sinAudio1{
@@ -1215,12 +1219,12 @@ margin-top:-3%;
 
 
 .spritechabelita {
-  background:  url(../imagenes/sprite_chabukita1.png) 0 100%;
+  background:  url(../imagenes/sprite_sheet_completo.png) 0 100%;
   
 
   z-index: 6;
-  height:401px;
-  width:320px;
+  height:378px;
+  width:182px;
   position: absolute;
   left: 0;
   
@@ -1229,7 +1233,7 @@ margin-top:-3%;
  /* display:none;*/
 
  
-    -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling3 4s both linear, spritehabla 1.4s steps(6, end) 5s 15;
+    -webkit-animation: spritechabelitaprueba 0.6s steps(6, end) 7,curling3 4s both linear, spritehablaprueba 1.4s steps(6, end) 5s 15;
  
  -webkit-animation-fill-mode:forwards;
  
@@ -1308,6 +1312,16 @@ from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
   to {background-position: -1920px 0; } 
 }
 
+@keyframes spritechabelitaprueba {  
+  from {background-position: 0 0; } 
+  to {background-position: -1092px 0; } 
+}
+
+@-webkit-keyframes spritechabelitaprueba {  
+    from {background-position: 0 0; } 
+  to {background-position: -1092px 0; } 
+}
+
 @keyframes spritechabelita2 {  
   from {background-position: 0 0; } 
   to {background-position: -7800px 0; } 
@@ -1326,6 +1340,16 @@ from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
 @-webkit-keyframes spritehabla {  
     from {background-position: 0 -401px; } 
   to {background-position: -1920px -401px; } 
+}
+
+@keyframes spritehablaprueba {  
+  from {background-position: 0 -378px; } 
+  to {background-position: -1092px -378px; } 
+}
+
+@-webkit-keyframes spritehablaprueba {  
+    from {background-position: 0 -378px; } 
+  to {background-position: -1092px -378px; } 
 }
 
 @keyframes spritehabla2 {  
