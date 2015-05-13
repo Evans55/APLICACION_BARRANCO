@@ -2352,9 +2352,9 @@ z-index:6;
   /*display:none;*/
 
   
-        -webkit-animation: spritechabelita2 0.8s steps(13, end) 4,curling3 3s both linear, spritehabla2 1.8s steps(13, end) 3.5s 3 forwards;
+     /*   -webkit-animation: spritechabelita2 0.8s steps(13, end) 4,curling3 3s both linear, spritehabla2 1.8s steps(13, end) 3.5s 3 forwards;*/
  
-  
+  -webkit-animation: spritechabelitaprueba 1.8s steps(28, end) 2,curling3 3.5s both linear, spritehablaprueba 1.8s steps(28, end) 3.5s 3 forwards;
 }
 
 .spritechabelita3 {
@@ -2377,6 +2377,26 @@ z-index:6;
 }
 	
 
+
+.spritechabelitaprueba {
+  background:  url(../imagenes/chabelita-brazoderecho.png) 0 100%;
+  
+
+   z-index: 3;
+  height:514px;
+  width:304px;
+  position: absolute;
+  left: 0;
+ 
+ margin-top:27%;
+  margin-left:15%;
+  /*display:none;*/
+
+
+        -webkit-animation: spritechabelitaprueba 1.8s steps(28, end) 2,curling4 3.5s both linear, spritehablaprueba 1.8s steps(28, end) 4s 5 forwards;
+       /*-webkit-animation-fill-mode:forwards;*/
+  
+}
 	
 }
 
