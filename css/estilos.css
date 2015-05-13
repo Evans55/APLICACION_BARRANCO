@@ -1294,6 +1294,52 @@ margin-top:-3%;
 }
 
 
+.spritechabelita2 {
+  background:  url(../imagenes/chabelita-brazoizquierdo3.png) 0 100%;
+  
+
+  z-index: 3;
+  height:514px;
+  width:304px;
+  position: absolute;
+  left: 0;
+  
+ margin-top:27%;
+  margin-left:-12%;
+ /* display:none;*/
+
+
+-webkit-animation: spritechabelitaprueba 1.8s steps(28, end) 2,curling3 3.5s both linear, spritehablaprueba 1.8s steps(28, end) 3.5s 3;
+ 
+ -webkit-animation-fill-mode:forwards;
+    
+ 
+  
+}
+
+
+@keyframes spritechabelitaprueba {  
+ from {background-position: 0 0; } 
+  to {background-position: -8512px 0; }  
+}
+
+@-webkit-keyframes spritechabelitaprueba {  
+ from {background-position: 0 0; } 
+  to {background-position: -8512px 0; } 
+}
+
+@keyframes spritehablaprueba {  
+  from {background-position: 0 -514px; } 
+  to {background-position: -8512px -514px; } 
+}
+
+@-webkit-keyframes spritehablaprueba {  
+    from {background-position: 0 -514px; } 
+  to {background-position: -8512px -514px; } 
+}
+
+
+
 
 .spritechabelita {
   background:  url(../imagenes/sprite_chabukita1.png) 0 100%;
@@ -1317,6 +1363,7 @@ margin-top:-3%;
   
 }
 
+/*
 .spritechabelita2 {
   background:  url(../imagenes/sprite_chabukita22.png) 0 100%;
   
@@ -1329,14 +1376,15 @@ margin-top:-3%;
  
  margin-top:30%;
   margin-left:-12%;
-  /*display:none;*/
+
 
   
          -webkit-animation: spritechabelita2 0.8s steps(13, end) 4,curling3 3s both linear, spritehabla2 1.8s steps(13, end) 3.5s 3;
  
  -webkit-animation-fill-mode:forwards;
   
-}
+}*/
+
 
 .spritechabelita3 {
   background:  url(../imagenes/sprite_chabukita33.png) 0 100%;
@@ -1360,6 +1408,28 @@ margin-top:-3%;
 }
 
 
+
+.spritechabelitaprueba {
+  background:  url(../imagenes/chabelita-brazoderecho.png) 0 100%;
+  
+
+   z-index: 3;
+  height:514px;
+  width:304px;
+  position: absolute;
+  left: 0;
+ 
+ margin-top:27%;
+  margin-left:15%;
+  /*display:none;*/
+
+
+        -webkit-animation: spritechabelitaprueba 1.8s steps(28, end) 2,curling4 3.5s both linear, spritehablaprueba 1.8s steps(28, end) 4s 5;
+       -webkit-animation-fill-mode:forwards;
+  
+}
+
+
 @-webkit-keyframes curling2{
 	0%{-webkit-transform:translateX(0);transform:translateX(0)}
 	50%{-webkit-transform:translateX(340px);transform:translateX(340px)}
@@ -1372,12 +1442,19 @@ margin-top:-3%;
 	
 @-webkit-keyframes curling3{
 	from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
-	to{-webkit-transform:translateX(500px);transform:translateX(500px)}}
+	to{-webkit-transform:translateX(600px);transform:translateX(600px)}}
 	
 @keyframes curling3{
 from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
-	to{-webkit-transform:translateX(500px);transform:translateX(500px)}}	
+	to{-webkit-transform:translateX(600px);transform:translateX(600px)}}	
+
+@-webkit-keyframes curling4{
+	from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
+	to{-webkit-transform:translateX(400px);transform:translateX(300px)}}
 	
+@keyframes curling4{
+from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
+	to{-webkit-transform:translateX(400px);transform:translateX(300px)}}		
 
 @keyframes spritechabelita {  
   from {background-position: 0 0; } 
