@@ -16,9 +16,9 @@
 <link rel="stylesheet" href="jquery-mobile/jquery.mobile.icons.min.css" type="text/css" />
 <link rel="stylesheet" href="jquery-mobile/jquery.mobile.structure-1.4.5.min.css" type="text/css"/>
 
- <script src="phonegap.js" charset="utf-8" type="text/javascript" async="async"></script>
-<script src="jquery-mobile/jquery-1.11.1.min.js" type="text/javascript" async="async"></script>
- <script src="jquery-mobile/jquery.mobile-1.4.5.min.js" type="text/javascript" async="async"></script> 
+ <script src="phonegap.js" charset="utf-8" type="text/javascript" async></script>
+<script src="jquery-mobile/jquery-1.11.1.min.js" type="text/javascript" async></script>
+ <script src="jquery-mobile/jquery.mobile-1.4.5.min.js" type="text/javascript" async></script> 
 
 
 <script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>
@@ -202,6 +202,17 @@ $(document).on('change', '#selectmenu2', function(){
 
 </script>
  -->
+ 
+ <script>
+ 
+ function enviomail(){
+	 cordova.plugins.email.open();
+	 
+ }
+ 
+ </script>
+ 
+ 
 <script language="javascript">
 
      function showConfirm() {
@@ -2230,7 +2241,7 @@ social, número de documento de identidad o número de RUC, domicilio del recurr
 	<div class="ui-grid-a">
 	  <div class="ui-block-a">
 	  	<div class="botonconsulta" id="botonconsulta" data-role="button">
-	  		<a><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
+	  		<a href="#" onclick="enviomail();" ><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a>
 	  	</div>
 	  </div>
 
@@ -2241,6 +2252,29 @@ social, número de documento de identidad o número de RUC, domicilio del recurr
 	</div>
 	<!-- FIN BOTONES CONSULTA-DESCARGA MENORES DE EDAD-->
   
+
+ <!--INICIO DE POPUP CONSULTA PARA MENORES DE EDAD-->
+	<div data-role="popup" id="popupConsulta1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppupconsulta" style="background-color:transparent; height:42em; width:50em;">
+	    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		
+        <form action="" method="post" data-ajax="false" style="margin-top: 20%; margin-left: 5%; width: 90%;">
+        
+        <input placeholder="Ingrese Nombre" type="text" name="nom" id="nom">
+        
+        <input placeholder="Ingrese Email" type="email" name="correo" id="correo">
+        
+        <input placeholder="Ingrese Asunto" type="text" name="asunto" id="asunto">
+        
+	    <textarea placeholder="Ingrese Mensaje" cols="40" rows="20" name="mensaje" id="mensaje"></textarea>
+        
+        <input type="submit" value="Enviar">
+        
+        </form>
+        
+	 </div>
+
+
+
 
   <!--INICIO DE POPUP MENORES DE EDAD-->
 	<div data-role="popup" id="popupMenoresEdad1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">

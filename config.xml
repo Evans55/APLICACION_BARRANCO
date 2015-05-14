@@ -23,6 +23,7 @@ Jonathan D. Ccoicca Jiménez
 <gap:plugin name="org.apache.cordova.file" />
 <gap:plugin name="org.apache.cordova.file-transfer" />
 <gap:plugin name="org.apache.cordova.dialogs" />
+<gap:plugin name="de.appplant.cordova.plugin.email-composer" version="0.8.2" />
 
 <preference name="stay-in-webview" value="false" />
 <preference name="orientation" value="landscape" />
