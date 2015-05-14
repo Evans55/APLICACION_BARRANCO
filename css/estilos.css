@@ -1358,7 +1358,7 @@ margin-top:-3%;
  margin-top:27%;
   margin-left:-12%;
 
--webkit-animation: spritechabelitaprueba 1.8s steps(28, end) 2,curling3 3.5s both linear, spritehablaprueba 1.8s steps(28, end) 3.5s 3 forwards;
+-webkit-animation: spritechabelitaprueba 1.5s steps(28, end) 2,curling3 2.9s both linear, spritehablaprueba 1.8s steps(28, end) 3.2s 3 forwards;
 
   
 }
@@ -1377,7 +1377,7 @@ margin-top:-3%;
   margin-left:-12%;
 
 
-        -webkit-animation: spritechabelitaprueba2 1.8s steps(28, end) 2,curling3 3.5s both linear, spritehablaprueba2 1.8s steps(28, end) 4s 5 forwards;
+        -webkit-animation: spritechabelitaprueba2 1.8s steps(28, end) 2,curling3 3.5s both linear, spritehablaprueba2 1.8s steps(28, end) 4s 3 forwards;
 
   
 }
@@ -2318,7 +2318,7 @@ z-index:6;
 
 
 
-  -webkit-animation: spritechabelitaprueba 1.8s steps(28, end) 2,curling3 3.5s both linear, spritehablaprueba 1.8s steps(28, end) 3.5s 3 forwards;
+  -webkit-animation: spritechabelitaprueba 1.5s steps(28, end) 2,curling3 2.9s both linear, spritehablaprueba 1.8s steps(28, end) 3.2s 3 forwards;
 }
 
 
@@ -2339,7 +2339,7 @@ z-index:6;
 
 
 
-        -webkit-animation: spritechabelitaprueba2 1.8s steps(28, end) 2,curling3 3.5s both linear, spritehablaprueba2 1.8s steps(28, end) 4s 5 forwards;
+        -webkit-animation: spritechabelitaprueba2 1.8s steps(28, end) 2,curling3 3.5s both linear, spritehablaprueba2 1.8s steps(28, end) 4s 3 forwards;
      
 }
 
