@@ -206,7 +206,12 @@ $(document).on('change', '#selectmenu2', function(){
  <script>
  
  function enviomail(){
-	 cordova.plugins.email.open();
+	 cordova.plugins.email.open({
+    to:      'treborlp@gmail.com',
+    subject: 'Consulta',
+    body:    '<h1>Ingresa el mensaje</h1>',
+    isHtml:  true
+});
 	 
  }
  
@@ -5377,7 +5382,7 @@ social, número de documento de identidad o número de RUC, domicilio del recurr
 
 
     <!--INICIO DE SEPARACIÓN CONVENCIONAL  .4-->
-  <div data-role="page" id="page29" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x:hidden; overflow-y:hidden;">
+  <div data-role="page" id="page29" style="overflow-x:hidden; overflow-y:hidden;">
   
   <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
 		
@@ -5385,14 +5390,24 @@ social, número de documento de identidad o número de RUC, domicilio del recurr
    
 	</div>
   
-  <div data-role="content">
+  <div data-role="content" style="padding:0;">
   
-   
-  <div id="titulotramite" style="-webkit-transform : scale(0.4); margin-top : 0%;">EN CASO DE REQUISITOS RELACIONADOS CON EL PATRIMONIO</div>
-  <div id="area" style="margin-top:12%;">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General.</div>
-  <div id="pasos">Total de 8 pasos</div>
-
-	  <div id="globaltramite" >
+  
+  <div class="ui-grid-b">
+      <div class="ui-block-a" style="background-image: url('imagenes/cabecera_tramite.png'); background-repeat: no-repeat; background-size: 100% 100%; width: 100%;height: 10em;
+top: 0; left: 0;">
+      <div id="titulotramite" style="-webkit-transform : scale(0.4); margin-top : 1%;">EN CASO DE REQUISITOS RELACIONADOS CON EL PATRIMONIO</div>
+      </div>
+      
+      <div class="ui-block-a" style="background-image: url('imagenes/cuerpo1_tramite.png'); background-repeat: no-repeat; background-size: 100% 100%; width: 100%;height: 9em;
+top: 0; left: 0;">
+     <div id="area" style="margin-top:5.3%;">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General.</div>
+     <div id="pasos">Total de 8 pasos</div>
+      </div>
+      
+      <div class="ui-block-a" style="background-image: url('imagenes/cuerpo2_tramite.png'); background-repeat: no-repeat; background-size: 100% 100%; width: 100%;height: 40em;
+top: 0; left: 0;">
+    <div id="globaltramite" >
 	      <div id="mensajes" style="background-color:#FFF">
 	        <div class="textotramite" style="text-align : left;">
 	        	<strong>Costo</strong>
@@ -5402,8 +5417,9 @@ social, número de documento de identidad o número de RUC, domicilio del recurr
 	        </div>
 	      </div>
 	  </div>
-  
-  <!--INICIO DE CAMINOS DE SEPARACIÓN CONVENCIONAL .4-->
+      
+      
+       <!--INICIO DE CAMINOS DE SEPARACIÓN CONVENCIONAL .4-->
 	  <div class="caminotramite-show" id="caminoRel1">
 		  <div class="botoncamino" id="botoncamino1" data-role="button">
 		  <a href="#popupRel1" data-rel="popup" data-position-to="window" ><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
@@ -5660,6 +5676,22 @@ social, número de documento de identidad o número de RUC, domicilio del recurr
 	  		</li>
         </ul>
     </div>
+    
+      
+      
+      
+      </div>
+    </div>
+
+ <!--  <div id="cabecera" style="background-image: url('imagenes/cabecera_tramite.png'); background-repeat: no-repeat; background-size: 100% 100%; width: 100%;height: 15%;position: absolute;
+top: 0; left: 0;">
+</div>
+
+ <div id="cuerpo1" style="background-image: url('imagenes/cuerpo1_tramite.png'); background-repeat: no-repeat; background-size: 100% 100%; width: 100%;height: 20%;position:absolute;
+top: 0; left: 0;">
+   </div> -->
+ 
+  
     
   </div>
 
