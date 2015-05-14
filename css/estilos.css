@@ -2393,24 +2393,7 @@ z-index:6;
   -webkit-animation: spritechabelitaprueba 1.8s steps(28, end) 2,curling3 3.5s both linear, spritehablaprueba 1.8s steps(28, end) 3.5s 3 forwards;
 }
 
-/*
-.spritechabelita3 {
-  background:  url(../imagenes/sprite_chabukita33.png) 0 100%;
-  
 
-  z-index: 3;
-   height:511px;
-  width:600px;
-  position: absolute;
-  left: 0;
-  
- margin-top:18%;
-  margin-left:-12%;
-  
-       -webkit-animation: spritechabelita2 0.8s steps(13, end) 5,curling3 4s both linear, spritehabla2 1.4s steps(13, end) 4s 4 forwards;
-  
-}*/
-	
 
 /*
 .spritechabelita3 {
