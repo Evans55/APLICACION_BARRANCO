@@ -1978,7 +1978,7 @@ margin-top:-10%;
   -webkit-background-size: 20% auto;
 -moz-background-size: 20% auto;
 -o-background-size: 20% auto;
-margin-left:-5%;
+margin-left:0%;
 margin-top:-3%;
 }
 
@@ -2130,7 +2130,7 @@ z-index:6;
   position: absolute;
   left: 0;
   margin-left:-4%;
-  margin-top:-32%;
+  margin-top:-33%;
 
   
    -webkit-animation: spritepalmera 0.6s steps(18, end) ;
@@ -2162,7 +2162,7 @@ z-index:6;
   position: absolute;
   left: 0;
   margin-left:77%;
-  margin-top:-32%;
+  margin-top:-33%;
 
   
    -webkit-animation: spritearbolfinal 0.6s steps(18, end) ;
