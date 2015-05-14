@@ -1927,6 +1927,41 @@ and (max-height : 800px)
 and (orientation : landscape)
 {
 	
+	.fachadaiz {
+  background: url(../imagenes/Fachada_Izq.png) 0 100% no-repeat;
+  margin-left: 0%;
+  z-index: 2;
+  top:-20%;
+  -webkit-background-size: 35% auto;
+  -moz-background-size: 35% auto;
+  -o-background-size: 35% auto;
+  
+}
+
+.fachadader {
+  background: url(../imagenes/Fachada_der.png) 0 100% no-repeat;
+  margin-left: 76%;
+  z-index: 2;
+  top:-20%;
+  -webkit-background-size: 32% auto;
+  -moz-background-size: 32% auto;
+  -o-background-size: 32% auto;
+  
+  
+}
+	
+	.midground {
+  background: url(../imagenes/Fachada.png) 0 100% no-repeat;
+ top:-20%;
+  left: 24%;
+  z-index: 3;
+  -webkit-background-size: 57% auto;
+  -moz-background-size: 57% auto;
+  -o-background-size: 57% auto;
+  
+ 
+}
+	
 	
 	.pastoiz {
   background:  url(../imagenes/pastoiz.png) 0 100% no-repeat;
