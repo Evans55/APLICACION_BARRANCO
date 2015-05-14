@@ -1007,12 +1007,14 @@ margin-top:-3%;
   -moz-background-size: 57% auto;
   -o-background-size: 57% auto;
   
-  
+  /*
       -webkit-animation-duration: 1.5s;
   -webkit-animation-name: moverfachadaa;	
 -webkit-animation-timing-function: ease-in-out;
  -webkit-animation-delay: 2s;
     -webkit-animation-fill-mode:forwards;
+	
+	*/
 }
 
 
@@ -1025,11 +1027,13 @@ margin-top:-3%;
   -moz-background-size: 35% auto;
   -o-background-size: 35% auto;
   
+  /*
     -webkit-animation-duration: 1.5s;
   -webkit-animation-name: moverpasto;	
 -webkit-animation-timing-function: ease-in-out;
  -webkit-animation-delay: 0s;
     -webkit-animation-fill-mode:forwards;
+	*/
 }
 
 .fachadader {
@@ -1041,12 +1045,13 @@ margin-top:-3%;
   -moz-background-size: 32% auto;
   -o-background-size: 32% auto;
   
-  
+ /* 
     -webkit-animation-duration: 1.5s;
   -webkit-animation-name: moverpasto;	
 -webkit-animation-timing-function: ease-in-out;
  -webkit-animation-delay: 1s;
     -webkit-animation-fill-mode:forwards;
+  */
 }
 
 @keyframes moverfachadaa {
